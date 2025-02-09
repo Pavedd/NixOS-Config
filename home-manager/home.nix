@@ -58,6 +58,9 @@
   # programs.neovim.enable = true;
   home.packages = with pkgs; [ 
     vim 
+    firefox
+    kitty
+    vscode-fhs
   ];
   
   programs.git = {

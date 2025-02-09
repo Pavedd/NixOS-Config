@@ -17,11 +17,10 @@
       monitor = ",preferred,auto,1";
 	
       # Programms
-      "$terminal" = kitty
-      "$webBrowser" = firefox
-      "$fileManager" = dolphin
-      "$menu" = "wofi --show drun"
-      "$codeEditor" = code
+      "$terminal" = "kitty";
+      "$webBrowser" = "firefox";
+      "$menu" = "wofi --show drun";
+      "$codeEditor" = "code";
 
 
       exec-once = [
@@ -36,8 +35,8 @@
         kb_layout = "ch";
         kb_variant = "";
         kb_model = "";
-        kb_rules = "";
-        kb_options = kbOptions;
+	kb_rules = "";
+        kb_options = "";
         follow_mouse = 1;
         touchpad = {
           natural_scroll = false;
@@ -127,7 +126,7 @@
 	force_default_wallpaper = -1;
       };
 
-      "$mainMod" = SUPER; # Sets Windows key as main modifier
+      "$mainMod" = "SUPER"; # Sets Windows key as main modifier
 
       bind = 
         [
@@ -135,7 +134,7 @@
           "$mainMod, B, exec, $webBrowser"
           "$mainMod, Q, killactive"
           "$mainMod, M, exit"
-          "$mainMod, E, exec, $fileManager"
+#          "$mainMod, E, exec, $fileManager"
           "$mainMod, V, togglefloating"
           "$mainMod, R, exec, $menu"
           "$mainMod, P, pseudo" # dwindle
@@ -210,7 +209,7 @@
 
       # Window rules
       windowrulev2 = [
-        suppressevent maximize, class:.*
+        "suppressevent maximize, class:.*"
       ];
 
 

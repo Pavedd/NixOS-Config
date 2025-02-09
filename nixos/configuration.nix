@@ -142,10 +142,7 @@
   #  wget
      hyprland
      xwayland
-     kitty
-     firefox
      libinput
-     vscode-fhs
      rustup
      nix-output-monitor
      nvd
