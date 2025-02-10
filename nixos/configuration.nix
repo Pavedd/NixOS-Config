@@ -103,6 +103,8 @@
     variant = "";
   };
 
+  services.udisks2.enable = true;
+
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -148,6 +150,10 @@
      nvd
      gcc
      nh
+     neofetch
+     yazi
+     btop
+     udiskie
   ];
 
 

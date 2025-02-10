@@ -24,7 +24,7 @@
 
 
       exec-once = [
-        
+	"udiskie"        
       ];
       env = [
         "XCURSOR_SIZE,24"
@@ -48,8 +48,8 @@
       };
       general = {
         gaps_in = 5;
-        gaps_out = 5;
-        border_size = 4;
+        gaps_out = 10;
+        border_size = 2;
         "col.active_border" = "$mauve";
         "col.inactive_border" = "$surface0";
         layout = "dwindle";
@@ -68,20 +68,20 @@
       };
       decoration = {
         rounding = 10;
-        active_opacity = 1.0;
-        inactive_opacity = 0.95;
+        active_opacity = 0.85;
+        inactive_opacity = 0.8;
         dim_inactive = true;
         dim_strength = 0.1;
         blur = {
-          enabled = true;
+	  enabled = true;
           size = 8;
           passes = 2;
-          popups = true;
         };
         shadow = {
           enabled = true;
-          range = 4;
+          range = 15;
           render_power = 3;
+	  offset = "0, 0";
           # color = "$base";
         };
       };
@@ -135,7 +135,7 @@
           "$mainMod, Q, killactive"
           "$mainMod, M, exit"
 #          "$mainMod, E, exec, $fileManager"
-          "$mainMod, V, togglefloating"
+          "$mainMod, G, togglefloating"
           "$mainMod, R, exec, $menu"
           "$mainMod, P, pseudo" # dwindle
           "$mainMod, J, togglesplit" # dwindle
@@ -181,10 +181,12 @@
           "$mainMod, mouse_up, workspace, e-1"
 
          ];
+
        bindm =
          [
            "$mainMod, mouse:272, movewindow"
            "$mainMod, mouse:273, resizewindow"
+	   "$mainMod, V, resizewindow"
          ];
 
         # Laptop multimedia keys for volume and LCD brightness
