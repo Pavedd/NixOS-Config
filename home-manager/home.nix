@@ -18,9 +18,7 @@
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
     ./../modules/home-manager/hyprland.nix
-    ./../modules/home-manager/waybar/settings.nix
-    ./../modules/home-manager/waybar/style.nix
-    ./../modules/home-manager/waybar/waybar.nix
+    ./../modules/home-manager/waybar.nix
   ];
   
 
@@ -63,7 +61,6 @@
     firefox
     kitty
     vscode-fhs
-    waybar
   ];
   
   programs.git = {
