@@ -105,11 +105,11 @@
 
   services.udisks2.enable = true;
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
-  };
+ # programs.hyprland = {
+   # enable = true;
+   # xwayland.enable = true;
+   # package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+ # };
 
   # Configure console keymap
   console.keyMap = "sg";
@@ -154,6 +154,7 @@
      yazi
      btop
      udiskie
+     p7zip
   ];
 
 
