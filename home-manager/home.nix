@@ -19,6 +19,7 @@
     # ./nvim.nix
     ./../modules/home-manager/hyprland.nix
     ./../modules/home-manager/waybar.nix
+    ./../modules/home-manager/tofi.nix
   ];
   
 
@@ -62,6 +63,8 @@
     kitty
     vscode-fhs
   ];
+
+  fonts.fontconfig.enable = true;
   
   programs.git = {
     enable = true;

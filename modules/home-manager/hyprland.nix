@@ -24,7 +24,8 @@
 
 
       exec-once = [
-	"udiskie"        
+	"udiskie"
+	"waybar"        
       ];
       env = [
         "XCURSOR_SIZE,24"
@@ -84,6 +85,17 @@
 	  offset = "0, 0";
           # color = "$base";
         };
+
+	blurls = [
+	  "waybar"
+	];
+
+	layerrule = [
+#	  "blur,waybar"
+
+	];
+	
+
       };
       binds = {
         movefocus_cycles_fullscreen = false;

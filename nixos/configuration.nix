@@ -105,11 +105,28 @@
 
   services.udisks2.enable = true;
 
- # programs.hyprland = {
-   # enable = true;
-   # xwayland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
    # package = inputs.hyprland.packages."${pkgs.system}".hyprland;
- # };
+  };
+
+  services.pulseaudio = {
+    enable = false;
+    extraModules = [ pkgs.pulseaudio-modules-bt ];
+  };
+  hardware.bluetooth = { enable = true; };
+
+
+  # Enable audio through pipewire
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+
+  
 
   # Configure console keymap
   console.keyMap = "sg";
@@ -155,9 +172,13 @@
      btop
      udiskie
      p7zip
+     tofi
+     hyprpaper
   ];
 
+  fonts.fontDir.enable = true;
 
+  fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
 
 
   # This setups a SSH server. Very important if you're setting up a headless system.

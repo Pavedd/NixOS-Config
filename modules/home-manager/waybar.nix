@@ -1,6 +1,5 @@
-{...}: {
-  home-manager.sharedModules = [
-    (_: {
+{ ... }:
+{ 
       programs.waybar = {
         enable = true;
         systemd = {
@@ -66,14 +65,6 @@
               # "noise_reduction" = 0.77;
               sleep_timer = 5;
               bar_delimiter = 0;
-            };
-            "custom/gpuinfo" = {
-              exec = " ~/.config/hypr/scripts/gpuinfo.sh";
-              return-type = "json";
-              format = " {}";
-              interval = 5; # once every 5 seconds
-              tooltip = true;
-              max-length = 1000;
             };
             "custom/icon" = {
               format = " ";
@@ -307,12 +298,14 @@
           @define-color pink      #f5c2e7;
           @define-color flamingo  #f2cdcd;
           @define-color rosewater #f5e0dc;
+	  @define-color theme_base_color #1e1e2e;
+	  @define-color theme_text_color #cdd6f4;
 
           window#waybar {
             transition-property: background-color;
             transition-duration: 0.5s;
             background: transparent;
-            /*border: 2px solid @overlay0;*/
+            /*border: 2px solid @mauve;*/
             /*background: @theme_base_color;*/
             border-radius: 10px;
           }
@@ -335,24 +328,27 @@
           /* This section can be use if you want to separate waybar modules */
           .modules-left {
           	background: @theme_base_color;
-           	border: 1px solid @blue;
+           	border: 1px solid @mauve;
           	padding-right: 15px;
           	padding-left: 2px;
           	border-radius: 10px;
+		opacity: 0.5;
           }
           .modules-center {
           	background: @theme_base_color;
-            border: 0.5px solid @overlay0;
+            border: 0.5px solid @mauve;
           	padding-right: 5px;
           	padding-left: 5px;
           	border-radius: 10px;
+		opacity: 0.5;
           }
           .modules-right {
           	background: @theme_base_color;
-           	border: 1px solid @blue;
+           	border: 1px solid @mauve;
           	padding-right: 15px;
           	padding-left: 15px;
           	border-radius: 10px;
+		opacity: 0.5;
           }
 
           #backlight,
@@ -456,10 +452,6 @@
           #custom-icon {
             font-size: 15px;
             color: #cba6f7;
-          }
-
-          #custom-gpuinfo {
-            color: @maroon;
           }
 
           #cpu {
@@ -652,6 +644,5 @@
           }
         '';
       };
-    })
-  ];
+       
 }
