@@ -19,7 +19,7 @@
       # Programms
       "$terminal" = "kitty";
       "$webBrowser" = "firefox";
-      "$menu" = "wofi --show drun";
+      "$menu" = "tofi-drun";
       "$codeEditor" = "code";
 
 
@@ -146,6 +146,7 @@
           "$mainMod, B, exec, $webBrowser"
           "$mainMod, Q, killactive"
           "$mainMod, M, exit"
+	  "$mainMod, A, exec, $menu"
 #          "$mainMod, E, exec, $fileManager"
           "$mainMod, G, togglefloating"
           "$mainMod, R, exec, $menu"
