@@ -17,9 +17,10 @@
     # inputs.nix-colors.homeManagerModules.default
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
-    ./../modules/home-manager/hyprland.nix
-    ./../modules/home-manager/waybar.nix
-    ./../modules/home-manager/tofi.nix
+    ./hyprland/hyprland.nix
+    ./hyprland/tofi.nix
+    ./hyprland/waybar.nix
+    ./hyprland/hyprpaper.nix
   ];
   
 

@@ -19,7 +19,7 @@
       # Programms
       "$terminal" = "kitty";
       "$webBrowser" = "firefox";
-      "$menu" = "tofi-drun";
+      "$menu" = "uwsm app -- $(tofi-drun)";
       "$codeEditor" = "code";
 
 
@@ -87,11 +87,11 @@
         };
 
 	blurls = [
-	  "waybar"
+#	  "waybar"
 	];
 
 	layerrule = [
-#	  "blur,waybar"
+	  "blur,waybar"
 
 	];
 	
