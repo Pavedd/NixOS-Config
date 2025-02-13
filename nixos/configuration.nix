@@ -174,6 +174,7 @@
      p7zip
      tofi
      hyprpaper
+     swaynotificationcenter
   ];
 
   fonts.fontDir.enable = true;

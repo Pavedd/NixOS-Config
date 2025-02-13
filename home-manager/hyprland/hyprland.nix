@@ -26,7 +26,8 @@
       exec-once = [
 	"udiskie"
 	"waybar"
-	"hyprpaper"        
+	"hyprpaper"
+        "swaync"        
       ];
       env = [
         "XCURSOR_SIZE,24"
