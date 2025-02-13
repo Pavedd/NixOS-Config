@@ -304,10 +304,10 @@
           window#waybar {
             transition-property: background-color;
             transition-duration: 0.5s;
-            border: 2px solid @mauve;
-            background: @theme_base_color;
+            background: transparent;
+            /*border: 2px solid @mauve;*/
+            /*background: @theme_base_color;*/
             border-radius: 10px;
-	    opacity: 0.7;
           }
 
           window#waybar.hidden {
@@ -328,21 +328,30 @@
 
 
           /* This section can be use if you want to separate waybar modules */
-          .modules-left {
-          	padding-right: 15px;
-          	padding-left: 2px;
-          	border-radius: 10px;
-          }
-          .modules-center {
-          	padding-right: 5px;
-          	padding-left: 5px;
-          	border-radius: 10px;
-          }
-          .modules-right {
-          	padding-right: 15px;
-          	padding-left: 15px;
-          	border-radius: 10px;
-          }
+#          .modules-left {
+#          	background: @theme_base_color;
+#           	border: 1px solid @mauve;
+#          	padding-right: 15px;
+#          	padding-left: 2px;
+#          	border-radius: 10px;
+#		opacity: 0.5;
+#          }
+#          .modules-center {
+#          	background: @theme_base_color;
+#            border: 0.5px solid @mauve;
+#          	padding-right: 5px;
+#          	padding-left: 5px;
+#          	border-radius: 10px;
+#		opacity: 0.5;
+#          }
+#          .modules-right {
+#          	background: @theme_base_color;
+#           	border: 1px solid @mauve;
+#          	padding-right: 15px;
+#          	padding-left: 15px;
+#          	border-radius: 10px;
+#		opacity: 0.5;
+#          }
 
           #backlight,
           #backlight-slider,

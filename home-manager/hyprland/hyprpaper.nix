@@ -4,10 +4,10 @@
     enable = true;
     settings = {
       preload = [
-        "./etc/nixos/home-manager/wallpapers/astolfo_cool.jpg"
+        "/etc/nixos/home-manager/wallpapers/edgy_ahh_astolfo.jpg"
       ];
       wallpaper = [
-        "monitor, ./etc/nixos/home-manager/wallpapers/astolfo_classic.jpg"
+        ", /etc/nixos/home-manager/wallpapers/edgy_ahh_astolfo.jpg"
       ];
     };
   };

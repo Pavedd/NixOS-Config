@@ -25,7 +25,8 @@
 
       exec-once = [
 	"udiskie"
-	"waybar"        
+	"waybar"
+	"hyprpaper"        
       ];
       env = [
         "XCURSOR_SIZE,24"
@@ -69,8 +70,8 @@
       };
       decoration = {
         rounding = 10;
-        active_opacity = 0.85;
-        inactive_opacity = 0.8;
+        active_opacity = 0.75;
+        inactive_opacity = 0.7;
         dim_inactive = true;
         dim_strength = 0.1;
         blur = {
@@ -85,10 +86,6 @@
 	  offset = "0, 0";
           # color = "$base";
         };
-
-	blurls = [
-#	  "waybar"
-	];
 
 	layerrule = [
 	  "blur,waybar"
