@@ -21,6 +21,7 @@
     ./hyprland/tofi.nix
     ./hyprland/waybar.nix
     ./hyprland/hyprpaper.nix
+    ./hyprland/fuzzel.nix
   ];
   
 
@@ -64,6 +65,14 @@
     kitty
     vscode-fhs
   ];
+
+  home.pointerCursor = {
+    name = "Catppuccin-Mocha-Dark-Cursors";
+    package = pkgs.catppuccin-cursors.mochaMauve;
+    size = 16;
+    gtk.enable = true;
+  };
+
 
   fonts.fontconfig.enable = true;
   

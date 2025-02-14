@@ -125,7 +125,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-
   
 
   # Configure console keymap
@@ -144,6 +143,7 @@
       #];
       # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
       extraGroups = ["wheel" "networkmanager"];
+      shell = pkgs.nushell;
       packages = with pkgs; [];
     };
   };
@@ -175,6 +175,9 @@
      tofi
      hyprpaper
      swaynotificationcenter
+     nautilus
+     nushell
+     fuzzel
   ];
 
   fonts.fontDir.enable = true;

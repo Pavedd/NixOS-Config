@@ -19,19 +19,21 @@
       # Programms
       "$terminal" = "kitty";
       "$webBrowser" = "firefox";
-      "$menu" = "uwsm app -- $(tofi-drun)";
+      "$menu" = "fuzzel";
       "$codeEditor" = "code";
-
+               
 
       exec-once = [
 	"udiskie"
 	"waybar"
 	"hyprpaper"
-        "swaync"        
+        "swaync"
+	"hyprctl setcursor Catppuccin-Mocha-Dark-Cursors"        
       ];
       env = [
-        "XCURSOR_SIZE,24"
-        "HYPRCURSOR_SIZE,24"
+	"XCURSOR_THEME, Catppuccin-Mocha-Dark-Cursors"
+        "XCURSOR_SIZE,16"
+        "HYPRCURSOR_SIZE,16"
       ];
 
       input = {
@@ -91,6 +93,9 @@
 	layerrule = [
 	  "blur,waybar"
 
+	];
+	blurls = [
+	  "waybar"
 	];
 	
 
