@@ -8,12 +8,14 @@
     # at the same time. Here's an working example:
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-unstable";
     # Also see the 'unstable-packages' overlay at 'overlays/default.nix'.
-
+    
     # Home manager
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     hyprland.url = "github:hyprwm/Hyprland";
+
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = {
@@ -60,6 +62,7 @@
         modules = [
           # > Our main nixos configuration file <
           ./nixos/configuration.nix
+          inputs.stylix.nixosModules.stylix
         ];
       };
     };

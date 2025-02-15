@@ -21,7 +21,7 @@
     ./hyprland/tofi.nix
     ./hyprland/waybar.nix
     ./hyprland/hyprpaper.nix
-    ./hyprland/fuzzel.nix
+#    ./hyprland/fuzzel.nix
   ];
   
 
@@ -68,11 +68,23 @@
 
   home.pointerCursor = {
     name = "Catppuccin-Mocha-Dark-Cursors";
-    package = pkgs.catppuccin-cursors.mochaMauve;
-    size = 16;
+    package = pkgs.catppuccin-cursors.mochaDark;
+    size = 24;
     gtk.enable = true;
   };
 
+  gtk = {
+    enable = true;
+    cursorTheme.package = pkgs.catppuccin-cursors.mochaDark;
+    cursorTheme.name = "Catppuccin-Mocha-Dark-Cursors";
+    theme.package = pkgs.catppuccin-gtk;
+    theme.name = "catppucin";
+    iconTheme.package = pkgs.gruvbox-dark-icons-gtk;
+    iconTheme.name = "gruvbox-dark-icons";
+
+  };
+
+  qt.enable = true;
 
   fonts.fontconfig.enable = true;
   

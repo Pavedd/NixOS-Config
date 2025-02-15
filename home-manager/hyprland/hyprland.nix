@@ -32,8 +32,8 @@
       ];
       env = [
 	"XCURSOR_THEME, Catppuccin-Mocha-Dark-Cursors"
-        "XCURSOR_SIZE,16"
-        "HYPRCURSOR_SIZE,16"
+        "XCURSOR_SIZE,24"
+        "HYPRCURSOR_SIZE,24"
       ];
 
       input = {

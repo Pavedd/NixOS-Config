@@ -19,7 +19,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
-
+    ./stylix.nix
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
   ];
@@ -178,6 +178,10 @@
      nautilus
      nushell
      fuzzel
+     nwg-look
+     gtk4
+     gtk3
+     gtk2
   ];
 
   fonts.fontDir.enable = true;
