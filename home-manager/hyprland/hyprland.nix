@@ -91,11 +91,11 @@
         };
 
 	layerrule = [
-	  "blur,waybar"
+#	  "blur,waybar"
 
 	];
 	blurls = [
-	  "waybar"
+#	  "waybar"
 	];
 	
 
