@@ -21,8 +21,7 @@
     ./hyprland/tofi.nix
     ./hyprland/waybar.nix
     ./hyprland/hyprpaper.nix
-    ./stylix.nix
-#    ./hyprland/fuzzel.nix
+#   ./hyprland/fuzzel.nix
   ];
   
 
@@ -44,15 +43,14 @@
       #   });
       # })
     ];
+
     # Configure your nixpkgs instance
     config = {
-      # Disable if you don't want unfree packages
       allowUnfree = true;
     };
   };
 
 
-  # TODO: Set your username
   home = {
     username = "es46";
     homeDirectory = "/home/es46";
@@ -67,25 +65,24 @@
     vscode-fhs
   ];
 
-  home.pointerCursor = {
-    name = "Catppuccin-Mocha-Dark-Cursors";
-    package = pkgs.catppuccin-cursors.mochaDark;
-    size = 24;
-    gtk.enable = true;
-  };
+#  home.pointerCursor = {
+#    name = "Catppuccin-Mocha-Dark-Cursors";
+#    package = pkgs.catppuccin-cursors.mochaDark;
+#    size = 24;
+#    gtk.enable = true;
+#  };
 
-  gtk = {
-    enable = true;
-    cursorTheme.package = pkgs.catppuccin-cursors.mochaDark;
-    cursorTheme.name = "Catppuccin-Mocha-Dark-Cursors";
-    theme.package = pkgs.catppuccin-gtk;
-    theme.name = "catppucin";
-    iconTheme.package = pkgs.gruvbox-dark-icons-gtk;
-    iconTheme.name = "gruvbox-dark-icons";
+#  gtk = {
+#    enable = true;
+#    cursorTheme.package = pkgs.catppuccin-cursors.mochaDark;
+#    cursorTheme.name = "Catppuccin-Mocha-Dark-Cursors";
+#    theme.package = pkgs.catppuccin-gtk;
+#    theme.name = "catppucin";
+#    iconTheme.package = pkgs.gruvbox-dark-icons-gtk;
+#    iconTheme.name = "gruvbox-dark-icons";
+#  };
 
-  };
-
-  qt.enable = true;
+#  qt.enable = true;
 
   fonts.fontconfig.enable = true;
   

@@ -21,6 +21,7 @@
     # ./users.nix
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
+    ./stylix.nix
   ];
 
   # Bootloader.
