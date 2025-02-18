@@ -1,11 +1,14 @@
-{ pkgs, ... }:
+{ pkgs, lib, config, inputs, ... }:
 { 
   
-
+   imports = [
+	inputs.stylix.homeManagerModules.stylix
+    ];
     # Configure Stylix
     stylix = {
       enable = true;
-      targets.gtk.enable = true;
+      autoEnable = false;
+      image = ./../home-manager/wallpapers/edgy-ahh-astolfo.jpg;
       base16Scheme = {
         base00 = "1e1e2e";  # Base
         base01 = "181825";  # Mantle
@@ -24,12 +27,19 @@
         base0E = "cba6f7";  # Mauve (Accent)
         base0F = "f2cdcd";  # Flamingo
       };
-      cursor.package = pkgs.catppuccin-cursors.mochaDark;
-      cursor.name = "Catppuccin-Mocha-Dark-Cursors";
-      cursor.size = 24;
-      targets.grub.enable = false;
-      targets.plymouth.enable = false;
-      image = ./../home-manager/wallpapers/edgy-ahh-astolfo.jpg;
+      targets = {
+        gnome.enable = true;
+        gtk.enable = true;
+        neovim.enable = true;
+        neovim.transparentBackground.main = true;
+      };
+      home.pointerCursor = lib.mkForce {
+        gtk.enable = true;
+        x11.enable = true;
+        name = "Catppuccin-Mocha-Dark-Cursors";
+        package = pkgs.catppuccin-cursors.mochaDark;
+        size = 24;
+      };
     };
 }
 

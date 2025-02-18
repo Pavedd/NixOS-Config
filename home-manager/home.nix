@@ -22,6 +22,7 @@
     ./hyprland/waybar.nix
     ./hyprland/hyprpaper.nix
 #   ./hyprland/fuzzel.nix
+#    ./stylix.nix
   ];
   
 
