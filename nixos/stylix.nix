@@ -28,18 +28,18 @@
         base0F = "f2cdcd";  # Flamingo
       };
       targets = {
-        gnome.enable = true;
         gtk.enable = true;
         neovim.enable = true;
         neovim.transparentBackground.main = true;
       };
-      home.pointerCursor = lib.mkForce {
-        gtk.enable = true;
-        x11.enable = true;
-        name = "Catppuccin-Mocha-Dark-Cursors";
-        package = pkgs.catppuccin-cursors.mochaDark;
-        size = 24;
-      };
+
+    };
+    home.pointerCursor = lib.mkForce {
+      gtk.enable = true;
+      x11.enable = true;
+      name = "Catppuccin-Mocha-Dark-Cursors";
+      package = pkgs.catppuccin-cursors.mochaDark;
+      size = 24;
     };
 }
 
