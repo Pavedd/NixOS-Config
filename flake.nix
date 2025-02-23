@@ -22,7 +22,6 @@
     self,
     nixpkgs,
     home-manager,
-    stylix,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -63,7 +62,7 @@
         modules = [
           # > Our main nixos configuration file <
           ./nixos/configuration.nix
-          stylix.nixosModules.stylix
+          inputs.stylix.nixosModules.stylix
         ];
       };
     };

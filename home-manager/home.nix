@@ -64,6 +64,9 @@
     firefox
     kitty
     vscode-fhs
+    catppuccin-cursors.mochaDark
+    catppuccin-gtk
+    gruvbox-dark-icons-gtk
   ];
 
 #  home.pointerCursor = {
@@ -73,27 +76,37 @@
 #    gtk.enable = true;
 #  };
 
-#  gtk = {
-#    enable = true;
-#    cursorTheme.package = pkgs.catppuccin-cursors.mochaDark;
-#    cursorTheme.name = "Catppuccin-Mocha-Dark-Cursors";
-#    theme.package = pkgs.catppuccin-gtk;
-#    theme.name = "catppucin";
-#    iconTheme.package = pkgs.gruvbox-dark-icons-gtk;
-#    iconTheme.name = "gruvbox-dark-icons";
-#  };
+  gtk = {
+    enable = true;
+    cursorTheme.package = pkgs.catppuccin-cursors.mochaDark;
+    cursorTheme.name = "Catppuccin-Mocha-Dark-Cursors";
+    theme.package = pkgs.catppuccin-gtk;
+    theme.name = "catppucin";
+    iconTheme.package = pkgs.gruvbox-dark-icons-gtk;
+    iconTheme.name = "gruvbox-dark-icons";
+  };
 
-#  qt.enable = true;
+  qt.enable = true;
+
+
+      home.pointerCursor = lib.mkForce {
+      gtk.enable = true;
+      x11.enable = true;
+      name = "Catppuccin-Mocha-Dark-Cursors";
+      package = pkgs.catppuccin-cursors.mochaDark;
+      size = 24;
+    };
 
   fonts.fontconfig.enable = true;
   
   programs.git = {
     enable = true;
     userName = "GitLab Username";
-    userEmail = "GitLab Email";
+    userEmail = "Endersoul46";
     extraConfig = {
       init.defaultBranch = "main";
-      safe.directory = "/etc/nixos" ;
+      safe.directory = "/etc/nixos";
+      credentials.helper = "libsecret";
     };
   };
 

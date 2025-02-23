@@ -181,7 +181,7 @@
      nwg-look
      lightdm
      gtk4
-     gtk3
+     gtk3    
      gtk2
   ];
 

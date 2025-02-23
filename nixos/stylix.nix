@@ -1,9 +1,6 @@
 { pkgs, lib, config, inputs, ... }:
 { 
   
-   imports = [
-	inputs.stylix.homeManagerModules.stylix
-    ];
     # Configure Stylix
     stylix = {
       enable = true;
@@ -28,19 +25,16 @@
         base0F = "f2cdcd";  # Flamingo
       };
       targets = {
+        gnome.enable = true;
         gtk.enable = true;
-        neovim.enable = true;
-        neovim.transparentBackground.main = true;
+      };
+      cursor = {
+	package = pkgs.catppuccin-cursors.mochaDark;
+        name = "Mocha Dark";
       };
 
     };
-    home.pointerCursor = lib.mkForce {
-      gtk.enable = true;
-      x11.enable = true;
-      name = "Catppuccin-Mocha-Dark-Cursors";
-      package = pkgs.catppuccin-cursors.mochaDark;
-      size = 24;
-    };
+    
 }
 
 
