@@ -28,7 +28,7 @@
 	"waybar"
 	"hyprpaper"
         "swaync"
-	"hyprctl setcursor Catppuccin-Mocha-Dark-Cursors"        
+	"hyprctl setcursor Catppuccin-Mocha-Dark-Cursors 24"        
       ];
       env = [
 	"XCURSOR_THEME, Catppuccin-Mocha-Dark-Cursors"

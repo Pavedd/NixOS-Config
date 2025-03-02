@@ -64,7 +64,6 @@
     firefox
     kitty
     vscode-fhs
-    catppuccin-cursors.mochaDark
     catppuccin-gtk
     gruvbox-dark-icons-gtk
   ];
@@ -76,26 +75,27 @@
 #    gtk.enable = true;
 #  };
 
-  gtk = {
-    enable = true;
-    cursorTheme.package = pkgs.catppuccin-cursors.mochaDark;
-    cursorTheme.name = "Catppuccin-Mocha-Dark-Cursors";
-    theme.package = pkgs.catppuccin-gtk;
-    theme.name = "catppucin";
-    iconTheme.package = pkgs.gruvbox-dark-icons-gtk;
-    iconTheme.name = "gruvbox-dark-icons";
-  };
-
-  qt.enable = true;
+#  gtk = {
+#    enable = true;
+#    cursorTheme.package = pkgs.catppuccin-cursors.mochaDark;
+#    cursorTheme.name = "Catppuccin-Mocha-Dark-Cursors";
+#    theme.package = pkgs.catppuccin-gtk;
+#    theme.name = "catppucin";
+#    iconTheme.package = pkgs.gruvbox-dark-icons-gtk;
+#    iconTheme.name = "gruvbox-dark-icons";
+#  };
 
 
-      home.pointerCursor = lib.mkForce {
-      gtk.enable = true;
-      x11.enable = true;
-      name = "Catppuccin-Mocha-Dark-Cursors";
-      package = pkgs.catppuccin-cursors.mochaDark;
-      size = 24;
-    };
+#  qt.enable = true;
+
+
+#      home.pointerCursor = lib.mkForce {
+#      gtk.enable = true;
+#      x11.enable = true;
+#      name = "Catppuccin-Mocha-Dark-Cursors";
+#      package = pkgs.catppuccin-cursors.mochaDark;
+#      size = 24;
+#    };
 
   fonts.fontconfig.enable = true;
   
@@ -110,6 +110,25 @@
     };
   };
 
+
+#    programs.vscode = {
+#      enable = true;
+#      package = pkgs.vscodium;
+#      mutableExtensionsDir = false;
+#    };
+#    programs.vscode.profiles.default = {
+#      enableExtensionUpdateCheck = false;
+#      enableUpdateCheck = false;
+#
+#      extensions = with pkgs.vscode-extensions; [
+#        jnoortheen.nix-ide
+#
+#        
+#        rust-lang.rust-analyzer
+#
+#	catppuccin.catppuccin-vsc
+#      ];
+#    };
 
 
   # Enable home-manager 
