@@ -15,9 +15,9 @@
             gtk-layer-shell = true;
             ipc = true;
             fixed-center = true;
-            margin-top = 10;
-            margin-left = 10;
-            margin-right = 10;
+            margin-top = 0;
+            margin-left = 0;
+            margin-right = 0;
             margin-bottom = 0;
 
             modules-left = ["hyprland/workspaces" "cava"];
@@ -304,10 +304,9 @@
           window#waybar {
             transition-property: background-color;
             transition-duration: 0.5s;
-            border: 2px solid @mauve;
-            background: @theme_base_color;
-            border-radius: 10px;
-	    opacity: 0.7;
+            border: 2px; 
+            background: transparent;
+            padding: 10px 25px;
           }
 
           window#waybar.hidden {
@@ -317,6 +316,7 @@
           tooltip {
             background: #1e1e2e;
             border-radius: 8px;
+            border-color: @mauve;
           }
 
           tooltip label {
@@ -331,17 +331,34 @@
           .modules-left {
           	padding-right: 15px;
           	padding-left: 2px;
+              /*  border: 2px solid; */
           	border-radius: 10px;
+	        border-color: @theme_base_color;
+		opacity: 0.7;
+		margin-left: 10px;
+		margin-bottom: 4px;
+                margin-top: 4px;
           }
           .modules-center {
           	padding-right: 5px;
           	padding-left: 5px;
+               /* border: 2px solid; */
           	border-radius: 10px;
+	        border-color: @mauve;
+		opacity: 0.7;
+                margin-bottom: 4px;
+		margin-top: 4px;
           }
           .modules-right {
           	padding-right: 15px;
           	padding-left: 15px;
+              /*  border: 2px solid; */
           	border-radius: 10px;
+	        border-color: @theme_base_color;
+		opacity: 0.7;
+		margin-right: 10px;
+		margin-bottom: 4px;
+                margin-top: 4px;
           }
 
           #backlight,
