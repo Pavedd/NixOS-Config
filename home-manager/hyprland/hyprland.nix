@@ -19,7 +19,7 @@
       # Programms
       "$terminal" = "kitty";
       "$webBrowser" = "firefox";
-      "$menu" = "fuzzel";
+      "$menu" = "tofi-drun --drun-launch=true";
       "$codeEditor" = "code";
                
 
@@ -76,7 +76,7 @@
         };
       };
       decoration = {
-#        rounding = 10;
+        rounding = 4;
         active_opacity = 0.9;
         inactive_opacity = 0.9;
         dim_inactive = true;
@@ -96,6 +96,7 @@
 
 	layerrule = [
 	  "blur,waybar"
+	  "blur,tofi"          
 
 	];
 	blurls = [
@@ -232,7 +233,7 @@
       # Window rules
       windowrulev2 = [
         "suppressevent maximize, class:.*"
-                "opacity 0.90 0.90,class:^(firefox)$"
+        "opacity 0.90 0.90,class:^(firefox)$"
         "opacity 0.90 0.90,class:^(Google-chrome)$"
         "opacity 0.90 0.90,class:^(Brave-browser)$"
         "opacity 0.80 0.80,class:^(code-oss)$"

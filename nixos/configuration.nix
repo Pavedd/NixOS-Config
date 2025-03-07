@@ -183,6 +183,11 @@
      gtk4
      gtk3    
      gtk2
+     vlc
+     appeditor
+     discord
+     fzf
+     bat
   ];
 
   fonts.fontDir.enable = true;

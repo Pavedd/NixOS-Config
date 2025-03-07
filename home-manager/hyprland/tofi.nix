@@ -4,19 +4,20 @@
     enable = true;
     settings = {
       font = "VT323";
-      corner-radius = 60;
-      outline-color = "rgb(20, 20, 14)";
-      outline-width = 3;
-      border-color = "#E3E1C9";
-      border-width = 60;
-      background-color = "#000000";
-      text-color = "#0A3";
-      selection-color = "#0F6";
+      corner-radius = 0;
+      outline-color = "rgb(203, 166, 247)";
+      outline-width = 0;
+      border-color = "#cba6f7";
+      border-width = 1;
+      background-color = "#313244E6";
+      text-color = "#cdd6f4";
+      selection-color = "#cba6f7";
+      
       prompt-text = "C:\\> ";
       num-results = 9;
       hide-cursor = true;
-      width = 640;
-      height = 480;
+      width = 460;
+      height = 380;
     };
   };
 }
