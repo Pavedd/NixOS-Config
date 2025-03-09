@@ -176,6 +176,7 @@
      hyprpaper
      swaynotificationcenter
      nautilus
+     blueman
      nushell
      fuzzel
      nwg-look
