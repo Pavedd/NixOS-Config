@@ -31,6 +31,7 @@
       cursor = {
 	package = pkgs.catppuccin-cursors.mochaDark;
         name = "Mocha Dark";
+	size = 24;
       };
 
     };

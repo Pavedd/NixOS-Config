@@ -22,6 +22,7 @@
     ./hyprland/waybar.nix
     ./hyprland/hyprpaper.nix
     ./desktop.nix
+    ./starship.nix
 #   ./hyprland/fuzzel.nix
 #    ./stylix.nix
   ];
@@ -63,10 +64,13 @@
   home.packages = with pkgs; [ 
     vim 
     firefox
+    thunderbird
     kitty
     vscode-fhs
     catppuccin-gtk
     gruvbox-dark-icons-gtk
+    hyprshot
+    starship
   ];
 
 #  home.pointerCursor = {
@@ -99,6 +103,15 @@
 #    };
 
   fonts.fontconfig.enable = true;
+
+  programs.kitty = lib.mkForce {
+    enable = true;
+    settings = {
+     TERM = "xterm-256color";
+    };
+  };
+
+
   
   programs.git = {
     enable = true;

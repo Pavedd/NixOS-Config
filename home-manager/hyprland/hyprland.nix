@@ -21,7 +21,7 @@
       "$webBrowser" = "firefox";
       "$menu" = "tofi-drun --drun-launch=true";
       "$codeEditor" = "code";
-               
+      "$fileManager" = "nautilus";         
 
       exec-once = [
 	"udiskie"
@@ -155,13 +155,19 @@
           "$mainMod, Q, killactive"
           "$mainMod, M, exit"
 	  "$mainMod, A, exec, $menu"
-#          "$mainMod, E, exec, $fileManager"
+          "$mainMod, E, exec, $fileManager"
           "$mainMod, G, togglefloating"
           "$mainMod, R, exec, $menu"
           "$mainMod, P, pseudo" # dwindle
           "$mainMod, J, togglesplit" # dwindle
           "$mainMod, C, exec, $codeEditor"
           "$mainMod, F, fullscreen"
+
+	  #Screenshot
+          "$mainMod, PRINT, exec, hyprshot -m window"
+          ", PRINT, exec, hyprshot -m output"
+          "$shiftMod, PRINT, exec, hyprshot -m region"
+
 
           # Move focus with mainMod + arrow keys
           "$mainMod, left, movefocus, l"

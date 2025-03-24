@@ -113,7 +113,6 @@
 
   services.pulseaudio = {
     enable = false;
-    extraModules = [ pkgs.pulseaudio-modules-bt ];
   };
   hardware.bluetooth = { enable = true; };
 
@@ -126,6 +125,12 @@
     pulse.enable = true;
   };
   
+
+  programs.fish = {
+    enable = true;
+  };
+ 
+
 
   # Configure console keymap
   console.keyMap = "sg";
@@ -143,14 +148,15 @@
       #];
       # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
       extraGroups = ["wheel" "networkmanager"];
-      shell = pkgs.nushell;
+      shell = pkgs.fish;
       packages = with pkgs; [];
     };
   };
 
  
   environment.sessionVariables = {
-    FLAKE = "/etc/nixos";    
+    FLAKE = "/etc/nixos";
+    TERM = "xterm-256color";    
   };
 
   
@@ -185,10 +191,11 @@
      gtk3    
      gtk2
      vlc
-     appeditor
      discord
      fzf
      bat
+     fish
+     networkmanagerapplet
   ];
 
   fonts.fontDir.enable = true;
