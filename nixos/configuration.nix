@@ -128,6 +128,10 @@
 
   programs.fish = {
     enable = true;
+    interactiveShellInit = ''
+      set -g fish_greeting
+      starship init fish | source
+    '';
   };
  
 
@@ -187,6 +191,7 @@
      fuzzel
      nwg-look
      lightdm
+     brightnessctl
      gtk4
      gtk3    
      gtk2

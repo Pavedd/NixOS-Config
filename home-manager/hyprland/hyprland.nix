@@ -76,9 +76,9 @@
         };
       };
       decoration = {
-        rounding = 4;
-        active_opacity = 0.9;
-        inactive_opacity = 0.9;
+        rounding = 8;
+        active_opacity = 1;
+        inactive_opacity = 1;
         dim_inactive = true;
         dim_strength = 0.1;
         blur = {
@@ -113,20 +113,18 @@
       animations = {
         enabled = true;
         bezier = [
-          "wind, 0.05, 0.9, 0.1, 1.05"
-          "winIn, 0.1, 1.1, 0.1, 1.1"
-          "winOut, 0.3, -0.3, 0, 1"
-          "liner, 1, 1, 1, 1"
+          "slow,0,0.85,0.3,1"
+          "overshot,0.7,0.6,0.1,1.1"
+          "bounce,1,1.6,0.1,0.85"
+          "slingshot,1,-1,0.15,1.25"
+          "myBezier, 0.05, 0.9, 0.1, 1.05"
         ];
         animation = [
-          "windows, 1, 6, wind, slide"
-          "windowsIn, 1, 6, winIn, slide"
-          "windowsOut, 1, 5, winOut, slide"
-          "windowsMove, 1, 5, wind, slide"
-          "border, 1, 1, liner"
-          "borderangle, 1, 200, liner, loop"
-          "fade, 1, 10, default"
-          "workspaces, 1, 5, wind"
+          "windows, 1, 7, myBezier"
+          "windowsOut, 1, 7, default, popin 80%"
+          "border, 1, 10, default"
+          "fade, 1, 7, default"
+          "workspaces, 1, 6, default"
         ];
       };
       dwindle = {
@@ -239,7 +237,7 @@
       # Window rules
       windowrulev2 = [
         "suppressevent maximize, class:.*"
-        "opacity 0.90 0.90,class:^(firefox)$"
+        "opacity 1.0 1.0,class:^(firefox)$"
         "opacity 0.90 0.90,class:^(Google-chrome)$"
         "opacity 0.90 0.90,class:^(Brave-browser)$"
         "opacity 0.80 0.80,class:^(code-oss)$"
