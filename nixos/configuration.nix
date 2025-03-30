@@ -197,10 +197,13 @@
      gtk2
      vlc
      discord
+     tcpdump
      fzf
+     pipes
      bat
      fish
      networkmanagerapplet
+     neovim
   ];
 
   fonts.fontDir.enable = true;

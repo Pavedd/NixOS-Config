@@ -21,6 +21,7 @@
     ./hyprland/tofi.nix
     ./hyprland/waybar.nix
     ./hyprland/hyprpaper.nix
+    ./hyprland/kitty.nix
     ./desktop.nix
     ./starship.nix
 #   ./hyprland/fuzzel.nix
@@ -71,6 +72,7 @@
     gruvbox-dark-icons-gtk
     hyprshot
     starship
+    modrinth-app 
   ];
 
 #  home.pointerCursor = {

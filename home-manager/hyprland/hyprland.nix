@@ -38,7 +38,7 @@
 
 
       input = {
-        kb_layout = "ch";
+        kb_layout = "eu";
         kb_variant = "";
         kb_model = "";
 	kb_rules = "";
@@ -221,8 +221,8 @@
   	    ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
   	    ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   	    ", XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-  	    ", XF86MonBrightnessUp, exec, brightnessctl s 10%+"
-   	    ", XF86MonBrightnessDown, exec, brightnessctl s 10%-"
+  	    ", XF86MonBrightnessUp, exec, brightnessctl s 5%+"
+   	    ", XF86MonBrightnessDown, exec, brightnessctl s 5%-"
 	   ];
 
 	# Requires playerctl
@@ -245,7 +245,7 @@
         "opacity 0.80 0.80,class:^(code-url-handler)$"
         "opacity 0.80 0.80,class:^(code-insiders-url-handler)$"
         "opacity 0.80 0.80,class:^(kitty)$"
-        "opacity 0.80 0.80,class:^(org.kde.dolphin)$"
+        "opacity 0.80 0.80,class:^(nautilus)$"
         "opacity 0.80 0.80,class:^(org.kde.ark)$"
         "opacity 0.80 0.80,class:^(nwg-look)$"
         "opacity 0.80 0.80,class:^(qt5ct)$"
