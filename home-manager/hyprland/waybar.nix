@@ -305,7 +305,7 @@
             transition-property: background-color;
             transition-duration: 0.5s;
             border: 2px; 
-            background: transparent;
+            background: rgba(30, 30, 46, 0.2);
             padding: 10px 25px;
           }
 
@@ -334,7 +334,6 @@
               /*  border: 2px solid; */
           	border-radius: 10px;
 	        border-color: @theme_base_color;
-		opacity: 0.7;
 		margin-left: 10px;
 		margin-bottom: 4px;
                 margin-top: 4px;
@@ -345,7 +344,6 @@
                /* border: 2px solid; */
           	border-radius: 10px;
 	        border-color: @mauve;
-		opacity: 0.7;
                 margin-bottom: 4px;
 		margin-top: 4px;
           }
@@ -355,7 +353,6 @@
               /*  border: 2px solid; */
           	border-radius: 10px;
 	        border-color: @theme_base_color;
-		opacity: 0.7;
 		margin-right: 10px;
 		margin-bottom: 4px;
                 margin-top: 4px;

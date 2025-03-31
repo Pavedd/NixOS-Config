@@ -12,7 +12,7 @@
     sourceFirst = true;
     settings = {
       source = [
-        "~/.config/hypr/mocha.conf" # Theme
+        "/etc/nixos/home-manager/hyprland/mocha.conf" # Theme
       ];
       monitor = ",preferred,auto,1";
 	
@@ -58,7 +58,7 @@
       general = {
         gaps_in = 3;
         gaps_out = 6;
-        border_size = 1;
+        border_size = 2;
         "col.active_border" = "$mauve";
         "col.inactive_border" = "$surface0";
         layout = "dwindle";
@@ -83,20 +83,23 @@
         dim_strength = 0.1;
         blur = {
 	  enabled = true;
-          size = 8;
+          size = 6;
           passes = 2;
+	  new_optimizations = true;
+	  xray = true;
+	  ignore_opacity = true; 
         };
         shadow = {
           enabled = true;
           range = 15;
           render_power = 3;
 	  offset = "0, 0";
-          # color = "$base";
+          color = "$crust";
         };
 
 	layerrule = [
-	  "blur,waybar"
-	  "blur,tofi"          
+	  "blur, waybar "
+	  "blur, tofi"          
 
 	];
 	blurls = [
@@ -244,7 +247,7 @@
         "opacity 0.80 0.80,class:^([Cc]ode)$"
         "opacity 0.80 0.80,class:^(code-url-handler)$"
         "opacity 0.80 0.80,class:^(code-insiders-url-handler)$"
-        "opacity 0.80 0.80,class:^(kitty)$"
+        #"opacity 0.80 0.80,class:^(kitty)$"
         "opacity 0.80 0.80,class:^(nautilus)$"
         "opacity 0.80 0.80,class:^(org.kde.ark)$"
         "opacity 0.80 0.80,class:^(nwg-look)$"
