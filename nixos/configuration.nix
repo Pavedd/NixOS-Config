@@ -204,6 +204,7 @@
      fish
      networkmanagerapplet
      neovim
+     xdg-desktop-portal
   ];
 
   fonts.fontDir.enable = true;
