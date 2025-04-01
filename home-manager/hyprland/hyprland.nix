@@ -100,6 +100,7 @@
 	layerrule = [
 	  "blur, waybar "
 	  "blur, tofi"          
+	  "blur, swaync"
 
 	];
 	blurls = [
