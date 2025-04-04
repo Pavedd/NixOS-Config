@@ -5,6 +5,7 @@
     themeFile = "Catppuccin-Mocha";
     settings = {
       confirm_os_window_close = 0;
+      paste_actions = "replace-dangerous-control-codes,replace-newline";
       enable_audio_bell = false;
       mouse_hide_wait = "-1.0";
       window_padding_width = 8;

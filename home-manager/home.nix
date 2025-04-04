@@ -16,7 +16,7 @@
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
     # You can also split up your configuration and import pieces of it here:
-    # ./nvim.nix
+    ./pkgs
     ./hyprland/hyprland.nix
     ./hyprland/tofi.nix
     ./hyprland/waybar.nix
@@ -61,22 +61,6 @@
     homeDirectory = "/home/es46";
   };
 
-  # Add stuff for your user as you see fit:
-  # programs.neovim.enable = true;
-  home.packages = with pkgs; [ 
-    vim 
-    firefox
-    thunderbird
-    kitty
-    vscode-fhs
-    catppuccin-gtk
-    #gruvbox-dark-icons-gtk
-    hyprshot
-    starship
-    kdePackages.breeze-icons
-    gnome-text-editor
-    eog
-  ];
 
   home.sessionVariables = {
     CARGO_MOMMYS_LITTLE = "boy/princess/pet";
