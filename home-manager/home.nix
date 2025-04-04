@@ -70,10 +70,21 @@
     kitty
     vscode-fhs
     catppuccin-gtk
-    gruvbox-dark-icons-gtk
+    #gruvbox-dark-icons-gtk
     hyprshot
     starship
+    kdePackages.breeze-icons
+    gnome-text-editor
+    eog
   ];
+
+  home.sessionVariables = {
+    CARGO_MOMMYS_LITTLE = "boy/princess/pet";
+    CARGO_MOMMYS_MOODS = "chill/thirsty";
+
+
+
+  };
 
 #  home.pointerCursor = {
 #    name = "Catppuccin-Mocha-Dark-Cursors";

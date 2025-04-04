@@ -86,7 +86,6 @@
           size = 6;
           passes = 2;
 	  new_optimizations = true;
-	  xray = true;
 	  ignore_opacity = true; 
         };
         shadow = {

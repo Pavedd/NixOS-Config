@@ -333,7 +333,7 @@
 	}
 
 	.widget-mpris .widget-mpris-player {
-	  background: #313244;
+	  background: rgba(30, 30, 46, 0.8);
 	  padding: 7px;
 	}
 

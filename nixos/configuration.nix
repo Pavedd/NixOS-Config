@@ -22,6 +22,7 @@
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
     ./stylix.nix
+    ./pkgs.nix
   ];
 
   # Bootloader.
@@ -131,6 +132,10 @@
     interactiveShellInit = ''
       set -g fish_greeting
       starship init fish | source
+
+      function cargo
+        command cargo mommy $argv
+      end
     '';
   };
  
@@ -161,53 +166,14 @@
   environment.sessionVariables = {
     FLAKE = "/etc/nixos";
     TERM = "xterm-256color";    
+    CARGO_MOMMYS_LITTLE = "boy/princess/pet";
+    CARGO_MOMMYS_MOODS = "chill/thirsty";
   };
 
   
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-     hyprland
-     xwayland
-     libinput
-     rustup
-     nix-output-monitor
-     nvd
-     gcc
-     nh
-     neofetch
-     yazi
-     btop
-     udiskie
-     p7zip
-     tofi
-     hyprpaper
-     swaynotificationcenter
-     nautilus
-     blueman
-     nushell
-     fuzzel
-     nwg-look
-     lightdm
-     brightnessctl
-     gtk4
-     gtk3    
-     gtk2
-     vlc
-     discord
-     tcpdump
-     fzf
-     pipes
-     bat
-     fish
-     networkmanagerapplet
-     neovim
-     xdg-desktop-portal
-  ];
-
-  fonts.fontDir.enable = true;
+   fonts.fontDir.enable = true;
 
   fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
 
