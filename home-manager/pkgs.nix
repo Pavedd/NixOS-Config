@@ -13,5 +13,8 @@
     kdePackages.breeze-icons
     gnome-text-editor
     eog
+    nodejs_23
+    yarn-berry
+    typescript
   ];
 }

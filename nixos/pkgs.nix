@@ -37,7 +37,11 @@
      bat
      fish
      networkmanagerapplet
-     neovim
+     neovim-unwrapped
+     vimPlugins.packer-nvim
      xdg-desktop-portal
+     pkg-config
+     openssl
+     openssl.dev
   ];
 }
