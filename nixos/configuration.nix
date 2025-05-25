@@ -23,6 +23,7 @@
     ./hardware-configuration.nix
     ./stylix.nix
     ./pkgs.nix
+    ./drives.nix
   ];
 
   # Bootloader.

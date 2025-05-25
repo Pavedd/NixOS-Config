@@ -29,6 +29,7 @@
 	"hyprpaper"
         "swaync"
 	"hyprctl setcursor Catppuccin Mocha Dark 24"        
+	"sudo auto-cpufreq --daemon"
       ];
       env = [
 	"XCURSOR_THEME, Catppuccin Mocha Dark"
@@ -45,7 +46,7 @@
         kb_options = "";
         follow_mouse = 1;
         touchpad = {
-          natural_scroll = false;
+          natural_scroll = true;
           clickfinger_behavior = false;
           disable_while_typing = false;
           tap-and-drag = false;

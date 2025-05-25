@@ -13,8 +13,12 @@
     kdePackages.breeze-icons
     gnome-text-editor
     eog
-    nodejs_23
+    nodejs_24
     yarn-berry
     typescript
+    gparted
+    gnome-disk-utility
+    polkit
+    polkit_gnome
   ];
 }

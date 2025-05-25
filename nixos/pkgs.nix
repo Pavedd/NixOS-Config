@@ -43,5 +43,7 @@
      pkg-config
      openssl
      openssl.dev
+     ntfs3g
+     auto-cpufreq
   ];
 }
