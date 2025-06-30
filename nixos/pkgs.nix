@@ -7,6 +7,8 @@
      xwayland
      libinput
      rustup
+     postgresql_17_jit
+     pgadmin4-desktopmode
      nix-output-monitor
      nvd
      gcc
@@ -45,5 +47,6 @@
      openssl.dev
      ntfs3g
      auto-cpufreq
+     rsync
   ];
 }

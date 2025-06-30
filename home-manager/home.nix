@@ -60,7 +60,16 @@
     username = "es46";
     homeDirectory = "/home/es46";
   };
-
+  
+  
+  home.activation.createProjectsSymlink = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    if [ -d /mnt/windows/Users/pault/Projects ]; then
+      rsync -av --delete /mnt/windows/Users/pault/Projects "$HOME/Projects"
+    else
+      echo "Warning: Target path does not exist."
+    fi
+  '';
+  
 
   home.sessionVariables = {
     CARGO_MOMMYS_LITTLE = "boy/princess/pet";

@@ -24,6 +24,7 @@
     ./stylix.nix
     ./pkgs.nix
     ./drives.nix
+    ./postgres.nix
   ];
 
   # Bootloader.
@@ -139,6 +140,8 @@
       end
     '';
   };
+
+  programs.zsh.enable = true;
  
 
 
@@ -166,7 +169,7 @@
  
   environment.sessionVariables = {
     PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
-    FLAKE = "/etc/nixos";
+    NH_FLAKE = "/etc/nixos";
     TERM = "xterm-256color";    
     CARGO_MOMMYS_LITTLE = "boy/princess/pet";
     CARGO_MOMMYS_MOODS = "chill/thirsty";
