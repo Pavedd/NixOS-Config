@@ -125,9 +125,9 @@
       openssl_3.dev
       pkg-config       
     ]);
-   sessionVariables = {
-     PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
-   };
+#   sessionVariables = {
+#     PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+#   };
   };
 
   
