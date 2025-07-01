@@ -18,6 +18,7 @@
     # You can also split up your configuration and import pieces of it here:
     ./pkgs.nix
     ./hyprland/hyprland.nix
+    ./neovim.nix
     ./hyprland/tofi.nix
     ./hyprland/waybar.nix
     ./hyprland/hyprpaper.nix
@@ -117,6 +118,17 @@
     };
   };
 
+
+  programs.vscode = {
+  enable = true;
+  package = pkgs.vscode.fhsWithPackages (ps: with ps; [
+      openssl_3.dev
+      pkg-config       
+    ]);
+   sessionVariables = {
+     PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+   };
+  };
 
   
   programs.git = {

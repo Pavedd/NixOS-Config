@@ -1,13 +1,13 @@
 { pkgs, ...}:
 {
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  #  # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
+     vim
      hyprland
      xwayland
      libinput
      rustup
-     postgresql_17_jit
      pgadmin4-desktopmode
      nix-output-monitor
      nvd
@@ -18,6 +18,7 @@
      btop
      udiskie
      p7zip
+     unzip
      tofi
      hyprpaper
      swaynotificationcenter
@@ -39,8 +40,6 @@
      bat
      fish
      networkmanagerapplet
-     neovim-unwrapped
-     vimPlugins.packer-nvim
      xdg-desktop-portal
      pkg-config
      openssl
@@ -48,5 +47,6 @@
      ntfs3g
      auto-cpufreq
      rsync
+     obsidian
   ];
 }
