@@ -12,6 +12,7 @@
     gnome-text-editor
     eog
     nodejs_24
+    rust-analyzer
     yarn-berry
     typescript
     gparted
