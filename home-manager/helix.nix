@@ -1,4 +1,5 @@
-
+{ pkgs, ... }:
+{
 programs.helix = {
   enable = true;
   settings = {
@@ -159,3 +160,4 @@ P = "paste_clipboard_before"
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
   '';
 };
+}
