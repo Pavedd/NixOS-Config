@@ -25,11 +25,13 @@
     ./pkgs.nix
     ./drives.nix
     ./postgres.nix
+    ./helix.nix
   ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
 
   nixpkgs = {
     # You can add overlays here
