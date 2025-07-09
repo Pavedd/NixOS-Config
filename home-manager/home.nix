@@ -26,6 +26,7 @@
     ./desktop.nix
     ./starship.nix
     ./neovim.nix
+    ./helix.nix
 #   ./hyprland/fuzzel.nix
 #    ./stylix.nix
   ];
