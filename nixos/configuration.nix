@@ -25,6 +25,7 @@
     ./pkgs.nix
     ./drives.nix
     ./postgres.nix
+    ./helix.nix
   ];
 
   # Bootloader.
