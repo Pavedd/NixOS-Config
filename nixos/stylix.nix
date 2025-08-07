@@ -5,7 +5,6 @@
     stylix = {
       enable = true;
       autoEnable = false;
-      image = ./../home-manager/wallpapers/edgy-ahh-astolfo.jpg;
       base16Scheme = {
         base00 = "1e1e2e";  # Base
         base01 = "181825";  # Mantle
@@ -29,7 +28,7 @@
         gtk.enable = true;
       };
       cursor = {
-	package = pkgs.catppuccin-cursors.mochaDark;
+	package = pkgs.catppuccin-cursors.mochaMauve;
         name = "Mocha Dark";
 	size = 24;
       };

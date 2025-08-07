@@ -1,12 +1,8 @@
 { pkgs, ...}:
 {
   environment.systemPackages = with pkgs; [
-  #  # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
      vim
      neovim
-     hyprland
-     xwayland
      libinput
      rustup
      pgadmin4-desktopmode
@@ -20,14 +16,9 @@
      udiskie
      p7zip
      unzip
-     tofi
-     hyprpaper
-     swaynotificationcenter
-     nautilus
-     blueman
+     mesa
      nushell
      fuzzel
-     nwg-look
      lightdm
      brightnessctl
      gtk4
@@ -36,12 +27,14 @@
      vlc
      discord
      tcpdump
+     blueman
      fzf
      pipes
      bat
      fish
      networkmanagerapplet
      xdg-desktop-portal
+     xdg-desktop-portal-hyprland
      pkg-config
      openssl
      openssl.dev
@@ -49,5 +42,6 @@
      auto-cpufreq
      rsync
      obsidian
+     bluetui
   ];
 }

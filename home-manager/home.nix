@@ -17,41 +17,24 @@
     # inputs.nix-colors.homeManagerModules.default
     # You can also split up your configuration and import pieces of it here:
     ./pkgs.nix
-    ./hyprland/hyprland.nix
-    ./hyprland/tofi.nix
-    ./hyprland/waybar.nix
-    ./hyprland/hyprpaper.nix
-    ./hyprland/kitty.nix
-    ./hyprland/swaync.nix
+    ./hyprland/default.nix
     ./desktop.nix
     ./starship.nix
-    ./neovim.nix
-    ./helix.nix
+    ./nvim.nix
 #   ./hyprland/fuzzel.nix
 #    ./stylix.nix
   ];
   
 
   nixpkgs = {
-    # You can add overlays here
     overlays = [
-      # Add overlays your own flake exports (from overlays and pkgs dir):
       outputs.overlays.additions
       outputs.overlays.modifications
       outputs.overlays.unstable-packages
 
-      # You can also add overlays exported from other flakes:
-      # neovim-nightly-overlay.overlays.default
+   ];
 
-      # Or define it inline, for example:
-      # (final: prev: {
-      #   hi = final.hello.overrideAttrs (oldAttrs: {
-      #     patches = [ ./change-hello-to-hi.patch ];
-      #   });
-      # })
-    ];
-
-    # Configure your nixpkgs instance
+    # Configure nixpkgs instance
     config = {
       allowUnfree = true;
     };
@@ -120,6 +103,7 @@
   };
 
 
+
   programs.vscode = {
   enable = true;
   package = pkgs.vscode.fhsWithPackages (ps: with ps; [
@@ -146,37 +130,10 @@
 
 
 
-#    programs.vscode = {
-#      enable = true;
-#      package = pkgs.vscodium;
-#      mutableExtensionsDir = false;
-#    };
-#    programs.vscode.profiles.default = {
-#      enableExtensionUpdateCheck = false;
-#      enableUpdateCheck = false;
-#
-#      extensions = with pkgs.vscode-extensions; [
-#        jnoortheen.nix-ide
-#
-#        
-#        rust-lang.rust-analyzer
-#
-#	catppuccin.catppuccin-vsc
-#      ];
-#    };
-
-
-  # Enable home-manager 
+ 
   programs.home-manager.enable = true;
 
-
   
-  wayland.windowManager.hyprland = {
-  };
- 
-
-
-
   
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

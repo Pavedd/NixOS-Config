@@ -3,19 +3,18 @@
 
   inputs = {
     # Nixpkgs
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     # You can access packages and modules from different nixpkgs revs
     # at the same time. Here's an working example:
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-unstable";
     # Also see the 'unstable-packages' overlay at 'overlays/default.nix'.
     
     # Home manager
-    home-manager.url = "github:nix-community/home-manager";
+    home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    hyprland.url = "github:hyprwm/Hyprland";
-
-    stylix.url = "github:danth/stylix";
+    #hyprland.url = "github:hyprwm/Hyprland/9958d297641b5c84dcff93f9039d80a5ad37ab00"; hyprland v 0.49
+    hyprland.url = "github:hyprwm/Hyprland"; 
   };
 
   outputs = {
@@ -23,7 +22,10 @@
     nixpkgs,
     home-manager,
     ...
-  } @ inputs: let
+  } @ inputs:
+  
+  let
+
     inherit (self) outputs;
     # Supported systems for your flake packages, shell, etc.
     systems = [
@@ -34,6 +36,7 @@
       "x86_64-darwin"
     ];
     host = "astolfo";
+
     # This is a function that generates an attribute by calling a function you
     # pass to it, with each system as an argument
     forAllSystems = nixpkgs.lib.genAttrs systems;
@@ -57,12 +60,11 @@
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
-      astolfo = nixpkgs.lib.nixosSystem {
+      ${host} = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
           # > Our main nixos configuration file <
           ./nixos/configuration.nix
-          inputs.stylix.nixosModules.stylix
         ];
       };
     };
@@ -70,7 +72,7 @@
     # Standalone home-manager configuration entrypoint
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
-      "es46@astolfo" = home-manager.lib.homeManagerConfiguration {
+      "es46@${host}" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [

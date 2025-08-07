@@ -35,6 +35,7 @@
 	"XCURSOR_THEME, Catppuccin Mocha Dark"
         "XCURSOR_SIZE,24"
         "HYPRCURSOR_SIZE,24"
+	"AQ_NO_MODIFIERS,1"
       ];
 
 

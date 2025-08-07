@@ -21,7 +21,6 @@
     # ./users.nix
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
-    ./stylix.nix
     ./pkgs.nix
     ./drives.nix
     ./postgres.nix
@@ -30,7 +29,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   nixpkgs = {
     # You can add overlays here
@@ -103,11 +102,13 @@
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "ch";
+    layout = "eu";
     variant = "";
   };
 
   services.udisks2.enable = true;
+
+  services.auto-cpufreq.enable = true;
 
   programs.hyprland = {
     enable = true;
@@ -130,6 +131,12 @@
   };
   
 
+
+
+
+  # Configure console keymap
+  console.keyMap = "sg";
+
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
@@ -145,22 +152,13 @@
   programs.zsh.enable = true;
  
 
-
-  # Configure console keymap
-  console.keyMap = "sg";
-
-
-
-  # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
-    # FIXME: Replace with your username
     es46 = {
       isNormalUser = true;
       description = "es46";
       #openssh.authorizedKeys.keys = [
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
       #];
-      # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
       extraGroups = ["wheel" "networkmanager"];
       shell = pkgs.fish;
       packages = with pkgs; [];

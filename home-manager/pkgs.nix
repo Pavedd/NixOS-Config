@@ -6,10 +6,11 @@
     kitty
     catppuccin-gtk
     #gruvbox-dark-icons-gtk
-    hyprshot
     starship
     kdePackages.breeze-icons
     gnome-text-editor
+    nautilus
+    nwg-look
     eog
     nodejs_24
     rust-analyzer
