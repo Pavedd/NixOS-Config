@@ -25,9 +25,8 @@
      gtk3    
      gtk2
      vlc
-     discord
+     unstable.discord
      tcpdump
-     blueman
      fzf
      pipes
      bat
@@ -40,8 +39,7 @@
      openssl.dev
      ntfs3g
      auto-cpufreq
-     rsync
-     obsidian
-     bluetui
+     ripgrep
+     impala
   ];
 }

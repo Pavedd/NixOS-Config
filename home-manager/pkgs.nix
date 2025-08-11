@@ -10,8 +10,8 @@
     kdePackages.breeze-icons
     gnome-text-editor
     nautilus
-    nwg-look
     eog
+    nwg-look
     nodejs_24
     rust-analyzer
     yarn-berry
@@ -20,5 +20,8 @@
     gnome-disk-utility
     polkit
     polkit_gnome
+    blueman
+    bluetui
+    obsidian
   ];
 }

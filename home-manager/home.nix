@@ -20,7 +20,7 @@
     ./hyprland/default.nix
     ./desktop.nix
     ./starship.nix
-    ./nvim.nix
+    ./nvim/nvim.nix
 #   ./hyprland/fuzzel.nix
 #    ./stylix.nix
   ];
@@ -45,15 +45,6 @@
     username = "es46";
     homeDirectory = "/home/es46";
   };
-  
-  
-  home.activation.createProjectsSymlink = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-    if [ -d /mnt/windows/Users/pault/Projects ]; then
-      rsync -av --delete /mnt/windows/Users/pault/Projects "$HOME/Projects"
-    else
-      echo "Warning: Target path does not exist."
-    fi
-  '';
   
 
   home.sessionVariables = {
@@ -101,7 +92,6 @@
      TERM = "xterm-256color";
     };
   };
-
 
 
   programs.vscode = {

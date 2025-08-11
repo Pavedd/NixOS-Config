@@ -7,5 +7,6 @@
     hyprshot
     tofi
     swaynotificationcenter
+    swww
   ];
 }

@@ -29,7 +29,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
 
   nixpkgs = {
     # You can add overlays here
@@ -80,7 +80,8 @@
   networking.hostName = "astolfo";
 
   # Enable networking
-  networking.networkmanager.enable = true;
+
+  networking.wireless.iwd.enable = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";

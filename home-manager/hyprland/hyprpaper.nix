@@ -9,7 +9,7 @@
 	"/etc/nixos/home-manager/wallpapers/marine-tunnel.jpg"
       ];
       wallpaper = [
-        "/etc/nixos/home-manager/wallpapers/hollow.jpg"
+        "eDP-1, /etc/nixos/home-manager/wallpapers/hollow.jpg"
       ];
     };
   };
