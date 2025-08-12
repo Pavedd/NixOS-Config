@@ -203,7 +203,7 @@
         tooltip-format = " {device_alias}";
         tooltip-format-connected = "{device_enumerate}";
         tooltip-format-enumerate-connected = " {device_alias}";
-        on-click = "kitty -t Open fish -c bluetui; exit";
+        on-click = "kitty -T \"pop-up\" zsh -c \"bluetui\"";
       };
 
       "pulseaudio" = {

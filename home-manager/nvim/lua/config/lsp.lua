@@ -45,3 +45,9 @@ for config, binary in pairs(servers) do
     vim.lsp.enable(config)
   end
 end
+
+vim.diagnostic.config({
+  virtual_lines ={
+    current_line = true
+  }
+})

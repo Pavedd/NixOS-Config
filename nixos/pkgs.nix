@@ -41,5 +41,11 @@
      auto-cpufreq
      ripgrep
      impala
+     nix-melt
+     nix-tree
+     tree
+     eza
+     zoxide
+     du-dust
   ];
 }

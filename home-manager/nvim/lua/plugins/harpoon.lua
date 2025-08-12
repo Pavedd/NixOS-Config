@@ -15,7 +15,7 @@ return {
       end
 
       -- Toggle previous & next buffers stored within Harpoon list
-      vim.keymap.set("n", "<leader>p", function() harpoon:list():prev() end)
+      vim.keymap.set("n", "<leader>b", function() harpoon:list():prev() end)
       vim.keymap.set("n", "<leader>n", function() harpoon:list():next() end)
 
       local conf = require("telescope.config").values

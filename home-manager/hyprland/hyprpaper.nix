@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 {
   services.hyprpaper = {
-    enable = true;
+    enable = false;
     settings = {
       preload = [
         "/etc/nixos/home-manager/wallpapers/hollow.jpg"

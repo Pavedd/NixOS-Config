@@ -327,7 +327,10 @@
           "float,title:^(File Operation Progress)$"
           "float,class:^(xdg-desktop-portal-gtk)$"
 
-          ];
+          "float, title:^(pop-up)$"
+          "pin, title:^(pop-up)$"
+          "size 800 600, title:^(pop-up)$"
+         ];
 
 
     };
