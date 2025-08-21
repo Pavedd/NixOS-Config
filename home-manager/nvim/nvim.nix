@@ -24,11 +24,16 @@ in{
       #the most important language servers
       lua-language-server
       nixd
-      rust-analyzer
       clang-tools
       pyright
-    ];
+   ];
 
+    extraWrapperArgs = [
+      "--suffix"
+      "RUST_SRC_PATH"
+      ":"
+      "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}"
+    ];
     defaultEditor = true;
     viAlias = true;
     vimAlias = true;

@@ -27,13 +27,18 @@ return{
       -- C-k: Toggle signature help (if signature.enabled = true)
       --
       -- See :h blink-cmp-config-keymap for defining your own keymap
-      keymap = { preset = 'default' },
+      keymap = {
+        preset = 'enter',
+      },
 
       appearance = {
         nerd_font_variant = 'mono',
       },
 
-      completion = { documentation = { auto_show = false } },
+      completion = {
+        documentation = { auto_show = false },
+        keyword = {range = 'full'}
+      },
 
       sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
@@ -42,7 +47,8 @@ return{
       fuzzy = { implementation = "prefer_rust_with_warning" },
     },
     opts_extend = { "sources.default" },
-  },
+
+ },
 
 
 }

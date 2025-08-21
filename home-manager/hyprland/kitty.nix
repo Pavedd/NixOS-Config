@@ -1,5 +1,9 @@
 { lib, ... }:
 {
+  programs.tmux = {
+      enable = true;
+    };
+
   programs.kitty = lib.mkForce {
     enable = true;
     themeFile = "Catppuccin-Mocha";

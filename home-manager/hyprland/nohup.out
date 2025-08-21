@@ -1277,3 +1277,419 @@ Gdk-Message: 09:12:15.233: Unable to load arrow from the cursor theme
 [2025-08-12 09:26:14.083] [error] memory: missing '}' in format string
 [2025-08-12 09:26:44.084] [error] memory: missing '}' in format string
 [2025-08-12 09:27:14.084] [error] memory: missing '}' in format string
+[2025-08-12 09:27:44.085] [error] memory: missing '}' in format string
+[2025-08-12 09:28:14.084] [error] memory: missing '}' in format string
+[2025-08-12 09:28:44.084] [error] memory: missing '}' in format string
+[2025-08-12 09:29:14.085] [error] memory: missing '}' in format string
+[2025-08-12 09:29:44.085] [error] memory: missing '}' in format string
+[2025-08-12 09:30:14.085] [error] memory: missing '}' in format string
+[2025-08-12 09:30:44.085] [error] memory: missing '}' in format string
+[2025-08-12 09:31:14.085] [error] memory: missing '}' in format string
+[2025-08-12 09:31:44.085] [error] memory: missing '}' in format string
+[2025-08-12 09:32:14.085] [error] memory: missing '}' in format string
+[2025-08-12 09:32:44.085] [error] memory: missing '}' in format string
+[2025-08-12 09:33:14.085] [error] memory: missing '}' in format string
+[2025-08-12 09:33:44.085] [error] memory: missing '}' in format string
+[2025-08-12 09:34:14.085] [error] memory: missing '}' in format string
+[2025-08-12 09:34:44.085] [error] memory: missing '}' in format string
+[2025-08-12 09:35:14.085] [error] memory: missing '}' in format string
+[2025-08-12 09:35:44.085] [error] memory: missing '}' in format string
+[2025-08-12 09:36:14.086] [error] memory: missing '}' in format string
+[2025-08-12 09:36:44.086] [error] memory: missing '}' in format string
+[2025-08-12 09:37:14.086] [error] memory: missing '}' in format string
+[2025-08-12 09:37:44.086] [error] memory: missing '}' in format string
+[2025-08-12 09:38:14.086] [error] memory: missing '}' in format string
+[2025-08-12 09:38:44.086] [error] memory: missing '}' in format string
+[2025-08-12 09:39:14.086] [error] memory: missing '}' in format string
+[2025-08-12 09:39:44.086] [error] memory: missing '}' in format string
+[2025-08-12 09:40:14.086] [error] memory: missing '}' in format string
+[2025-08-12 09:40:44.087] [error] memory: missing '}' in format string
+Gdk-Message: 09:41:13.331: Unable to load hand2 from the cursor theme
+Gdk-Message: 09:41:13.344: Unable to load arrow from the cursor theme
+Gdk-Message: 09:41:13.344: Unable to load hand2 from the cursor theme
+Gdk-Message: 09:41:13.399: Unable to load arrow from the cursor theme
+Gdk-Message: 09:41:13.399: Unable to load hand2 from the cursor theme
+Gdk-Message: 09:41:13.521: Unable to load arrow from the cursor theme
+Gdk-Message: 09:41:13.720: Unable to load hand2 from the cursor theme
+[2025-08-12 09:41:14.087] [error] memory: missing '}' in format string
+Gdk-Message: 09:41:15.500: Unable to load arrow from the cursor theme
+Gdk-Message: 09:41:15.500: Unable to load hand2 from the cursor theme
+Gdk-Message: 09:41:15.527: Unable to load arrow from the cursor theme
+[2025-08-12 09:41:44.087] [error] memory: missing '}' in format string
+[2025-08-12 09:42:14.087] [error] memory: missing '}' in format string
+[2025-08-12 09:42:44.087] [error] memory: missing '}' in format string
+[2025-08-12 09:43:14.087] [error] memory: missing '}' in format string
+[2025-08-12 09:43:44.087] [error] memory: missing '}' in format string
+[2025-08-12 09:44:14.087] [error] memory: missing '}' in format string
+[2025-08-12 09:44:44.087] [error] memory: missing '}' in format string
+[2025-08-12 09:45:14.087] [error] memory: missing '}' in format string
+[2025-08-12 09:45:44.087] [error] memory: missing '}' in format string
+[2025-08-12 09:46:14.087] [error] memory: missing '}' in format string
+[2025-08-12 09:46:44.087] [error] memory: missing '}' in format string
+[2025-08-12 09:47:14.088] [error] memory: missing '}' in format string
+[2025-08-12 09:47:44.088] [error] memory: missing '}' in format string
+[2025-08-12 09:48:14.088] [error] memory: missing '}' in format string
+[2025-08-12 09:48:44.088] [error] memory: missing '}' in format string
+[2025-08-12 09:49:14.088] [error] memory: missing '}' in format string
+[2025-08-12 09:49:44.088] [error] memory: missing '}' in format string
+[2025-08-12 09:50:14.088] [error] memory: missing '}' in format string
+[2025-08-12 09:50:44.088] [error] memory: missing '}' in format string
+[2025-08-12 09:51:14.089] [error] memory: missing '}' in format string
+[2025-08-12 09:51:44.089] [error] memory: missing '}' in format string
+[2025-08-12 09:52:14.089] [error] memory: missing '}' in format string
+[2025-08-12 09:52:44.089] [error] memory: missing '}' in format string
+[2025-08-12 09:53:14.089] [error] memory: missing '}' in format string
+[2025-08-12 09:53:44.089] [error] memory: missing '}' in format string
+[2025-08-12 09:54:14.089] [error] memory: missing '}' in format string
+[2025-08-12 09:54:44.090] [error] memory: missing '}' in format string
+[2025-08-12 09:55:14.090] [error] memory: missing '}' in format string
+[2025-08-12 09:55:44.090] [error] memory: missing '}' in format string
+[2025-08-12 09:56:14.090] [error] memory: missing '}' in format string
+[2025-08-12 09:56:44.090] [error] memory: missing '}' in format string
+[2025-08-12 09:57:14.090] [error] memory: missing '}' in format string
+[2025-08-12 09:57:44.090] [error] memory: missing '}' in format string
+[2025-08-12 09:58:14.091] [error] memory: missing '}' in format string
+[2025-08-12 09:58:44.091] [error] memory: missing '}' in format string
+[2025-08-12 09:59:14.091] [error] memory: missing '}' in format string
+[2025-08-12 09:59:44.091] [error] memory: missing '}' in format string
+[2025-08-12 10:00:14.091] [error] memory: missing '}' in format string
+[2025-08-12 10:00:44.091] [error] memory: missing '}' in format string
+[2025-08-12 10:01:14.091] [error] memory: missing '}' in format string
+[2025-08-12 10:01:44.091] [error] memory: missing '}' in format string
+[2025-08-12 10:02:14.091] [error] memory: missing '}' in format string
+[2025-08-12 10:02:44.091] [error] memory: missing '}' in format string
+[2025-08-12 10:03:14.091] [error] memory: missing '}' in format string
+[2025-08-12 10:03:44.091] [error] memory: missing '}' in format string
+[2025-08-12 10:04:14.091] [error] memory: missing '}' in format string
+[2025-08-12 10:04:44.091] [error] memory: missing '}' in format string
+[2025-08-12 10:05:14.091] [error] memory: missing '}' in format string
+[2025-08-12 10:05:44.091] [error] memory: missing '}' in format string
+[2025-08-12 10:06:14.092] [error] memory: missing '}' in format string
+[2025-08-12 10:06:44.092] [error] memory: missing '}' in format string
+[2025-08-12 10:07:14.092] [error] memory: missing '}' in format string
+[2025-08-12 10:07:44.092] [error] memory: missing '}' in format string
+[2025-08-12 10:08:14.092] [error] memory: missing '}' in format string
+[2025-08-12 10:08:44.092] [error] memory: missing '}' in format string
+[2025-08-12 10:09:09.049] [info] Bar configured (width: 1959, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.065] [info] Bar configured (width: 1981, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.082] [info] Bar configured (width: 1973, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.098] [info] Bar configured (width: 1935, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.115] [info] Bar configured (width: 1920, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.166] [info] Bar configured (width: 1931, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.182] [info] Bar configured (width: 1957, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.199] [info] Bar configured (width: 1977, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.216] [info] Bar configured (width: 1987, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.249] [info] Bar configured (width: 1977, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.282] [info] Bar configured (width: 2043, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.299] [info] Bar configured (width: 2095, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.316] [info] Bar configured (width: 2123, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.332] [info] Bar configured (width: 2119, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.349] [info] Bar configured (width: 2079, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.383] [info] Bar configured (width: 2129, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.399] [info] Bar configured (width: 2169, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.415] [info] Bar configured (width: 2203, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.433] [info] Bar configured (width: 2227, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.449] [info] Bar configured (width: 2239, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.500] [info] Bar configured (width: 2329, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.516] [info] Bar configured (width: 2389, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.532] [info] Bar configured (width: 2417, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.549] [info] Bar configured (width: 2409, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.566] [info] Bar configured (width: 2353, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.599] [info] Bar configured (width: 2415, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.615] [info] Bar configured (width: 2465, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.632] [info] Bar configured (width: 2505, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.649] [info] Bar configured (width: 2533, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.666] [info] Bar configured (width: 2549, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.683] [info] Bar configured (width: 2547, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.700] [info] Bar configured (width: 2531, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.733] [info] Bar configured (width: 2635, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.749] [info] Bar configured (width: 2709, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.766] [info] Bar configured (width: 2745, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.782] [info] Bar configured (width: 2737, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.799] [info] Bar configured (width: 2673, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.833] [info] Bar configured (width: 2745, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.849] [info] Bar configured (width: 2807, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.866] [info] Bar configured (width: 2853, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.883] [info] Bar configured (width: 2889, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.899] [info] Bar configured (width: 2907, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.933] [info] Bar configured (width: 2887, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.966] [info] Bar configured (width: 3013, height: 38) for output: eDP-1
+[2025-08-12 10:09:09.983] [info] Bar configured (width: 3103, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.000] [info] Bar configured (width: 3147, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.016] [info] Bar configured (width: 3133, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.034] [info] Bar configured (width: 3053, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.050] [info] Bar configured (width: 3139, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.066] [info] Bar configured (width: 3213, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.083] [info] Bar configured (width: 3271, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.100] [info] Bar configured (width: 3313, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.116] [info] Bar configured (width: 3333, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.150] [info] Bar configured (width: 3309, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.183] [info] Bar configured (width: 3457, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.200] [info] Bar configured (width: 3569, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.216] [info] Bar configured (width: 3619, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.233] [info] Bar configured (width: 3607, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.250] [info] Bar configured (width: 3513, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.267] [info] Bar configured (width: 3325, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.283] [info] Bar configured (width: 3037, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.317] [info] Bar configured (width: 3127, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.333] [info] Bar configured (width: 3197, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.350] [info] Bar configured (width: 3255, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.368] [info] Bar configured (width: 3297, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.384] [info] Bar configured (width: 3317, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.416] [info] Bar configured (width: 3469, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.433] [info] Bar configured (width: 3575, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.450] [info] Bar configured (width: 3627, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.467] [info] Bar configured (width: 3613, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.484] [info] Bar configured (width: 3517, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.500] [info] Bar configured (width: 3327, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.518] [info] Bar configured (width: 3035, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.534] [info] Bar configured (width: 3123, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.550] [info] Bar configured (width: 3195, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.567] [info] Bar configured (width: 3251, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.583] [info] Bar configured (width: 3291, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.601] [info] Bar configured (width: 3313, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.617] [info] Bar configured (width: 3311, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.633] [info] Bar configured (width: 3289, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.667] [info] Bar configured (width: 3439, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.684] [info] Bar configured (width: 3545, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.700] [info] Bar configured (width: 3597, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.717] [info] Bar configured (width: 3581, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.733] [info] Bar configured (width: 3489, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.750] [info] Bar configured (width: 3301, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.767] [info] Bar configured (width: 3003, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.800] [info] Bar configured (width: 3087, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.817] [info] Bar configured (width: 3161, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.834] [info] Bar configured (width: 3217, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.850] [info] Bar configured (width: 3257, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.867] [info] Bar configured (width: 3277, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.917] [info] Bar configured (width: 3429, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.934] [info] Bar configured (width: 3533, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.950] [info] Bar configured (width: 3585, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.967] [info] Bar configured (width: 3569, height: 38) for output: eDP-1
+[2025-08-12 10:09:10.985] [info] Bar configured (width: 3473, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.001] [info] Bar configured (width: 3289, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.018] [info] Bar configured (width: 2999, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.035] [info] Bar configured (width: 3087, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.051] [info] Bar configured (width: 3155, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.068] [info] Bar configured (width: 3213, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.084] [info] Bar configured (width: 3251, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.101] [info] Bar configured (width: 3273, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.134] [info] Bar configured (width: 3423, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.164] [info] Bar configured (width: 3573, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.167] [info] Bar configured (width: 3579, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.184] [info] Bar configured (width: 3563, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.202] [info] Bar configured (width: 3463, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.217] [info] Bar configured (width: 3285, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.234] [info] Bar configured (width: 2987, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.252] [info] Bar configured (width: 2583, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.284] [info] Bar configured (width: 2653, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.301] [info] Bar configured (width: 2711, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.317] [info] Bar configured (width: 2757, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.334] [info] Bar configured (width: 2789, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.351] [info] Bar configured (width: 2807, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.385] [info] Bar configured (width: 2787, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.401] [info] Bar configured (width: 2747, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.434] [info] Bar configured (width: 2863, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.451] [info] Bar configured (width: 2947, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.469] [info] Bar configured (width: 2989, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.484] [info] Bar configured (width: 2977, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.501] [info] Bar configured (width: 2905, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.534] [info] Bar configured (width: 2985, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.551] [info] Bar configured (width: 3055, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.568] [info] Bar configured (width: 3109, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.585] [info] Bar configured (width: 3147, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.601] [info] Bar configured (width: 3167, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.651] [info] Bar configured (width: 3305, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.668] [info] Bar configured (width: 3407, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.684] [info] Bar configured (width: 3459, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.714] [info] Bar configured (width: 3391, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.718] [info] Bar configured (width: 3361, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.735] [info] Bar configured (width: 3185, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.751] [info] Bar configured (width: 2917, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.785] [info] Bar configured (width: 2999, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.801] [info] Bar configured (width: 3067, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.818] [info] Bar configured (width: 3121, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.835] [info] Bar configured (width: 3159, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.852] [info] Bar configured (width: 3181, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.868] [info] Bar configured (width: 3179, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.886] [info] Bar configured (width: 3157, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.919] [info] Bar configured (width: 3303, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.935] [info] Bar configured (width: 3401, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.951] [info] Bar configured (width: 3449, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.968] [info] Bar configured (width: 3435, height: 38) for output: eDP-1
+[2025-08-12 10:09:11.985] [info] Bar configured (width: 3347, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.019] [info] Bar configured (width: 3445, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.035] [info] Bar configured (width: 3527, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.052] [info] Bar configured (width: 3593, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.068] [info] Bar configured (width: 3639, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.086] [info] Bar configured (width: 3663, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.119] [info] Bar configured (width: 3635, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.152] [info] Bar configured (width: 3799, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.168] [info] Bar configured (width: 3923, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.185] [info] Bar configured (width: 3985, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.202] [info] Bar configured (width: 3973, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.218] [info] Bar configured (width: 3871, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.235] [info] Bar configured (width: 3665, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.264] [info] Bar configured (width: 3015, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.286] [info] Bar configured (width: 3099, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.303] [info] Bar configured (width: 3173, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.319] [info] Bar configured (width: 3229, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.335] [info] Bar configured (width: 3269, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.353] [info] Bar configured (width: 3291, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.402] [info] Bar configured (width: 3445, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.419] [info] Bar configured (width: 3549, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.435] [info] Bar configured (width: 3599, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.452] [info] Bar configured (width: 3583, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.469] [info] Bar configured (width: 3489, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.485] [info] Bar configured (width: 3305, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.520] [info] Bar configured (width: 3403, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.536] [info] Bar configured (width: 3483, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.552] [info] Bar configured (width: 3547, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.570] [info] Bar configured (width: 3593, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.586] [info] Bar configured (width: 3615, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.619] [info] Bar configured (width: 3587, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.652] [info] Bar configured (width: 3757, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.669] [info] Bar configured (width: 3875, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.686] [info] Bar configured (width: 3933, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.702] [info] Bar configured (width: 3915, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.721] [info] Bar configured (width: 3805, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.752] [info] Bar configured (width: 3917, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.769] [info] Bar configured (width: 4017, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.788] [info] Bar configured (width: 4099, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.803] [info] Bar configured (width: 4149, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.819] [info] Bar configured (width: 4177, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.852] [info] Bar configured (width: 4145, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.869] [info] Bar configured (width: 4079, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.886] [info] Bar configured (width: 3973, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.903] [info] Bar configured (width: 3821, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.919] [info] Bar configured (width: 3629, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.936] [info] Bar configured (width: 3393, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.953] [info] Bar configured (width: 3175, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.969] [info] Bar configured (width: 2893, height: 38) for output: eDP-1
+[2025-08-12 10:09:12.986] [info] Bar configured (width: 2547, height: 38) for output: eDP-1
+[2025-08-12 10:09:13.003] [info] Bar configured (width: 2159, height: 38) for output: eDP-1
+[2025-08-12 10:09:13.020] [info] Bar configured (width: 1920, height: 38) for output: eDP-1
+[2025-08-12 10:09:14.092] [error] memory: missing '}' in format string
+[2025-08-12 10:09:44.092] [error] memory: missing '}' in format string
+[2025-08-12 10:10:14.093] [error] memory: missing '}' in format string
+[2025-08-12 10:10:44.093] [error] memory: missing '}' in format string
+[2025-08-12 10:11:14.093] [error] memory: missing '}' in format string
+[2025-08-12 10:11:44.093] [error] memory: missing '}' in format string
+[2025-08-12 10:12:14.094] [error] memory: missing '}' in format string
+[2025-08-12 10:12:44.094] [error] memory: missing '}' in format string
+[2025-08-12 10:13:14.094] [error] memory: missing '}' in format string
+[2025-08-12 10:13:44.095] [error] memory: missing '}' in format string
+[2025-08-12 10:14:14.095] [error] memory: missing '}' in format string
+[2025-08-12 10:14:44.095] [error] memory: missing '}' in format string
+[2025-08-12 10:15:14.095] [error] memory: missing '}' in format string
+[2025-08-12 10:15:44.096] [error] memory: missing '}' in format string
+[2025-08-12 10:16:14.095] [error] memory: missing '}' in format string
+[2025-08-12 10:16:44.096] [error] memory: missing '}' in format string
+[2025-08-12 10:17:14.096] [error] memory: missing '}' in format string
+[2025-08-12 10:17:44.096] [error] memory: missing '}' in format string
+[2025-08-12 10:18:14.096] [error] memory: missing '}' in format string
+[2025-08-12 10:18:44.096] [error] memory: missing '}' in format string
+[2025-08-12 10:19:14.097] [error] memory: missing '}' in format string
+[2025-08-12 10:19:44.097] [error] memory: missing '}' in format string
+[2025-08-12 10:20:14.097] [error] memory: missing '}' in format string
+[2025-08-12 10:20:44.097] [error] memory: missing '}' in format string
+[2025-08-12 10:21:14.097] [error] memory: missing '}' in format string
+[2025-08-12 10:21:44.098] [error] memory: missing '}' in format string
+[2025-08-12 10:22:14.098] [error] memory: missing '}' in format string
+[2025-08-12 10:22:44.098] [error] memory: missing '}' in format string
+[2025-08-12 10:23:14.098] [error] memory: missing '}' in format string
+[2025-08-12 10:23:44.098] [error] memory: missing '}' in format string
+[2025-08-12 10:24:14.099] [error] memory: missing '}' in format string
+Gdk-Message: 10:24:25.560: Unable to load hand2 from the cursor theme
+Gdk-Message: 10:24:25.567: Unable to load arrow from the cursor theme
+[2025-08-12 10:24:44.099] [error] memory: missing '}' in format string
+[2025-08-12 10:25:14.099] [error] memory: missing '}' in format string
+[2025-08-12 10:25:44.099] [error] memory: missing '}' in format string
+[2025-08-12 10:26:14.099] [error] memory: missing '}' in format string
+[2025-08-12 10:26:44.100] [error] memory: missing '}' in format string
+[2025-08-12 10:27:14.100] [error] memory: missing '}' in format string
+[2025-08-12 10:27:44.100] [error] memory: missing '}' in format string
+[2025-08-12 10:28:14.100] [error] memory: missing '}' in format string
+[2025-08-12 10:28:44.101] [error] memory: missing '}' in format string
+[2025-08-12 10:29:14.101] [error] memory: missing '}' in format string
+[2025-08-12 10:29:44.101] [error] memory: missing '}' in format string
+[2025-08-12 10:30:14.101] [error] memory: missing '}' in format string
+[2025-08-12 10:30:44.101] [error] memory: missing '}' in format string
+[2025-08-12 10:31:14.102] [error] memory: missing '}' in format string
+[2025-08-12 10:31:44.102] [error] memory: missing '}' in format string
+[2025-08-12 10:32:14.102] [error] memory: missing '}' in format string
+[2025-08-12 10:32:44.102] [error] memory: missing '}' in format string
+[2025-08-12 10:33:14.102] [error] memory: missing '}' in format string
+[2025-08-12 10:33:44.103] [error] memory: missing '}' in format string
+Gdk-Message: 10:33:55.841: Unable to load hand2 from the cursor theme
+Gdk-Message: 10:33:55.861: Unable to load arrow from the cursor theme
+Gdk-Message: 10:33:55.861: Unable to load hand2 from the cursor theme
+Gdk-Message: 10:33:55.909: Unable to load arrow from the cursor theme
+[2025-08-12 10:34:14.103] [error] memory: missing '}' in format string
+[2025-08-12 10:34:44.103] [error] memory: missing '}' in format string
+[2025-08-12 10:35:14.103] [error] memory: missing '}' in format string
+[2025-08-12 10:35:44.103] [error] memory: missing '}' in format string
+[2025-08-12 10:36:14.104] [error] memory: missing '}' in format string
+[2025-08-12 10:36:44.104] [error] memory: missing '}' in format string
+[2025-08-12 10:37:14.104] [error] memory: missing '}' in format string
+[2025-08-12 10:37:44.104] [error] memory: missing '}' in format string
+[2025-08-12 10:38:14.104] [error] memory: missing '}' in format string
+[2025-08-12 10:38:44.105] [error] memory: missing '}' in format string
+[2025-08-12 10:39:14.105] [error] memory: missing '}' in format string
+[2025-08-12 10:39:44.105] [error] memory: missing '}' in format string
+[2025-08-12 10:40:14.105] [error] memory: missing '}' in format string
+[2025-08-12 10:40:44.106] [error] memory: missing '}' in format string
+[2025-08-12 10:41:14.106] [error] memory: missing '}' in format string
+[2025-08-12 10:41:44.106] [error] memory: missing '}' in format string
+[2025-08-12 10:42:14.106] [error] memory: missing '}' in format string
+[2025-08-12 10:42:16.889] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-08-12 10:42:16.908] [info] Loading persistent workspaces from Waybar config
+[2025-08-12 10:42:16.909] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-08-12 10:42:44.106] [error] memory: missing '}' in format string
+[2025-08-12 10:43:14.107] [error] memory: missing '}' in format string
+[2025-08-12 10:43:44.107] [error] memory: missing '}' in format string
+[2025-08-12 10:44:14.107] [error] memory: missing '}' in format string
+[2025-08-12 10:44:44.107] [error] memory: missing '}' in format string
+[2025-08-12 10:45:14.107] [error] memory: missing '}' in format string
+[2025-08-12 10:45:20.358] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-08-12 10:45:20.395] [info] Loading persistent workspaces from Waybar config
+[2025-08-12 10:45:20.396] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-08-12 10:45:44.107] [error] memory: missing '}' in format string
+[2025-08-12 10:46:14.107] [error] memory: missing '}' in format string
+[2025-08-12 10:46:44.108] [error] memory: missing '}' in format string
+[2025-08-12 10:47:14.108] [error] memory: missing '}' in format string
+[2025-08-12 10:47:44.108] [error] memory: missing '}' in format string
+[2025-08-12 10:48:14.108] [error] memory: missing '}' in format string
+[2025-08-12 10:48:44.108] [error] memory: missing '}' in format string
+[2025-08-12 10:49:14.108] [error] memory: missing '}' in format string
+[2025-08-12 10:49:44.108] [error] memory: missing '}' in format string
+[2025-08-12 10:50:14.108] [error] memory: missing '}' in format string
+[2025-08-12 10:50:44.109] [error] memory: missing '}' in format string
+[2025-08-12 10:51:14.109] [error] memory: missing '}' in format string
+[2025-08-12 10:51:44.109] [error] memory: missing '}' in format string
+[2025-08-12 10:52:14.110] [error] memory: missing '}' in format string
+[2025-08-12 10:52:44.110] [error] memory: missing '}' in format string
+[2025-08-12 10:53:14.110] [error] memory: missing '}' in format string
+[2025-08-12 10:53:44.111] [error] memory: missing '}' in format string
+[2025-08-12 10:54:14.110] [error] memory: missing '}' in format string
+[2025-08-12 10:54:44.111] [error] memory: missing '}' in format string
+[2025-08-12 10:55:14.111] [error] memory: missing '}' in format string
+[2025-08-12 10:55:44.112] [error] memory: missing '}' in format string
+[2025-08-12 10:56:14.112] [error] memory: missing '}' in format string
+[2025-08-12 10:56:44.112] [error] memory: missing '}' in format string
+[2025-08-12 10:57:14.113] [error] memory: missing '}' in format string
+[2025-08-12 10:57:44.113] [error] memory: missing '}' in format string
+Gdk-Message: 10:57:52.604: Unable to load hand2 from the cursor theme
+Gdk-Message: 10:57:52.624: Unable to load arrow from the cursor theme
+Gdk-Message: 10:57:52.624: Unable to load hand2 from the cursor theme
+Gdk-Message: 10:57:52.637: Unable to load arrow from the cursor theme
+[2025-08-12 10:58:14.113] [error] memory: missing '}' in format string
+[2025-08-12 10:58:44.113] [error] memory: missing '}' in format string
+[2025-08-12 10:59:14.114] [error] memory: missing '}' in format string
+[2025-08-12 10:59:23.109] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-08-12 10:59:23.140] [info] Loading persistent workspaces from Waybar config
+[2025-08-12 10:59:23.140] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-08-12 10:59:44.114] [error] memory: missing '}' in format string
+[2025-08-12 11:00:14.114] [error] memory: missing '}' in format string
+[2025-08-12 11:00:44.115] [error] memory: missing '}' in format string
+Gdk-Message: 11:01:04.526: Error reading events from display: Connection reset by peer

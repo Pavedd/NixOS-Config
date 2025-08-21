@@ -13,7 +13,6 @@
     eog
     nwg-look
     nodejs_24
-    rust-analyzer
     yarn-berry
     typescript
     gparted

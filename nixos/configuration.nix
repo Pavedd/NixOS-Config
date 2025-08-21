@@ -66,6 +66,7 @@
       flake-registry = "";
       # Workaround for https://github.com/NixOS/nix/issues/9574
       nix-path = config.nix.nixPath;
+      trusted-users = [ "root" "@wheel" ];
     };
     # Opinionated: disable channels
     channel.enable = false;
@@ -107,6 +108,23 @@
     variant = "";
   };
 
+  services.keyd = {
+    enable = true;
+    keyboards = {
+      default = {
+        ids = [ "*" ];
+        settings = {
+          main = {
+            capslock = "overload(control, esc)"; # Caps Lock as Ctrl when held, Esc when tapped
+          };
+          alt = {
+            capslock = "capslock";
+          };
+        };
+      };
+    };
+  };
+
   services.udisks2.enable = true;
 
   services.auto-cpufreq.enable = true;
@@ -136,22 +154,25 @@
 
 
   # Configure console keymap
-  console.keyMap = "sg";
+  console.keyMap = "us";
 
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
       set -g fish_greeting
       starship init fish | source
-
-      function cargo
-        command cargo mommy $argv
-      end
-    '';
+   '';
   };
 
   programs.zsh.enable = true;
  
+
+  
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;  # Enables better Nix integration
+  };
+
 
   users.users = {
     es46 = {

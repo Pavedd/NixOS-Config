@@ -3,11 +3,10 @@
 --huge dict with most important lsps
 
 local servers = {
-  rust_analyzer = "rust-analyzer", -- Rust
   lua_ls = "lua-language-server", -- Lua
   clangd = "clangd", -- C/C++
   pyright = "pyright-langserver", -- Python
-  tsserver = "typescript-language-server", -- JavaScript / TypeScript
+  ts_ls = "typescript-language-server", -- JavaScript / TypeScript
   html = "vscode-html-language-server", -- HTML
   cssls = "vscode-css-language-server", -- CSS
   jsonls = "vscode-json-language-server", -- JSON
@@ -49,5 +48,9 @@ end
 vim.diagnostic.config({
   virtual_lines ={
     current_line = true
-  }
+  },
+  update_in_insert = true
 })
+
+
+
