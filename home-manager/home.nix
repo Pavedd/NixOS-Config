@@ -13,7 +13,6 @@
     ./starship.nix
     ./nvim/nvim.nix
     ./kitty.nix
-    ./fish.nix
   ];
   
 
