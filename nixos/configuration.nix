@@ -24,6 +24,7 @@
     ./pkgs.nix
     ./drives.nix
     ./postgres.nix
+    ./fish.nix
   ];
 
   # Bootloader.
@@ -172,6 +173,7 @@
       #];
       extraGroups = ["wheel" "networkmanager"];
       packages = with pkgs; [];
+      shell = pkgs.fish;
     };
   };
 

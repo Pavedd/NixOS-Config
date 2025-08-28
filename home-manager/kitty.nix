@@ -8,7 +8,6 @@
     enable = true;
     themeFile = "Catppuccin-Mocha";
     settings = {
-      shell = "${pkgs.fish}";
       TERM = "xterm-256color";
       cursor_trail = 1;
       cursor_trail_start_threshold = 0;
