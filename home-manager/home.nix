@@ -21,6 +21,7 @@
     ./desktop.nix
     ./starship.nix
     ./nvim/nvim.nix
+    ./kitty.nix
 #   ./hyprland/fuzzel.nix
 #    ./stylix.nix
   ];
@@ -56,13 +57,6 @@
   };
 
   fonts.fontconfig.enable = true;
-
-  programs.kitty = lib.mkForce {
-    enable = true;
-    settings = {
-     TERM = "xterm-256color";
-    };
-  };
 
 
   programs.vscode = {

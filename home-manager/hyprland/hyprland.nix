@@ -22,6 +22,7 @@
       "$menu" = "tofi-drun --drun-launch=true";
       "$codeEditor" = "code";
       "$fileManager" = "nautilus";         
+      "$notes" = "obsidian";
 
       exec-once = [
         "udiskie"
@@ -164,6 +165,7 @@
           "$mainMod CTRL, D, pseudo" # dwindle
           "$mainMod, R, togglesplit" # dwindle
           "$mainMod, C, exec, $codeEditor"
+          "$mainMod, N, exec, $notes"
           "$mainMod, F, fullscreen"
 
           "SUPER_SHIFT, L, exec, hyprlock"
@@ -261,8 +263,8 @@
  # resize with mainMod CTRL + arrow keys
           "$mainMod CTRL, left, resizeactive, -20 0"
           "$mainMod CTRL, right, resizeactive, 20 0"
-          "$mainMod CTRL, up, resizeactive, 0 20"
-          "$mainMod CTRL, down, resizeactive, 0 -20"
+          "$mainMod CTRL, up, resizeactive, 0 -20"
+          "$mainMod CTRL, down, resizeactive, 0 20"
 
           ", XF86MonBrightnessDown, exec, brightnessctl s 5%-"
         ];

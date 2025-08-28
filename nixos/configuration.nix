@@ -156,17 +156,6 @@
   # Configure console keymap
   console.keyMap = "us";
 
-  programs.fish = {
-    enable = true;
-    interactiveShellInit = ''
-      set -g fish_greeting
-      starship init fish | source
-   '';
-  };
-
-  programs.zsh.enable = true;
- 
-
   
   programs.direnv = {
     enable = true;
@@ -182,7 +171,6 @@
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
       #];
       extraGroups = ["wheel" "networkmanager"];
-      shell = pkgs.fish;
       packages = with pkgs; [];
     };
   };

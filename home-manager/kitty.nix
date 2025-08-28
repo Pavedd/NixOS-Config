@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 {
   programs.tmux = {
       enable = true;
@@ -8,6 +8,8 @@
     enable = true;
     themeFile = "Catppuccin-Mocha";
     settings = {
+      shell = "${pkgs.fish}";
+      TERM = "xterm-256color";
       cursor_trail = 1;
       cursor_trail_start_threshold = 0;
       cursor_trail_decay =  "0.04 0.08";
@@ -25,4 +27,5 @@
     };
   };
 }
+
 
