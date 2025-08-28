@@ -17,7 +17,7 @@
 # BACKGROUND
     background {
       monitor =
-        path = /etc/nixos/home-manager/wallpapers/hollow.jpg
+        path = /etc/nixos/home-manager/wallpapers/miku.png
         blur_passes = 3
         color = $base
     }

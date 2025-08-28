@@ -1,6 +1,6 @@
 return {
   {
-    'echasnovski/mini.nvim',
+    'nvim-mini/mini.nvim',
     version = false,
     config = function ()
       vim.keymap.set('n', 's', '<Nop>', { noremap = true })

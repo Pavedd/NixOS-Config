@@ -8,6 +8,10 @@
     enable = true;
     themeFile = "Catppuccin-Mocha";
     settings = {
+      cursor_trail = 1;
+      cursor_trail_start_threshold = 0;
+      cursor_trail_decay =  "0.04 0.08";
+      cursor = "#cdd6f4";
       confirm_os_window_close = 0;
       paste_actions = "replace-dangerous-control-codes,replace-newline";
       enable_audio_bell = false;

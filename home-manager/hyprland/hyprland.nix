@@ -27,7 +27,7 @@
         "udiskie"
          "waybar" 
          "swww-daemon"
-         "swww img /etc/nixos/home-manager/wallpapers/miku.gif"
+         "swww img /etc/nixos/home-manager/wallpapers/miku.png"
          "swaync"
          "hyprctl setcursor Catppuccin Mocha Dark 24"        
          "sudo auto-cpufreq --daemon"
@@ -57,7 +57,10 @@
       };
 
 
-      cursor.no_hardware_cursors = true;
+      cursor = {
+        inactive_timeout = 3;
+        no_hardware_cursors = true;
+      };
       general = {
         gaps_in = 3;
         gaps_out = 6;
@@ -92,11 +95,12 @@
           ignore_opacity = true; 
         };
         shadow = {
-          enabled = false;
-          range = 15;
+          enabled = true;
+          range = 5;
           render_power = 3;
           offset = "0, 0";
-          color = "$crust";
+          color = "rgba(17, 17, 27, 1.0)";
+          color_inactive = "rgba(17, 17, 27, 0.0)";
         };
 
         layerrule = [
@@ -150,21 +154,23 @@
 
         bind = 
         [
-        "$mainMod, T, exec, $terminal"
+        "$mainMod, SPACE , exec, $terminal"
           "$mainMod, B, exec, $webBrowser"
           "$mainMod, Q, killactive"
-          "$mainMod, M, exit"
+          "$mainMod SHIFT, M, exit"
           "$mainMod, A, exec, $menu"
           "$mainMod, E, exec, $fileManager"
-          "$mainMod, G, togglefloating"
-          "$mainMod, R, exec, $menu"
-          "$mainMod, P, pseudo" # dwindle
-          "$mainMod, J, togglesplit" # dwindle
+          "$mainMod, D, togglefloating"
+          "$mainMod CTRL, D, pseudo" # dwindle
+          "$mainMod, R, togglesplit" # dwindle
           "$mainMod, C, exec, $codeEditor"
           "$mainMod, F, fullscreen"
 
           "SUPER_SHIFT, L, exec, hyprlock"
           
+#background
+          "$mainMod SHIFT, G, exec, swww img /etc/nixos/home-manager/wallpapers/miku.gif"
+          "$mainMod CTRL, G, exec, swww img /etc/nixos/home-manager/wallpapers/miku.png"
 
 #Screenshot
           "$mainMod, PRINT, exec, hyprshot -m window"
@@ -172,11 +178,23 @@
           "$shiftMod, PRINT, exec, hyprshot -m region"
 
 
-# Move focus with mainMod + arrow keys
+# Move focus with mainMod + arrow keys or vim motions
           "$mainMod, left, movefocus, l"
           "$mainMod, right, movefocus, r"
           "$mainMod, up, movefocus, u"
           "$mainMod, down, movefocus, d"
+
+          "$mainMod, l, movefocus, l"
+          "$mainMod, h, movefocus, r"
+          "$mainMod, k, movefocus, u"
+          "$mainMod, j, movefocus, d"
+
+          "$mainMod CTRL, l, movewindow, l"
+          "$mainMod CTRL, h, movewindow, r"
+          "$mainMod CTRL, k, movewindow, u"
+          "$mainMod CTRL, j, movewindow, d"
+
+
 
 # Switch workspaces with mainMod + [0-9]
           "$mainMod, 1, workspace, 1"
@@ -201,6 +219,19 @@
           "$mainMod SHIFT, 8, movetoworkspace, 8"
           "$mainMod SHIFT, 9, movetoworkspace, 9"
           "$mainMod SHIFT, 0, movetoworkspace, 10"
+
+# Move active window to a workspace without moving mainMod + ctrl + [0-9]
+          "$mainMod CTRL, 1, movetoworkspacesilent, 1"
+          "$mainMod CTRL, 2, movetoworkspacesilent, 2"
+          "$mainMod CTRL, 3, movetoworkspacesilent, 3"
+          "$mainMod CTRL, 4, movetoworkspacesilent, 4"
+          "$mainMod CTRL, 5, movetoworkspacesilent, 5"
+          "$mainMod CTRL, 6, movetoworkspacesilent, 6"
+          "$mainMod CTRL, 7, movetoworkspacesilent, 7"
+          "$mainMod CTRL, 8, movetoworkspacesilent, 8"
+          "$mainMod CTRL, 9, movetoworkspacesilent, 9"
+          "$mainMod CTRL, 0, movetoworkspacesilent, 10"
+
 
 # Example special workspace (scratchpad)
           "$mainMod, S, togglespecialworkspace, magic"
@@ -227,6 +258,12 @@
           ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
           ", XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
           ", XF86MonBrightnessUp, exec, brightnessctl s 5%+"
+ # resize with mainMod CTRL + arrow keys
+          "$mainMod CTRL, left, resizeactive, -20 0"
+          "$mainMod CTRL, right, resizeactive, 20 0"
+          "$mainMod CTRL, up, resizeactive, 0 20"
+          "$mainMod CTRL, down, resizeactive, 0 -20"
+
           ", XF86MonBrightnessDown, exec, brightnessctl s 5%-"
         ];
 
