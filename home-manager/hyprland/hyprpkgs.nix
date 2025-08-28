@@ -5,6 +5,8 @@
     xwayland
     hyprpaper
     hyprshot
+    hyprlock
+    hypridle
     tofi
     swaynotificationcenter
     swww

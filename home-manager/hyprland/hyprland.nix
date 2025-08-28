@@ -61,7 +61,7 @@
       general = {
         gaps_in = 3;
         gaps_out = 6;
-        border_size = 2;
+        border_size = 0;
         "col.active_border" = "$mauve";
         "col.inactive_border" = "$surface0";
         layout = "dwindle";
@@ -92,7 +92,7 @@
           ignore_opacity = true; 
         };
         shadow = {
-          enabled = true;
+          enabled = false;
           range = 15;
           render_power = 3;
           offset = "0, 0";
@@ -162,6 +162,9 @@
           "$mainMod, J, togglesplit" # dwindle
           "$mainMod, C, exec, $codeEditor"
           "$mainMod, F, fullscreen"
+
+          "SUPER_SHIFT, L, exec, hyprlock"
+          
 
 #Screenshot
           "$mainMod, PRINT, exec, hyprshot -m window"

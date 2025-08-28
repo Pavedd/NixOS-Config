@@ -58,7 +58,7 @@
       };
       palette = "catppuccin_mocha";
       format = lib.concatStrings [
-        "[┏](bold mauve)[  ](bold bg:mauve fg:base)"
+        "[╭─](bold overlay0)[◖](bold mauve)[  ](bold bg:mauve fg:base)"
         "[](fg:mauve bg:base)"
         "$status"
         "$shlvl"
@@ -301,7 +301,7 @@
         style = "bold bg:lavender fg:base";
       };
       time = {
-        format = "[](fg:mauve)[ $time ]($style)";
+        format = "[](fg:mauve)[ $time ]($style)[◗](fg:mauve)";
         disabled = false;
         time_format = "%R";
         style = "bold bg:mauve fg:base";
@@ -310,9 +310,9 @@
       add_newline = true;
       character = {
         format = "$symbol";
-        success_symbol = "[┗━](bold mauve)[ ](bold mauve)";
-        error_symbol = "[┗━](bold red)[ ](bold red)";
-        vicmd_symbol = "[┗━](bold green)[ ](bold green)";
+        success_symbol = "[╰─](bold overlay0)[❯ ](bold mauve)";
+        error_symbol = "[╰─](bold overlay0)[❯ ](bold red)";
+        vicmd_symbol = "[╰─](bold overlay0)[❯ ](bold green)";
       };
     };
   };

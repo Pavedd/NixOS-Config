@@ -305,7 +305,8 @@ padding: 0px;
       transition-property: background-color;
       transition-duration: 0.5s;
 border: 2px; 
-background: rgba(30, 30, 46, 0.2);
+background: rgba(17 ,17 , 27, 0.65);
+box-shadow: 0 4px 4px rgba(17 ,17 , 27, 0.25);
 padding: 10px 25px;
     }
 
