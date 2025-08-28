@@ -12,6 +12,10 @@
 
       listener = [
       {
+        timeout = 600;
+        on-timeout = "notify-send \"5min till locked :3\"";
+      }
+      {
         timeout = 900;
         on-timeout = "hyprlock";
       }
