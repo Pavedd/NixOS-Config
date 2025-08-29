@@ -10,6 +10,8 @@
         tmux-thumbs
         yank
         open
+        tmux-sessionx
+        tmux-floax
         resurrect
         continuum
     ];
@@ -20,13 +22,23 @@
       set-option -g prefix C-a
       bind C-a send-prefix
 
+      set -g @sessionx-bind 'o'
+      set -g @sessionx-custom-paths '/etc/nixos/, /home/es46/Documents/Projects/'
+      set -g mode-style "bg=default, fg=#{thm_overlay_0}"
+
+
+      bind-key N command-prompt -p "New session name:" "new-session -s '%%'"
+
       bind k set-option status
 
       set -g mouse on
       set -g default-terminal "tmux-256color"
           
       set -g base-index 1
+      set -g detach-on-destroy off 
       set -g pane-base-index 1
+
+      set -g @continuum-restore 'on'
 
 # Configure Catppuccin
       set -g @catppuccin_flavor "macchiato"
@@ -45,17 +57,15 @@
       set -ga status-left "#{?client_prefix,#{#[bg=#{@thm_green},fg=#{@thm_bg}]  #S },#{#[bg=default,fg=#{@thm_green}]  #S }}"
       set -ga status-left "#[bg=default,fg=#{@thm_overlay_0},none]│"
       set -ga status-left "#[bg=default,fg=#{@thm_maroon}]  #{pane_current_command} "
-      set -ga status-left "#[bg=default,fg=#{@thm_overlay_0},none]│"
-      set -ga status-left "#[bg=default,fg=#{@thm_blue}]  #{=/-32/...:#{s|$USER|~|:#{b:pane_current_path}}} "
       set -ga status-left "#[bg=default,fg=#{@thm_overlay_0},none]#{?window_zoomed_flag,│,}"
       set -ga status-left "#[bg=default,fg=#{@thm_yellow}]#{?window_zoomed_flag,  zoom ,}"
 
 # status right look and feel
       set -g status-right-length 100
       set -g status-right ""
-      set -ga status-right "#[bg=default,fg=#{@thm_lavender}] 󰅐 %H:%M "
+      set -ga status-right "#[bg=default,fg=#{@thm_blue}]  #{=/-32/...:#{s|$USER|~|:#{b:pane_current_path}}} "
       set -ga status-right "#[bg=default,fg=#{@thm_overlay_0}, none]│"
-      set -ga status-right "#[bg=default,fg=#{@thm_blue}] 󰭦 %Y-%m-%d  "
+      set -ga status-right "#[fg=#{@thm_lavender},bg=default]  #(uptime | awk '{print $3}'|sed 's/,//') "
 
 # Configure Tmux
           set -g status-position top
@@ -81,6 +91,8 @@
 
           set -g window-status-current-format " #I#{?#{!=:#{window_name},fish},: #W,} "
           set -g window-status-current-style "bg=#{@thm_mauve},fg=#{@thm_bg},bold"
+
+          run-shell ${pkgs.tmuxPlugins.tmux-sessionx}/share/tmux-plugins/sessionx/sessionx.tmux
       '';
   };
 }
