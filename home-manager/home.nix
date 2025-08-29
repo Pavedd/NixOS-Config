@@ -8,11 +8,12 @@
 }: {
 
   imports = [
-   ./pkgs.nix
+    ./pkgs.nix
     ./hyprland/default.nix
-    ./starship.nix
     ./nvim/nvim.nix
     ./kitty.nix
+    ./starship.nix
+    ./tmux.nix
   ];
   
 

@@ -21,6 +21,8 @@
     polkit_gnome
     blueman
     bluetui
+    ytermusic
+    youtube-tui
     obsidian
   ];
 }
