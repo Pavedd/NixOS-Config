@@ -12,7 +12,7 @@
     sourceFirst = true;
     settings = {
       source = [
-        "/etc/nixos/home-manager/hyprland/mocha.conf" # Theme
+        "/etc/nixos/home-manager/modules/hyprland/mocha.conf" # Theme
       ];
       monitor = ",preferred,auto,1";
 
