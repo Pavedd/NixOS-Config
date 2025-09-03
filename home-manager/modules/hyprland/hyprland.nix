@@ -155,7 +155,8 @@
 
         bind = 
         [
-        "$mainMod, SPACE , exec, $terminal"
+          "$mainMod, SPACE , exec, $terminal"
+          "$mainMod CTRL, SPACE, exec, $terminal -e tmux"
           "$mainMod, B, exec, $webBrowser"
           "$mainMod, Q, killactive"
           "$mainMod SHIFT, M, exit"

@@ -32,7 +32,11 @@ return{
         ['<C-k>'] = { 'select_prev', 'fallback' },
         ['<C-j>'] = { 'select_next', 'fallback' },
 
+        ['<Up>'] = { 'select_prev', 'fallback_to_mappings' },
+        ['<Down>'] = { 'select_next', 'fallback_to_mappings' },
+
         ['<C-l>'] = { 'select_and_accept' },
+        ['<CR>'] = { 'accept', 'fallback' },
       },
 
       appearance = {

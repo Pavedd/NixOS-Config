@@ -1,4 +1,4 @@
-{ pkgs, ...}:
+{ pkgs,inputs, ...}:
 {
   home.packages = with pkgs; [ 
     firefox
@@ -23,6 +23,6 @@
     bluetui
     ytermusic
     youtube-tui
-    obsidian
+    unstable.quickshell
   ];
 }

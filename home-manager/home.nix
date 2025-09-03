@@ -26,6 +26,8 @@
   };
 
 
+  obsidian.sync.enable = true;
+
   home = {
     username = "es46";
     homeDirectory = "/home/es46";

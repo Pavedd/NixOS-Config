@@ -15,7 +15,9 @@
 
     #hyprland.url = "github:hyprwm/Hyprland/9958d297641b5c84dcff93f9039d80a5ad37ab00"; hyprland v 0.49
     hyprland.url = "github:hyprwm/Hyprland"; 
-  };
+
+
+ };
 
   outputs = {
     self,

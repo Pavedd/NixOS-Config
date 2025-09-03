@@ -29,7 +29,7 @@
 
       bind-key N command-prompt -p "New session name:" "new-session -s '%%'"
 
-      bind k set-option status
+      bind h set-option status
 
       set -g mouse on
       set -g default-terminal "tmux-256color"
@@ -39,6 +39,7 @@
       set -g pane-base-index 1
 
       set -g @continuum-restore 'on'
+      set -g @continuum-save-interval '15'
 
 # Configure Catppuccin
       set -g @catppuccin_flavor "macchiato"
@@ -84,7 +85,7 @@
 
           set -g window-status-format " #I#{?#{!=:#{window_name},fish},: #W,} "
           set -g window-status-style "bg=default,fg=#{@thm_rosewater}"
-          set -g window-status-last-style "bg=default,fg=#{@thm_peach}"
+          set -g window-status-last-style "bg=default,fg=#{@thm_mauve}"
           set -g window-status-activity-style "bg=#{@thm_red},fg=#{@thm_bg}"  
           set -g window-status-bell-style "bg=#{@thm_red},fg=#{@thm_bg},bold" 
           set -gF window-status-separator "#[bg=default,fg=#{@thm_overlay_0}]│"

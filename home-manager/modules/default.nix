@@ -7,5 +7,7 @@
     ./kitty.nix
     ./starship.nix
     ./tmux.nix
+    ./shell.nix
+    ./obsidian.nix
   ];
 }
