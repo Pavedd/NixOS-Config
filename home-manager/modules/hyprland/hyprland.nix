@@ -19,7 +19,7 @@
 # Programms
       "$terminal" = "kitty";
       "$webBrowser" = "firefox";
-      "$menu" = "tofi-drun --drun-launch=true";
+      "$menu" = "fuzzel";
       "$codeEditor" = "code";
       "$fileManager" = "nautilus";         
       "$notes" = "obsidian";
@@ -106,8 +106,9 @@
 
         layerrule = [
           "blur, waybar "
-            "blur, tofi"          
-            "blur, swaync"
+          "blur, quickshell"
+          "blur, tofi"          
+          "blur, swaync"
 
         ];
 

@@ -10,7 +10,6 @@
 
     '';
     shellAliases = {
-      nmtui = "impala";
       cd = "z";
       ls = "eza"; 
     };

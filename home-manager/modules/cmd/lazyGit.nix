@@ -1,6 +1,6 @@
-{ ... }:
+{ pkgs, lib, ... }:
 {
-  programs.lazy = {
+  programs.lazygit = {
     enable = true;
     settings = {
 

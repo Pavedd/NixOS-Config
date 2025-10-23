@@ -6,8 +6,14 @@ return {
     priority = 1000, 
     config = function()
       require("catppuccin").setup({
-	auto_integrations = true,
-	transparent_background = true,
+       auto_integrations = true,
+        transparent_background = true,
+        integrations = {
+          nvimtree = {
+            enabled = true,
+            transparent_panel = false,
+          },
+        },
       })
       vim.cmd([[colorscheme catppuccin-mocha]])
     end

@@ -6,5 +6,6 @@
     ./cmd/default.nix
     ./shell.nix
     ./obsidian.nix
+    ./mpd.nix
   ];
 }

@@ -40,7 +40,7 @@ return {
       items = {
         starter.sections.builtin_actions(),
         starter.sections.recent_files(5),
-        {name = "", action = ":lua MiniFiles.open()", section = "Recent files"},
+        {name = "", action = ":NvimTreeToggle", section = "Recent files"},
       },
       content_hooks = {
         starter.gen_hook.adding_bullet("➤ "),
@@ -55,6 +55,7 @@ return {
         end,
       },
       symbol = "│",
+      options = { try_as_border = true },
     })
     require("mini.git").setup()
     
@@ -88,7 +89,7 @@ return {
     require("mini.comment").setup({ mappings = { comment = 'sc', comment_line = 'scc', comment_visual = 'sc', textobject = 'sc' } })
     require("mini.splitjoin").setup({ mappings = { toggle = 'sS'} })
 
-    vim.keymap.set("n", "<leader>e", function ()
+    vim.keymap.set("n", "<leader>ee", function ()
       MiniFiles.open()
     end) 
   end

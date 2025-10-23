@@ -21,8 +21,18 @@
     polkit_gnome
     blueman
     bluetui
+    mpd
+    mpc
     ytermusic
-    youtube-tui
+    unstable.yt-dlp
+    ffmpeg_6
     unstable.quickshell
+    qt6.full
+    networkmanagerapplet
+    localsend
+    #arduino
+    arduino
+    arduino-ide
+    arduino-cli
   ];
 }

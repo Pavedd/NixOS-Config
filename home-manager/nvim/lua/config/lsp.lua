@@ -33,6 +33,8 @@ local servers = {
   rescriptls = "rescript-language-server", -- ReScript
   reason_ls = "reason-language-server", -- ReasonML
   sqls = "sqls", -- SQL
+  qmlls = "qmlls", --qml
+  arduino_language_server = "arduino-language-server",
 }
 
 --this little function checks if the lsp is executable

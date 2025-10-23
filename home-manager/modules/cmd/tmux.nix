@@ -22,6 +22,9 @@
       set-option -g prefix C-a
       bind C-a send-prefix
 
+      set -g @floax-border-color "#{@thm_mauve}"
+      set -g @floax-text-color "#{@thm_blue}"
+      set -g @floax-prefix "p"
       set -g @sessionx-bind 'o'
       set -g @sessionx-custom-paths '/etc/nixos/, /home/es46/Documents/Projects/'
       set -g mode-style "bg=default, fg=#{thm_overlay_0}"
