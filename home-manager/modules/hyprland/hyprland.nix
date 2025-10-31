@@ -14,7 +14,11 @@
       source = [
         "/etc/nixos/home-manager/modules/hyprland/mocha.conf" # Theme
       ];
-      monitor = ",preferred,auto,1";
+    monitor = [
+      "DP-1, 2560x1440@165, 0x0, 1.25"
+      "HDMI-A-1, 1920x1080@60, -1920x0, 1"
+    ];
+
 
 # Programms
       "$terminal" = "kitty";
@@ -37,7 +41,6 @@
         "XCURSOR_THEME, Catppuccin Mocha Dark"
          "XCURSOR_SIZE,24"
          "HYPRCURSOR_SIZE,24"
-         "AQ_NO_MODIFIERS,1"
       ];
 
 
@@ -243,7 +246,12 @@
 
 # Scroll through existing workspaces with mainMod + scroll
           "$mainMod, mouse_down, workspace, e+1"
-          "$mainMod, mouse_up, workspace, e-1"
+          "$mainMod, mouse_up, workspace, e-1" 
+
+#Example special workspace (scratchpad)
+          "$mainMod, S, togglespecialworkspace, magic"
+          "$mainMod SHIFT, S, movetoworkspace, special:magic"
+
 
           ];
 
