@@ -2,7 +2,8 @@
 {
   imports = [
     ./pkgs.nix
-    ./drives.nix
+    ./nvidia.nix
+#    ./drives.nix
     ./postgres.nix
     ./fish.nix
   ];

@@ -57,12 +57,11 @@
   
   programs.git = {
     enable = true;
-    userName = "GitLab Username";
-    userEmail = "Endersoul46";
+    userName = "Endersoul46";
+    userEmail = "paul.theodor.maier@gmail.com";
     extraConfig = {
       init.defaultBranch = "main";
       safe.directory = "/etc/nixos";
-      credentials.helper = "libsecret";
     };
   };
 
