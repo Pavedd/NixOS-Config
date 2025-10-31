@@ -29,8 +29,7 @@
       set -g @sessionx-custom-paths '/etc/nixos/, /home/es46/Documents/Projects/'
       set -g mode-style "bg=default, fg=#{thm_overlay_0}"
 
-
-      bind-key N command-prompt -p "New session name:" "new-session -s '%%'"
+            bind-key N command-prompt -p "New session name:" "new-session -s '%%'"
 
       bind h set-option status
 

@@ -1,9 +1,10 @@
-{ ... }:
+{lib, config, pkgs, ... }:
 {
   services.mpd = {
     enable = true;
     musicDirectory = "/home/es46/Music";
     extraConfig = ''
+      bind_to_address "/tmp/mpd_socket"
       audio_output {
         type "pipewire"
           name "PipeWire Sound Server"
@@ -18,6 +19,7 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
+    address: "/tmp/mpd_socket",
     password: None,
     volume_step: 5,
     max_fps: 30,

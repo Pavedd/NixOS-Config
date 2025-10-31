@@ -6,7 +6,7 @@ return {
     priority = 1000, 
     config = function()
       require("catppuccin").setup({
-       auto_integrations = true,
+       auto_integrations = false,
         transparent_background = true,
         integrations = {
           nvimtree = {

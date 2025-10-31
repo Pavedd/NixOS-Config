@@ -57,6 +57,11 @@ vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d")
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
+
+-- Split mappings under <leader>;
+vim.keymap.set("n", "<leader>;h", ":split<CR>",  { desc = "Horizontal split" })
+vim.keymap.set("n", "<leader>;v", ":vsplit<CR>", { desc = "Vertical split" })
+
 vim.keymap.set("n", "Q", "<nop>")
 --vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 --vim.keymap.set("n", "<M-h>", "<cmd>silent !tmux-sessionizer -s 0 --vsplit<CR>")

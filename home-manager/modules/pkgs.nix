@@ -21,6 +21,7 @@
     polkit_gnome
     blueman
     bluetui
+    blender
     mpd
     mpc
     ytermusic
@@ -34,5 +35,7 @@
     arduino
     arduino-ide
     arduino-cli
+    kdePackages.filelight
+    bacon
   ];
 }

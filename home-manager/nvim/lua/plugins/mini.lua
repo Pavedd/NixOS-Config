@@ -47,7 +47,6 @@ return {
         starter.gen_hook.aligning("center", "center"),
       }
     } )
-
     require("mini.indentscope").setup({
       draw = {
         animation = function()
@@ -58,7 +57,16 @@ return {
       options = { try_as_border = true },
     })
     require("mini.git").setup()
-    
+    --local map = require('mini.map')
+    -- map.setup({
+      --   integrations = {
+        --      map.gen_integration.builtin_search(),
+        --      map.gen_integration.diagnostic(),
+        --    },
+        --      vim.keymap.set("n", "<leader>mm", MiniMap.toggle),
+        --       vim.keymap.set("n", "<leader>mf", MiniMap.toggle_focus)
+        --      })
+
 
 
      require("mini.statusline").setup({
