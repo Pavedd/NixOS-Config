@@ -1,0 +1,45 @@
+{ inputs, ...}:
+{
+  flake.nixosModules.homePkgs = {pkgs, ... }: {
+    home.packages = with pkgs; [ 
+    git
+    firefox
+    thunderbird
+    kitty
+    catppuccin-gtk
+#gruvbox-dark-icons-gtk
+    starship
+    kdePackages.breeze-icons
+    gnome-text-editor
+    nautilus
+    eog
+    nwg-look
+    nodejs_24
+    yarn-berry
+    typescript
+    gparted
+    gnome-disk-utility
+    polkit
+    polkit_gnome
+    blueman
+    bluetui
+    blender
+    mpd
+    mpc
+    ytermusic
+    yt-dlp
+    ffmpeg_6
+    #unstable.quickshell
+    qt6.full
+    networkmanagerapplet
+    localsend
+#arduino
+    arduino
+    arduino-ide
+    arduino-cli
+    kdePackages.filelight
+    bacon
+    prismlauncher
+    ];
+};
+}

@@ -1,0 +1,54 @@
+{
+  flake.nixosModules.pkgs = { pkgs, ...}:
+  {
+    environment.systemPackages = with pkgs; [
+      vim
+        neovim
+        libinput
+        pgadmin4-desktopmode
+        nix-output-monitor
+        nvd
+        gcc
+        nh
+        neofetch
+        yazi
+        btop
+        udiskie
+        p7zip
+        unzip
+        mesa
+        nushell
+        fuzzel
+        lightdm
+        brightnessctl
+        gtk4
+        gtk3    
+        gtk2
+        vlc
+        discord
+        tcpdump
+        fzf
+        pipes
+        bat
+        fish
+        networkmanagerapplet
+        xdg-desktop-portal
+        xdg-desktop-portal-hyprland
+        pkg-config
+        openssl
+        openssl.dev
+        ntfs3g
+        auto-cpufreq
+        ripgrep
+        impala
+        devenv
+        direnv
+        nix-melt
+        nix-tree
+        tree
+        eza
+        zoxide
+        du-dust
+        ];
+  };
+}
