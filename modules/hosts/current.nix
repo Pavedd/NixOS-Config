@@ -1,7 +1,7 @@
 {
-  flake.nixosConfigurations.current = {lib, config, ...}: 
+  flake.nixosModules.current = {lib, config, ...}: 
     let
-    hostname = "astolfo";
+    hostname = "twinkpad";
     username = "es46";
     in{
      networking.hostName = "${hostname}";

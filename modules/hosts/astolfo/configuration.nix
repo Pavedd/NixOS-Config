@@ -3,26 +3,34 @@
   inputs,
   self,
   ...
-}: { flake.nixosModules.astolfo = {
+}: { 
+
+  flake.nixosConfigurations.astolfo = inputs.nixpkgs.lib.nixosSystem {
+    modules = [
+      self.nixosModules.astolfo
+    ];
+  };
+
+
+  flake.nixosModules.astolfo = {
   config,
   pkgs,
   ...
-}: {
+  }: {
 
   imports = [
     #Sets the Hostname
     self.nixosModules.current
 
     self.nixosModules.base
-    self.nixosModules.drives
+    self.nixosModules.steam
+    self.nixosModules.nvidia
     self.nixosModules.postgres
     self.nixosModules.fish
     self.nixosModules.pkgs
     self.nixosModules.es46
  ];
 
-
-  programs.niri.enable = true; 
 
   nixpkgs = {
     config = {

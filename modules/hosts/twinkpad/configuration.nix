@@ -3,16 +3,19 @@
   inputs,
   self,
   ...
-}: { 
+}: {
+  
 
-  flake.nixosConfigurations.felix = inputs.nixpkgs.lib.nixosSystem {
+  flake.nixosConfigurations.twinkpad = inputs.nixpkgs.lib.nixosSystem {
     modules = [
-      self.nixosModules.felix
+      self.nixosModules.twinkpad
     ];
   };
 
 
-  flake.nixosModules.felix = {
+
+
+ flake.nixosModules.twinkpad = {
   config,
   pkgs,
   ...
@@ -23,14 +26,15 @@
     self.nixosModules.current
 
     self.nixosModules.base
-    self.nixosModules.steam
-    self.nixosModules.nvidia
+    self.nixosModules.drives
     self.nixosModules.postgres
     self.nixosModules.fish
     self.nixosModules.pkgs
     self.nixosModules.es46
  ];
 
+
+  programs.niri.enable = true; 
 
   nixpkgs = {
     config = {

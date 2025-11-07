@@ -3,7 +3,7 @@
     programs.hyprlock = {
       enable = true;
       extraConfig = ''
-        source = /etc/nixos/nonNix/hyprland/mocha.conf
+        source = /etc/nixos/modules/home/desktop/mocha.conf
 
         $accent = $mauve
         $accentAlpha = $mauveAlpha
@@ -17,7 +17,7 @@
 # BACKGROUND
       background {
         monitor =
-          path = /etc/nixos/home-manager/wallpapers/miku.png
+          path = /etc/nixos/nonNix/wallpapers/miku.png
           blur_passes = 3
           color = $base
       }
