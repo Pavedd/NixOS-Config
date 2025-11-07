@@ -5,7 +5,7 @@
         isNormalUser = true;
         description = "es46";
 
-       extraGroups = ["wheel" "networkmanager" "dialout"];
+       extraGroups = ["wheel" "networkmanager" "dialout" "seat"];
         packages = with pkgs; [];
         shell = pkgs.fish;
       };

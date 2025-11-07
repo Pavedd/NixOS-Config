@@ -3,13 +3,32 @@
     self,
     ...
   }: { 
+    flake.nixosModules.es46 = { config, pkgs, ... }: {
+      users.users = {
+        es46 = {
+          isNormalUser = true;
+          description = "es46";
 
-    flake.nixosModules.home = {pkgs, config, ...}: {
+          extraGroups = ["wheel" "networkmanager" "dialout" "seat"];
+          packages = with pkgs; [];
+          shell = pkgs.fish;
+        };
+      };
+    };
+
+    flake.homeConfigurations.es46 = inputs.home-manager.lib.homeManagerConfiguration  {
+      pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
+      modules = [
+        self.nixosModules.es46Home
+      ];
+    };
+
+    flake.nixosModules.es46Home = {pkgs, config, ...}: {
 
     imports = [
       self.nixosModules.homePkgs
         self.nixosModules.git
-        self.nixosModules.hyprland
+        self.nixosModules.niri
         self.nixosModules.hypridle
         self.nixosModules.hyprlock
         self.nixosModules.hyprpkgs
@@ -28,7 +47,7 @@
         self.nixosModules.mpd
     ];
 
-
+    obsidian.sync.enable = true;
     nixpkgs = {
 
         config = {
@@ -46,6 +65,7 @@
 
 
     home.sessionVariables = {
+      WLR_DRM_DEVICES= "/dev/dri/card1";
       CARGO_MOMMYS_LITTLE = "boy/princess/pet";
       CARGO_MOMMYS_MOODS = "chill/thirsty";
 

@@ -49,6 +49,7 @@
         eza
         zoxide
         du-dust
+        xwayland-satellite
         ];
   };
 }

@@ -16,6 +16,7 @@
     import-tree.url = "github:vic/import-tree";
     #hyprland.url = "github:hyprwm/Hyprland/9958d297641b5c84dcff93f9039d80a5ad37ab00"; hyprland v 0.49
     hyprland.url = "github:hyprwm/Hyprland"; 
+    hyprland.inputs.nixpkgs.follows = "nixpkgs";
 
     stylix.url = "github:nix-community/stylix";
 

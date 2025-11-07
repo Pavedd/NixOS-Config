@@ -3,22 +3,26 @@
   inputs,
   self,
   ...
-}: { flake.nixosModules.PC = {
+}: { flake.nixosModules.astolfo = {
   config,
   pkgs,
   ...
 }: {
 
   imports = [
+    #Sets the Hostname
+    self.nixosModules.current
+
     self.nixosModules.base
-    self.nixosModules.steam
-    self.nixosModules.nvidia
+    self.nixosModules.drives
     self.nixosModules.postgres
     self.nixosModules.fish
     self.nixosModules.pkgs
-    self.nixosModules.users
+    self.nixosModules.es46
  ];
 
+
+  programs.niri.enable = true; 
 
   nixpkgs = {
     config = {
@@ -38,7 +42,7 @@
         trusted-users = [ "root" "@wheel" ];
       };
 # Opinionated: disable channels
-      channel.enable = true;
+      channel.enable = false;
 
 # Opinionated: make flake registry and nix path match flake inputs
 # registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
@@ -46,8 +50,6 @@
     };
 
 
-# hostname
-  networking.hostName = "astolfo";
 
 
 
