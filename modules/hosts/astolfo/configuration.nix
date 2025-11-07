@@ -31,6 +31,7 @@
     self.nixosModules.es46
  ];
 
+  programs.niri.enable = true;
 
   nixpkgs = {
     config = {
