@@ -4,7 +4,7 @@
  - Both niri and hyprland fully configured
  - Multi System ready
  - uses flake-parts + import tree to make the config file structure irrelevant
- - 
+
 ## Installation:
 To install this config just go through the normal nixos setup then afterwards make a copy of your hardware-configuration.nix and then clone this into /etc/nixos instead of the default config, then just copy the astolfo host folder and rename it to your hostname change out the hardware config with yours and do the flake-parts boilerplate in it. Lastly you just have to change all the mentions of astolfo in the configuration.nix to your hostname and then do a sudo nixos-rebuild switch --flake .#{your hostname}.
 
