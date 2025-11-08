@@ -7,6 +7,7 @@
 
   flake.nixosConfigurations.astolfo = inputs.nixpkgs.lib.nixosSystem {
     modules = [
+      self.nixosModules.astolfo-hardware
       self.nixosModules.astolfo
     ];
   };
@@ -24,6 +25,7 @@
 
     self.nixosModules.base
     self.nixosModules.steam
+    self.nixosModules.vr
     self.nixosModules.nvidia
     self.nixosModules.postgres
     self.nixosModules.fish
@@ -34,6 +36,7 @@
   programs.niri.enable = true;
 
   nixpkgs = {
+    overlays = [ self.overlays.unstable ];
     config = {
       allowUnfree = true;
     };

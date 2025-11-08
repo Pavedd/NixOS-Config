@@ -9,7 +9,7 @@
           isNormalUser = true;
           description = "es46";
 
-          extraGroups = ["wheel" "networkmanager" "dialout" "seat"];
+          extraGroups = ["wheel" "networkmanager" "dialout" "seat" "adbusers"];
           packages = with pkgs; [];
           shell = pkgs.fish;
         };
@@ -49,7 +49,7 @@
 
     obsidian.sync.enable = true;
     nixpkgs = {
-
+        overlays = [ self.overlays.unstable ];
         config = {
         allowUnfree = true;
       };

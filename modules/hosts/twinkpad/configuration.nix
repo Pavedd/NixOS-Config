@@ -8,6 +8,7 @@
 
   flake.nixosConfigurations.twinkpad = inputs.nixpkgs.lib.nixosSystem {
     modules = [
+      self.nixosModules.twinkpad-hardware
       self.nixosModules.twinkpad
     ];
   };
@@ -37,6 +38,7 @@
   programs.niri.enable = true; 
 
   nixpkgs = {
+    overlays = [ self.overlays.unstable ];
     config = {
       allowUnfree = true;
     };

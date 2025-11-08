@@ -41,8 +41,6 @@
         auto-cpufreq
         ripgrep
         impala
-        devenv
-        direnv
         nix-melt
         nix-tree
         tree

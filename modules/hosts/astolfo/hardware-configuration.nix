@@ -2,7 +2,7 @@
 # and may be overwritten by future invocations.  Please make changes
 # to /etc/nixos/configuration.nix instead.
 {
-  flake.nixosModules.astoflo = { config, lib, pkgs, modulesPath, ... }:
+flake.nixosModules.astolfo-hardware = { config, lib, pkgs, modulesPath, ... }:
 
   {
     imports =
@@ -39,5 +39,5 @@
 
       nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
       hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
-  };
+};
 }

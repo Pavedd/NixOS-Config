@@ -2,7 +2,7 @@
 # and may be overwritten by future invocations.  Please make changes
 # to /etc/nixos/configuration.nix instead.
 {
-flake.nixosModules.twinkpad = { config, lib, pkgs, modulesPath, ... }: {
+flake.nixosModules.twinkpad-hardware = { config, lib, pkgs, modulesPath, ... }: {
 
   imports =
     [ (modulesPath + "/installer/scan/not-detected.nix")
