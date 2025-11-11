@@ -1,6 +1,6 @@
 { inputs, ... }: {
 # Configure Stylix
-  flake.homeModules.stylix = { pkgs, lib, config, ... }: {
+  flake.nixosModules.stylix = { pkgs, lib, config, ... }: {
     stylix = {
       enable = true;
       autoEnable = true;
@@ -23,8 +23,6 @@
           base0F = "f2cdcd";  # Flamingo
       };
       targets = {
-        kitty.enable = false;
-        fish.enable = false;
         gnome.enable = true;
         gtk.enable = true;
       };

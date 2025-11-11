@@ -25,7 +25,7 @@
         gtk3    
         gtk2
         vlc
-        discord
+        unstable.discord
         tcpdump
         fzf
         pipes

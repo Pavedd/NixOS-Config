@@ -1,6 +1,7 @@
   {
     inputs,
     self,
+    stylix,
     ...
   }: { 
     flake.nixosModules.es46 = { config, pkgs, ... }: {
@@ -20,6 +21,7 @@
       pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
       modules = [
         self.nixosModules.es46Home
+        inputs.stylix.homeModules.stylix
       ];
     };
 
@@ -43,12 +45,10 @@
         self.nixosModules.obsidian
         self.nixosModules.vscode
 
-  #      self.nixosModules.stylix
         self.nixosModules.mpd
     ];
 
-    obsidian.sync.enable = true;
-    nixpkgs = {
+      nixpkgs = {
         overlays = [ self.overlays.unstable ];
         config = {
         allowUnfree = true;
@@ -56,7 +56,7 @@
     };
 
 
-  #  obsidian.sync.enable = true;
+    obsidian.sync.enable = true;
 
     home = {
       username = "es46";

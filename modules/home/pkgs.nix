@@ -27,9 +27,9 @@
     mpd
     mpc
     ytermusic
-    yt-dlp
+    unstable.yt-dlp
     ffmpeg_6
-    #unstable.quickshell
+    unstable.quickshell
     qt6.full
     networkmanagerapplet
     localsend
