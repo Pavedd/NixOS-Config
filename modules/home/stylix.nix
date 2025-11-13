@@ -1,6 +1,7 @@
 { inputs, ... }: {
 # Configure Stylix
   flake.homeModules.stylix = { pkgs, lib, config, ... }: {
+    programs.gnome-shell.enable = true;
     stylix = {
       enable = true;
       autoEnable = true;
@@ -23,10 +24,9 @@
           base0F = "f2cdcd";  # Flamingo
       };
       targets = {
+        neovim.enable = false;
         kitty.enable = false;
-        fish.enable = false;
-        gnome.enable = true;
-        gtk.enable = true;
+        starship.enable = false;
       };
       cursor = {
         package = pkgs.catppuccin-cursors;
@@ -38,6 +38,6 @@
 
    };
   }; 
-                                   }
+}
 
 

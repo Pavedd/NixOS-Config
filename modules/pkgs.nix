@@ -18,11 +18,8 @@
         unzip
         mesa
         nushell
-        fuzzel
         lightdm
         brightnessctl
-        gtk4
-        gtk3    
         gtk2
         vlc
         unstable.discord

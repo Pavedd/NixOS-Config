@@ -38,6 +38,7 @@
 
 
   programs.niri.enable = true; 
+  qt.enable = true;
 
   nixpkgs = {
     overlays = [ self.overlays.unstable ];

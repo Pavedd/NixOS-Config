@@ -1,7 +1,6 @@
   {
     inputs,
     self,
-    stylix,
     ...
   }: { 
     flake.nixosModules.es46 = { config, pkgs, ... }: {
@@ -37,7 +36,9 @@
         self.nixosModules.kitty
         self.nixosModules.swaync
         self.nixosModules.waybar
+        self.nixosModules.gtk
 
+        self.homeModules.stylix
         self.nixosModules.nvim
         self.nixosModules.lazygit
         self.nixosModules.starship
@@ -55,6 +56,7 @@
       };
     };
 
+programs.fuzzel.enable = true;
 
     obsidian.sync.enable = true;
 
@@ -68,7 +70,7 @@
       WLR_DRM_DEVICES= "/dev/dri/card1";
       CARGO_MOMMYS_LITTLE = "boy/princess/pet";
       CARGO_MOMMYS_MOODS = "chill/thirsty";
-
+      MOZ_ENABLE_WAYLAND=1;
     };
 
     fonts.fontconfig.enable = true;
