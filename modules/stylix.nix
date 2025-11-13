@@ -1,10 +1,9 @@
 { inputs, ... }: {
 # Configure Stylix
-  flake.homeModules.stylix = { pkgs, lib, config, ... }: {
-    programs.gnome-shell.enable = true;
+  flake.nixosModules.stylix = { pkgs, lib, config, ... }: {
     stylix = {
       enable = true;
-      autoEnable = true;
+      autoEnable = false;
       base16Scheme = {
         base00 = "1e1e2e";  # Base
           base01 = "181825";  # Mantle
@@ -24,20 +23,21 @@
           base0F = "f2cdcd";  # Flamingo
       };
       targets = {
-        neovim.enable = false;
-        kitty.enable = false;
-        starship.enable = false;
+        gnome.enable = true; 
+        gtk.enable = true;
+        qt.enable = true;
+        fish.enable = false;
       };
       cursor = {
         package = pkgs.catppuccin-cursors;
         name = "mochaMauve";
         size = 24;
       };
- 
+
       polarity = "dark";
 
    };
   }; 
-}
+                                   }
 
 

@@ -20,6 +20,7 @@
       pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
       modules = [
         self.nixosModules.es46Home
+        inputs.stylix.homeModules.stylix
       ];
     };
 
@@ -35,7 +36,9 @@
         self.nixosModules.kitty
         self.nixosModules.swaync
         self.nixosModules.waybar
+        self.nixosModules.gtk
 
+        self.homeModules.stylix
         self.nixosModules.nvim
         self.nixosModules.lazygit
         self.nixosModules.starship
@@ -43,20 +46,19 @@
         self.nixosModules.obsidian
         self.nixosModules.vscode
 
-  #      self.nixosModules.stylix
         self.nixosModules.mpd
     ];
 
-    obsidian.sync.enable = true;
-    nixpkgs = {
+      nixpkgs = {
         overlays = [ self.overlays.unstable ];
         config = {
         allowUnfree = true;
       };
     };
 
+programs.fuzzel.enable = true;
 
-  #  obsidian.sync.enable = true;
+    obsidian.sync.enable = true;
 
     home = {
       username = "es46";
@@ -68,7 +70,7 @@
       WLR_DRM_DEVICES= "/dev/dri/card1";
       CARGO_MOMMYS_LITTLE = "boy/princess/pet";
       CARGO_MOMMYS_MOODS = "chill/thirsty";
-
+      MOZ_ENABLE_WAYLAND=1;
     };
 
     fonts.fontconfig.enable = true;
