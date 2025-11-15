@@ -19,26 +19,25 @@
     flake.homeConfigurations.es46 = inputs.home-manager.lib.homeManagerConfiguration  {
       pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
       modules = [
-        self.nixosModules.es46Home
-        inputs.stylix.homeModules.stylix
+        self.homeModules.es46
       ];
     };
 
-    flake.nixosModules.es46Home = {pkgs, config, ...}: {
+    flake.homeModules.es46 = {pkgs, config, ...}: {
 
     imports = [
-      self.nixosModules.homePkgs
+        self.nixosModules.homePkgs
         self.nixosModules.git
         self.nixosModules.niri
         self.nixosModules.hypridle
         self.nixosModules.hyprlock
         self.nixosModules.hyprpkgs
         self.nixosModules.kitty
+        self.nixosModules.fuzzel
         self.nixosModules.swaync
         self.nixosModules.waybar
         self.nixosModules.gtk
 
-        self.homeModules.stylix
         self.nixosModules.nvim
         self.nixosModules.lazygit
         self.nixosModules.starship
@@ -56,7 +55,6 @@
       };
     };
 
-programs.fuzzel.enable = true;
 
     obsidian.sync.enable = true;
 

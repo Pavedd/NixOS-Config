@@ -1,9 +1,9 @@
 {
-  flake.nixosModules.starship = {lib, ...}: {
+  flake.nixosModules.starship = {pkgs, config, lib, ...}: {
     programs.starship = {
       enable = true;
       enableBashIntegration = true;
-      enableZshIntegration = true;
+      enableZshIntegration = false;
       enableFishIntegration = true;
       enableTransience = true;
       settings = {

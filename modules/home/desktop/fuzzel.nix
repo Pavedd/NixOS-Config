@@ -1,7 +1,7 @@
 {
   flake.nixosModules.fuzzel = { ... }: {
     programs.fuzzel =  {
-      enabled = true;
+      enable = true;
       settings = {
         colors = {
           background = "1e1e2edd";

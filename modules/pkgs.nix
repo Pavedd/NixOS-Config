@@ -45,6 +45,7 @@
         zoxide
         du-dust
         unstable.xwayland-satellite
+        linux-wifi-hotspot
         ];
   };
 }
