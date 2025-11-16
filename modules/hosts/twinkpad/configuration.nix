@@ -26,6 +26,7 @@
     #Sets the Hostname
     self.nixosModules.current
 
+    self.nixosModules.stylix
     self.nixosModules.base
     self.nixosModules.drives
     self.nixosModules.postgres

@@ -1,6 +1,6 @@
 { inputs, ... }: {
 # Configure Stylix
-  flake.homeModules.stylix = { pkgs, lib, config, ... }: {
+  flake.nixosModules.home-stylix = { pkgs, lib, config, ... }: {
    programs.fuzzel.enable = true;
     programs.gnome-shell.enable = true;
     stylix = {
@@ -25,6 +25,7 @@
           base0F = "f2cdcd";  # Flamingo
       };
       targets = {
+        fuzzel.enable = false;
         neovim.enable = false;
         kitty.enable = false;
         starship.enable = false;

@@ -23,6 +23,7 @@
     #Sets the Hostname
     self.nixosModules.current
 
+    self.nixosModules.stylix
     self.nixosModules.base
     self.nixosModules.steam
     self.nixosModules.vr

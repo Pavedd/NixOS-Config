@@ -20,6 +20,7 @@
       pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
       modules = [
         self.homeModules.es46
+        inputs.stylix.homeModules.stylix
       ];
     };
 
@@ -38,6 +39,7 @@
         self.nixosModules.waybar
         self.nixosModules.gtk
 
+        self.nixosModules.home-stylix
         self.nixosModules.nvim
         self.nixosModules.lazygit
         self.nixosModules.starship
