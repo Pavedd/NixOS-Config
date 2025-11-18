@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.kitty = { lib, pkgs, ... }: {
+  flake.homeModules.kitty = { lib, pkgs, ... }: {
     programs.btop.enable = true;
     programs.kitty = lib.mkForce {
       enable = true;

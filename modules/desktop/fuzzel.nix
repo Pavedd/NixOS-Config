@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.fuzzel = { ... }: {
+  flake.homeModules.fuzzel = { ... }: {
     programs.fuzzel =  {
       enable = true;
       settings = {

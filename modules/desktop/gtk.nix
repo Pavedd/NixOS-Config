@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.gtk = { pkgs, config, ... }: {
+  flake.homeModules.gtk = { pkgs, config, ... }: {
     xdg.enable = true;
     gtk = {
       enable = true;

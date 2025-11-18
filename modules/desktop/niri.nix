@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.niri = { config, pkgs, lib, ... }: 
+  flake.homeModules.niri = { config, pkgs, lib, ... }: 
 
     let 
       source = "/etc/nixos/nonNix/niri";

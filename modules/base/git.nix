@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.git = { pkgs, config, ... }: { 
+  flake.homeModules.git = { pkgs, config, ... }: { 
     programs.git = {
       enable = true;
       userName = "Endersoul46";

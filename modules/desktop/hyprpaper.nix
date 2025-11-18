@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.hyprpaper = { config, pkgs, ... }: {
+  flake.homeModules.hyprpaper = { config, pkgs, ... }: {
     services.hyprpaper = {
       enable = false;
       settings = {

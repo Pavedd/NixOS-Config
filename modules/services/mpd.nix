@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.mpd = {lib, config, pkgs, ... }:
+  flake.homeModules.mpd = {lib, config, pkgs, ... }:
   {
     services.mpd = {
       enable = true;

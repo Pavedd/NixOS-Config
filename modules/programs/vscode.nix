@@ -1,5 +1,5 @@
 {
- flake.nixosModules.vscode = { pkgs, config, ... }:{
+ flake.homeModules.vscode = { pkgs, config, ... }:{
   programs.vscode = {
   enable = true;
   package = pkgs.vscode.fhsWithPackages (ps: with ps; [

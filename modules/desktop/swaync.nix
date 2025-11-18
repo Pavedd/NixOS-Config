@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.swaync = {config, ...}: { 
+  flake.homeModules.swaync = {config, ...}: { 
     services.swaync = {
       enable = true;
       settings = {

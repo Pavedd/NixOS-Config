@@ -23,10 +23,8 @@
   }: {
 
   imports = [
-    self.nixosModules.defaultConf
-
     self.nixosModules.steam
-    self.nixosModules.vr
+#    self.nixosModules.vr
     self.nixosModules.nvidia
 ];
 

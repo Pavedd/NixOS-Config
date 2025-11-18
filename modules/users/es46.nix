@@ -27,27 +27,27 @@
     flake.homeModules.es46 = {pkgs, config, ...}: {
 
     imports = [
-        self.nixosModules.homePkgs
-        self.nixosModules.git
-        self.nixosModules.niri
-        self.nixosModules.hypridle
-        self.nixosModules.hyprlock
-        self.nixosModules.hyprpkgs
-        self.nixosModules.kitty
-        self.nixosModules.fuzzel
-        self.nixosModules.swaync
-        self.nixosModules.waybar
-        self.nixosModules.gtk
+        self.homeModules.pkgs
+        self.homeModules.git
+        self.homeModules.niri
+        self.homeModules.hypridle
+        self.homeModules.hyprlock
+        self.homeModules.hyprpkgs
+        self.homeModules.kitty
+        self.homeModules.fuzzel
+        self.homeModules.swaync
+        self.homeModules.waybar
+        self.homeModules.gtk
 
-        self.nixosModules.stylix
-        self.nixosModules.nvim
-        self.nixosModules.lazygit
-        self.nixosModules.starship
-        self.nixosModules.tmux
-        self.nixosModules.obsidian
-        self.nixosModules.vscode
+        self.homeModules.stylix
+        self.homeModules.nvim
+        self.homeModules.lazygit
+        self.homeModules.starship
+        self.homeModules.tmux
+        self.homeModules.obsidian
+        self.homeModules.vscode
 
-        self.nixosModules.mpd
+        self.homeModules.mpd
     ];
 
       nixpkgs = {
@@ -61,6 +61,7 @@
         fuzzel.enable = false;
         neovim.enable = false;
         kitty.enable = false;
+        waybar.enable = false;
         starship.enable = false;
       };
 

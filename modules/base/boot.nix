@@ -3,8 +3,6 @@
     boot.loader.systemd-boot.enable = false;
     boot.loader.grub = {
       enable = true;
-      gfxmodeEfi = "1920x1080"; 
-      gfxpayloadEfi = "keep";
       milk-theme.enable = true;   
       device = "nodev";
       useOSProber = true;

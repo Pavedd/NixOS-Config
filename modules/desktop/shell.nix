@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.quickshell = { pkgs, lib,  ...}: 
+  flake.homeModules.quickshell = { pkgs, lib,  ...}: 
     let 
     source = "/etc/nixos/nonNix/quickshell";
   target = "$HOME/.config/quickshell";

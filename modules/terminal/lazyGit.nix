@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.lazygit = { pkgs, lib, ... }: {
+  flake.homeModules.lazygit = { pkgs, lib, ... }: {
     programs.lazygit = {
       enable = true;
       settings = {

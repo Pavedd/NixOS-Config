@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.hypridle = { pkgs, ... }: {
+  flake.homeModules.hypridle = { pkgs, ... }: {
     services.hypridle = {
 
       enable = true;

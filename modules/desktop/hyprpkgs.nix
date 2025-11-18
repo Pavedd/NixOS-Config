@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.hyprpkgs = { pkgs, ... }: {
+  flake.homeModules.hyprpkgs = { pkgs, ... }: {
     home.packages = with pkgs; [
     hyprland
       xwayland

@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.obsidian = {lib, config, pkgs,  ...}:
+  flake.homeModules.obsidian = {lib, config, pkgs,  ...}:
 
     with lib;
 

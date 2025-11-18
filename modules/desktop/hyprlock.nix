@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.hyprlock = {pkgs, ... }: {
+  flake.homeModules.hyprlock = {pkgs, ... }: {
     programs.hyprlock = {
       enable = true;
       extraConfig = ''

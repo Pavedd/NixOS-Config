@@ -1,6 +1,6 @@
 
 {
-  flake.nixosModules.hyprland = {
+  flake.homeModules.hyprland = {
   hostName,
     pkgs,
     ...

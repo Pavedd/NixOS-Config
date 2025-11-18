@@ -1,6 +1,6 @@
 
 { 
-  flake.nixosModules.waybar = { ... }: { 
+  flake.homeModules.waybar = { ... }: { 
     programs.waybar = {
       enable = true;
       systemd = {

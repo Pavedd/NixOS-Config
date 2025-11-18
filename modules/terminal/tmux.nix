@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.tmux = {lib, pkgs, ... }:  {
+  flake.homeModules.tmux = {lib, pkgs, ... }:  {
 
     programs.tmux = {
       enable = true;

@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.nvim = { config, pkgs, lib, ... }: 
+  flake.homeModules.nvim = { config, pkgs, lib, ... }: 
 
     let 
       source = "/etc/nixos/nonNix/nvim";

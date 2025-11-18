@@ -1,6 +1,6 @@
 { inputs, ...}:
 {
-  flake.nixosModules.homePkgs = {pkgs, ... }: {
+  flake.homeModules.pkgs = {pkgs, ... }: {
     home.packages = with pkgs; [ 
     git
     firefox

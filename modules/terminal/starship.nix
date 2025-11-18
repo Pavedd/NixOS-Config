@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.starship = {pkgs, config, lib, ...}: {
+  flake.homeModules.starship = {pkgs, config, lib, ...}: {
     programs.starship = {
       enable = true;
       enableBashIntegration = true;
