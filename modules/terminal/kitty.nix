@@ -1,5 +1,6 @@
 {
   flake.nixosModules.kitty = { lib, pkgs, ... }: {
+    programs.btop.enable = true;
     programs.kitty = lib.mkForce {
       enable = true;
       themeFile = "Catppuccin-Mocha";

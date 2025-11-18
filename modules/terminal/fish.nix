@@ -3,6 +3,7 @@
 
     programs.fish = {
       enable = true;
+      documentation.man.generateCaches = false;
       interactiveShellInit = ''
         set -g fish_greeting
         starship init fish | source

@@ -28,7 +28,10 @@
   qt.enable = true;
 
   nixpkgs = {
-    overlays = [ self.overlays.unstable ];
+    overlays = [ 
+      self.overlays.unstable 
+      inputs.fenix.overlays.default
+    ];
     config = {
       allowUnfree = true;
     };

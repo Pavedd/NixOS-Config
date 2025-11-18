@@ -22,6 +22,8 @@
     stylix.inputs.nixpkgs.follows = "nixpkgs";
 
     milk-grub-theme.url = "github:gemakfy/MilkGrub";
+    fenix.url = "github:nix-community/fenix/monthly";
+ 
  };
   outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
 
