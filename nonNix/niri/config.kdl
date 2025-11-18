@@ -135,13 +135,13 @@ window-rule {
 // --- Keybindings ---
 binds {
     // --- Launchers ---
-    Mod+Space { spawn "kitty"; }
-    Mod+Ctrl+Space { spawn "kitty" "-e" "tmux"; }
-    Mod+B { spawn "firefox"; }
-    Mod+A { spawn "fuzzel"; }
-    Mod+E { spawn "nautilus"; }
-    Mod+V { spawn "code"; }
-    Mod+N { spawn "obsidian"; }
+    Mod+Space repeat=false { spawn "kitty"; }
+    Mod+Ctrl+Space repeat=false { spawn "kitty" "-e" "tmux"; }
+    Mod+B repeat=false { spawn "firefox"; }
+    Mod+A repeat=false  { spawn "fuzzel"; }
+    Mod+E repeat=false { spawn "nautilus"; }
+    Mod+V repeat=false { spawn "code"; }
+    Mod+N repeat=false { spawn "obsidian"; }
 
     // --- System ---
     Mod+Shift+M { quit; }

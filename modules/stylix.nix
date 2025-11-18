@@ -1,10 +1,10 @@
 { inputs, ... }: {
+
 # Configure Stylix
   flake.nixosModules.stylix = { pkgs, lib, config, ... }: {
     stylix = {
       enable = true;
-      homeManagerIntegration.autoImport = true;
-      autoEnable = false;
+      autoEnable = true;
       base16Scheme = {
         base00 = "1e1e2e";  # Base
           base01 = "181825";  # Mantle
@@ -23,19 +23,38 @@
           base0E = "cba6f7";  # Mauve (Accent)
           base0F = "f2cdcd";  # Flamingo
       };
-      targets = {
-        gnome.enable = true; 
-        gtk.enable = true;
-        qt.enable = true;
-        fish.enable = false;
+    fonts = {
+      emoji = {
+        name = "Noto Color Emoji";
+        package = pkgs.noto-fonts-color-emoji;
       };
-      cursor = {
-        package = pkgs.catppuccin-cursors;
-        name = "mochaMauve";
+      monospace = {
+        name = "JetBrains Mono";
+        package = pkgs.jetbrains-mono;
+      };
+      sansSerif = {
+        name = "Noto Sans";
+        package = pkgs.noto-fonts;
+      };
+      serif = {
+        name = "Noto Serif";
+        package = pkgs.noto-fonts;
+      };
+    };
+
+    iconTheme = {
+      enable = true;
+      package = pkgs.papirus-icon-theme;
+      dark = "Papirus-Dark";
+      light = "Papirus-Light";
+    };    
+
+    cursor = {
+        package = pkgs.bibata-cursors;
+        name = "Bibata-Modern-Classic";
         size = 24;
       };
-
-      polarity = "dark";
+       polarity = "dark";
 
    };
   }; 

@@ -39,7 +39,7 @@
         self.nixosModules.waybar
         self.nixosModules.gtk
 
-        self.nixosModules.home-stylix
+        self.nixosModules.stylix
         self.nixosModules.nvim
         self.nixosModules.lazygit
         self.nixosModules.starship
@@ -56,6 +56,13 @@
         allowUnfree = true;
       };
     };
+      stylix.targets = {
+        swaync.enable = false;
+        fuzzel.enable = false;
+        neovim.enable = false;
+        kitty.enable = false;
+        starship.enable = false;
+      };
 
 
     obsidian.sync.enable = true;

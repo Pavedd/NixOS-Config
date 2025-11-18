@@ -16,10 +16,12 @@
         window_padding_width = 8;
         background_opacity = "0.65";
         background = "#11111b";
-        bold_font = "JetBrainsMono Nerd Font Mono Extra Bold";
-        bold_italic_font = "JetBrainsMono Nerd Font Mono Extra Bold Italic";
-        font_family = "JetBrainsMono Nerd Font Mono";
-      };
+        bold_font = "JetBrainsMono-ExtraBold";
+        bold_italic_font = "JetBrainsMono-ExtraBoldItalic";
+        # bold_font = "JetBrainsMono Nerd Font Mono Extra Bold";
+        # bold_italic_font = "JetBrainsMono Nerd Font Mono Extra Bold Italic";
+        # font_family = "JetBrainsMono Nerd Font Mono";     
+     };
     };
   };
 }

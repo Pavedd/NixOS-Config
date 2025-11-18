@@ -9,7 +9,6 @@
     catppuccin-gtk
 #gruvbox-dark-icons-gtk
     starship
-    kdePackages.breeze-icons
     gnome-text-editor
     nautilus
     eog
@@ -40,6 +39,19 @@
     kdePackages.filelight
     bacon
     prismlauncher
+
+#fonts
+
+    dejavu_fonts
+    nerd-fonts.jetbrains-mono
+    noto-fonts
+    noto-fonts-lgc-plus
+    texlivePackages.hebrew-fonts
+    noto-fonts-emoji
+    font-awesome
+    powerline-fonts
+    powerline-symbols
+    nerd-fonts.symbols-only
     ];
 };
 }
