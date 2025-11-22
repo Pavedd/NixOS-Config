@@ -2,7 +2,7 @@
   flake.nixosModules.pkgs = { pkgs, ...}:
   {
     environment.systemPackages = with pkgs; [
-      fenix.stable.toolchain
+      fenix.complete.toolchain
       vim
         neovim
         libinput
