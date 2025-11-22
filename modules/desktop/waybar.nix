@@ -174,7 +174,7 @@
           format-alt = "󰾅 {used}GB";
           max-length = 10;
           tooltip = true;
-          tooltip-format = " {used =0.1f}GB/{total =0.1f}GB";
+           tooltip-format = " {used}GB / {total}GB";
         };
 
         "backlight" = {
