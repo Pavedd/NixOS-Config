@@ -48,6 +48,8 @@
         unstable.xwayland-satellite
         linux-wifi-hotspot
         devenv
+        hello
+        nil
         ];
   };
 }

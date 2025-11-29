@@ -3,7 +3,7 @@
     programs.hyprlock = {
       enable = true;
       extraConfig = ''
-        source = /etc/nixos/modules/home/desktop/mocha.conf
+        source = /etc/nixos/modules/desktop/mocha.conf
 
         $accent = $mauve
         $accentAlpha = $mauveAlpha

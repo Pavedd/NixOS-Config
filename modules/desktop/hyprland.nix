@@ -15,7 +15,7 @@
     settings = {
       debug.disable_logs = false;
       source = [
-        "/etc/nixos/modules/home/desktop/mocha.conf" # Theme
+        "/etc/nixos/modules/desktop/mocha.conf" # Theme
       ];
       monitor = ",preferred,auto,1";
 
