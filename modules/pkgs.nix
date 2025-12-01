@@ -2,6 +2,7 @@
   flake.nixosModules.pkgs = { pkgs, ...}:
   {
     environment.systemPackages = with pkgs; [
+      en
       fenix.complete.toolchain
       vim
         neovim
@@ -50,6 +51,7 @@
         devenv
         hello
         nil
+        nix-init
         ];
   };
 }

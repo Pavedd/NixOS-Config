@@ -23,6 +23,8 @@
 
     milk-grub-theme.url = "github:gemakfy/MilkGrub";
     fenix.url = "github:nix-community/fenix/monthly";
+
+    en.url = "github:Endersoul46/en";
  
  };
   outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
