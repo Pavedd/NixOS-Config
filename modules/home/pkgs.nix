@@ -29,7 +29,6 @@
     unstable.yt-dlp
     ffmpeg_6
     unstable.quickshell
-    qt6.full
     networkmanagerapplet
     localsend
 #arduino
@@ -47,7 +46,7 @@
     noto-fonts
     noto-fonts-lgc-plus
     texlivePackages.hebrew-fonts
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     font-awesome
     powerline-fonts
     powerline-symbols

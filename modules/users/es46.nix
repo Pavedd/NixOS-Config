@@ -83,6 +83,7 @@
       CARGO_MOMMYS_LITTLE = "boy/princess/pet";
       CARGO_MOMMYS_MOODS = "chill/thirsty";
       MOZ_ENABLE_WAYLAND=1;
+      DIRENV_WARN_TIMEOUT="";
     };
 
     fonts.fontconfig.enable = true;

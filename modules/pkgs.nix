@@ -45,7 +45,7 @@
         tree
         eza
         zoxide
-        du-dust
+        dust
         unstable.xwayland-satellite
         linux-wifi-hotspot
         devenv
