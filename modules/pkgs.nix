@@ -49,7 +49,7 @@
         unstable.xwayland-satellite
         linux-wifi-hotspot
         devenv
-        hello
+        heroic
         nil
         nix-init
         ];
