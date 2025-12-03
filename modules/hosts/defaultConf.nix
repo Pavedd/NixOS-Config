@@ -5,9 +5,6 @@
 }: { flake.nixosModules.defaultConf = { config, pkgs, ... }: {
 
   imports = [
-#Sets the Hostname
-    self.nixosModules.current
-
       self.nixosModules.stylix
       self.nixosModules.base
       self.nixosModules.postgres
@@ -15,6 +12,8 @@
       self.nixosModules.pkgs
       self.nixosModules.es46
   ];
+
+  networking.hostName = self.host; 
 
   stylix.targets = {
     gnome.enable = true; 
@@ -30,7 +29,7 @@
   nixpkgs = {
     overlays = [ 
       self.overlays.unstable 
-      inputs.en.overlay
+      inputs.en.overlays.default
       inputs.fenix.overlays.default
     ];
     config = {
