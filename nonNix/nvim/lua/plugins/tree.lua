@@ -7,7 +7,7 @@ return {
   },
   config = function()
     -- disable netrw at the very start of your init.lua
-    vim.keymap.set("n", "<leader>ef",  ":NvimTreeToggle<CR>", { silent = true })
+    vim.keymap.set("n", "<leader>ee",  ":NvimTreeToggle<CR>", { silent = true })
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 

@@ -97,7 +97,7 @@ return {
     require("mini.comment").setup({ mappings = { comment = 'sc', comment_line = 'scc', comment_visual = 'sc', textobject = 'sc' } })
     require("mini.splitjoin").setup({ mappings = { toggle = 'sS'} })
 
-    vim.keymap.set("n", "<leader>ee", function ()
+    vim.keymap.set("n", "<leader>eE", function ()
       MiniFiles.open()
     end) 
   end

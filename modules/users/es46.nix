@@ -48,6 +48,7 @@
         self.homeModules.vscode
 
         self.homeModules.mpd
+
     ];
 
       nixpkgs = {
@@ -56,12 +57,15 @@
         allowUnfree = true;
       };
     };
+
+
       stylix.targets = {
         swaync.enable = false;
         fuzzel.enable = false;
         neovim.enable = false;
         kitty.enable = false;
         waybar.enable = false;
+        tmux.enable = false;
         starship.enable = false;
       };
 
@@ -79,6 +83,7 @@
       CARGO_MOMMYS_LITTLE = "boy/princess/pet";
       CARGO_MOMMYS_MOODS = "chill/thirsty";
       MOZ_ENABLE_WAYLAND=1;
+      DIRENV_WARN_TIMEOUT="";
     };
 
     fonts.fontconfig.enable = true;

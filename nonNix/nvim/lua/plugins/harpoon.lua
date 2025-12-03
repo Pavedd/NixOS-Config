@@ -18,7 +18,7 @@ return {
       vim.keymap.set("n", "<leader>b", function() harpoon:list():prev() end)
       vim.keymap.set("n", "<leader>n", function() harpoon:list():next() end)
 
-      vim.keymap.set("n", "<leader>he", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+      vim.keymap.set("n", "<leader>hh", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
     end
   }
 }

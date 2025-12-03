@@ -2,6 +2,7 @@
   flake.nixosModules.pkgs = { pkgs, ...}:
   {
     environment.systemPackages = with pkgs; [
+      en
       fenix.complete.toolchain
       vim
         neovim
@@ -44,11 +45,13 @@
         tree
         eza
         zoxide
-        du-dust
+        dust
         unstable.xwayland-satellite
         linux-wifi-hotspot
         devenv
-        heroic
+        hello
+        nil
+        nix-init
         ];
   };
 }

@@ -3,12 +3,12 @@
 
   inputs = {
     # Nixpkgs
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     # nixpkgs-unstable
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     
     # Home manager
-    home-manager.url = "github:nix-community/home-manager/release-25.05";
+    home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # flake parts
@@ -18,11 +18,15 @@
     hyprland.url = "github:hyprwm/Hyprland"; 
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
 
-    stylix.url = "github:nix-community/stylix/release-25.05";
+    stylix.url = "github:nix-community/stylix/release-25.11";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
 
     milk-grub-theme.url = "github:gemakfy/MilkGrub";
+    milk-grub-theme.inputs.nixpkgs.follows = "nixpkgs";
     fenix.url = "github:nix-community/fenix/monthly";
+    fenix.inputs.nixpkgs.follows = "nixpkgs";
+
+    en.url = "github:Endersoul46/en";
  
  };
   outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);

@@ -30,6 +30,7 @@
   nixpkgs = {
     overlays = [ 
       self.overlays.unstable 
+      inputs.en.overlay
       inputs.fenix.overlays.default
     ];
     config = {

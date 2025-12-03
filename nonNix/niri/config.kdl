@@ -30,6 +30,12 @@ input {
     focus-follows-mouse max-scroll-amount="0%"
 }
 
+gestures {
+  hot-corners {
+    off
+  }
+}
+
 output "eDP-1" {
     mode "1920x1080@60.0"
     scale 1
