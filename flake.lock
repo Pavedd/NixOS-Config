@@ -107,11 +107,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1764660530,
-        "narHash": "sha256-n/xOSPBfe8ZmS+kHk7yUEzhJT/gglyUxqyXv1JVXhEk=",
+        "lastModified": 1764721495,
+        "narHash": "sha256-nLzvnytOJ4RhtuTm/yOBZiFiXV6uue/7O6fiUEOitSg=",
         "owner": "Endersoul46",
         "repo": "en",
-        "rev": "d296dc0e05535086aac102e3a29b169238d0650f",
+        "rev": "7e62e4204587acdf26cf0b559b74498bffc4e805",
         "type": "github"
       },
       "original": {
