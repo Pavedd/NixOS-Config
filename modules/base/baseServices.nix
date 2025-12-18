@@ -30,6 +30,8 @@
       EDITOR = "nvim";
       PKGS_FILE = "/etc/nixos/modules/pkgs.nix";
       PKGS_HOME_FILE = "/etc/nixos/modules/home/pkgs.nix";
+      HOSTNAME_FILE = "/etc/nixos/modules/variables/_host.nix";
+      THEME_FILE = "/etc/nixos/modules/variables/_theme.nix";
     };
 
 
