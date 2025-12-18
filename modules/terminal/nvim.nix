@@ -40,6 +40,11 @@
         vimAlias = true;
         vimdiffAlias = true;
       };
+
+      home.sessionVariables = {
+        EDITOR = "nvim";
+      };
+
     };  
   }
 

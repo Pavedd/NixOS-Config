@@ -27,6 +27,9 @@
       TERM = "xterm-256color";    
       CARGO_MOMMYS_LITTLE = "boy/princess/pet";
       CARGO_MOMMYS_MOODS = "chill/thirsty";
+      EDITOR = "nvim";
+      PKGS_FILE = "/etc/nixos/modules/pkgs.nix";
+      PKGS_HOME_FILE = "/etc/nixos/modules/home/pkgs.nix";
     };
 
 
