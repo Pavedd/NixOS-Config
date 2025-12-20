@@ -1,8 +1,4 @@
-{...}: let
-
-  host = "twinkpad";
-
-
+{
   theme = {
     base00 = "#1e1e2e"; # crust (darkest bg)
     base01 = "#181825"; # mantle
@@ -20,15 +16,5 @@
     base0D = "#89b4fa"; # blue
     base0E = "#cba6f7"; # mauve
     base0F = "#f2cdcd"; # flamingo
-  };
-  stripHash = str:
-    if builtins.substring 0 1 str == "#"
-    then builtins.substring 1 (builtins.stringLength str - 1) str
-    else str;
-
-  themeNoHash = builtins.mapAttrs (_: v: stripHash v) theme;
-in {
-  flake = {
-    inherit theme themeNoHash host;
   };
 }

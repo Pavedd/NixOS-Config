@@ -1,3 +1,5 @@
+q
+
 {
   flake.nixosModules.pkgs = { pkgs, ...}:
   {
@@ -49,13 +51,16 @@
         unstable.xwayland-satellite
         linux-wifi-hotspot
         devenv
-        heroic
+        hello
         nil
         nix-init
-        obs-studio
-
-        localsend
-        jocalsend
+        opendrop
+        owl
         ];
- };
+
+    environment.variables = rec {
+      PKGS_FILE = "/etc/nixos/modules/pkgs.nix";
+      PKGS_HOME_FILE = "/etc/nixos/modules/home/pkgs.nix";
+    };
+  };
 }
