@@ -160,8 +160,8 @@ binds {
 
     // --- Screenshots ---
     Print { screenshot-screen; }
-    Mod+Print { screenshot-window; }
-    Shift+Print { screenshot; }
+    Mod+Backslash { screenshot-window; }
+    Shift+Backslash { screenshot; }
 
     // --- Workspaces ---
     Mod+1 { focus-workspace 1; }

@@ -10,6 +10,7 @@
       self.nixosModules.astolfo-hardware
       self.nixosModules.defaultConf
       self.nixosModules.astolfo
+      self.nixosModules.amd
       inputs.stylix.nixosModules.stylix
       inputs.milk-grub-theme.nixosModule
     ];
@@ -25,7 +26,6 @@
   imports = [
     self.nixosModules.steam
 #    self.nixosModules.vr
-    self.nixosModules.nvidia
 ];
 
 

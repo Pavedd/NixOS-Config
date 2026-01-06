@@ -5,6 +5,8 @@
       en
       fenix.complete.toolchain
       vim
+      protonup-qt
+      aseprite
         neovim
         libinput
         pgadmin4-desktopmode
