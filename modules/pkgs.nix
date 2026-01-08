@@ -4,6 +4,7 @@
     environment.systemPackages = with pkgs; [
       en
       fenix.complete.toolchain
+      uv
       vim
       protonup-qt
       aseprite
@@ -55,6 +56,11 @@
         nil
         nix-init
         obs-studio
+
+        ffmpeg_6
+        miktex
+        pango
+
 
         localsend
         jocalsend

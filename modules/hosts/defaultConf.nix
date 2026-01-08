@@ -10,6 +10,7 @@
       self.nixosModules.postgres
       self.nixosModules.fish
       self.nixosModules.pkgs
+      self.nixosModules.nix-ld
       self.nixosModules.es46
   ];
 

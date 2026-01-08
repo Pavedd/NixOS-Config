@@ -27,8 +27,7 @@
     mpc
     ytermusic
     unstable.yt-dlp
-    ffmpeg_6
-    unstable.quickshell
+   unstable.quickshell
     networkmanagerapplet
     localsend
 #arduino

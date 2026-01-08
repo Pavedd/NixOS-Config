@@ -11,6 +11,7 @@
       self.nixosModules.twinkpad-hardware
       self.nixosModules.defaultConf
       self.nixosModules.twinkpad
+      self.nixosModules.amd
       inputs.stylix.nixosModules.stylix
       inputs.milk-grub-theme.nixosModule
     ];
