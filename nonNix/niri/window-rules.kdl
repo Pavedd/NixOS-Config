@@ -1,0 +1,15 @@
+window-rule {
+    geometry-corner-radius 8
+    clip-to-geometry true
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match app-id="ModernGL" 
+    match title="^Manim$"
+    open-floating true
+}

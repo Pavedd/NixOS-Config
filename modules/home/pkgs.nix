@@ -1,55 +1,77 @@
-{ inputs, ...}:
+
 {
-  flake.homeModules.pkgs = {pkgs, ... }: {
-    home.packages = with pkgs; [ 
-    git
-    firefox
-    thunderbird
-    kitty
-    catppuccin-gtk
-#gruvbox-dark-icons-gtk
-    starship
-    gnome-text-editor
-    nautilus
-    eog
-    nwg-look
-    nodejs_24
-    yarn-berry
-    typescript
-    gparted
-    gnome-disk-utility
-    polkit
-    polkit_gnome
-    blueman
-    bluetui
-    blender
-    mpd
-    mpc
-    ytermusic
-    unstable.yt-dlp
-   unstable.quickshell
-    networkmanagerapplet
-    localsend
-#arduino
-    arduino
-    arduino-ide
-    arduino-cli
-    kdePackages.filelight
-    bacon
-    prismlauncher
+  flake.homeModules.pkgs = { pkgs, ... }: {
+    home.packages = with pkgs; [
 
-#fonts
+      # Version Control
+      git
 
-    dejavu_fonts
-    nerd-fonts.jetbrains-mono
-    noto-fonts
-    noto-fonts-lgc-plus
-    texlivePackages.hebrew-fonts
-    noto-fonts-color-emoji
-    font-awesome
-    powerline-fonts
-    powerline-symbols
-    nerd-fonts.symbols-only
+      # Dev tools
+      nodejs_24
+      yarn-berry
+      typescript
+      arduino
+      arduino-ide
+      arduino-cli
+      unstable.quickshell
+
+      # Web
+      firefox
+      unstable.yt-dlp
+      ytermusic
+
+      # Email & File sharing
+      thunderbird
+      localsend
+      jocalsend
+
+      # Terminal & Shell
+      starship
+      bacon
+
+      # Text Editing
+      gnome-text-editor
+
+      # File Browsing & Utilities
+      nautilus
+      gparted
+      gnome-disk-utility
+      kdePackages.filelight
+
+      # Multimedia & Graphics
+      eog
+      blender
+      krita
+      aseprite
+      obs-studio
+      mpd
+
+      # Games
+      prismlauncher
+
+      # Networking Tools
+      networkmanagerapplet
+      blueman
+      bluetui
+      impala
+
+      # Authentication & Policy
+      polkit
+      polkit_gnome
+
+      # Fonts
+      dejavu_fonts
+      nerd-fonts.jetbrains-mono
+      noto-fonts
+      noto-fonts-lgc-plus
+      texlivePackages.hebrew-fonts
+      noto-fonts-color-emoji
+      font-awesome
+      powerline-fonts
+      powerline-symbols
+      nerd-fonts.symbols-only
+      catppuccin-gtk
     ];
-};
+  };
 }
+

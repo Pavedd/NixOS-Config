@@ -1,0 +1,66 @@
+layout {
+    gaps 6
+    center-focused-column "never"
+
+    // Presets for dynamic resizing
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
+
+    preset-window-heights {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
+
+    default-column-width { proportion 0.5; }
+
+    // --- Visuals ---
+    focus-ring {
+      off
+        width 1
+        active-color "#cba6f7"      // Catppuccin Mauve
+        inactive-color "#313244"    // Surface0
+        urgent-color "#f38ba8"      // Red
+    }
+
+    border {
+      on
+        width 1
+        active-color "#cba6f7"      // Mauve
+        inactive-color "#45475a"    // Surface1
+        urgent-color "#f38ba8"      // Red
+    }
+
+    shadow {
+      on
+        softness 20
+        spread 2 
+        offset x=0 y=2
+        color "#45475a12"
+    }
+
+    insert-hint {
+        color "#cba6f780"
+        // gradient from="#ffbb6680" to="#ffc88080" angle=45 relative-to="workspace-view"
+    }
+    struts {}
+
+    }
+overview {
+  backdrop-color "#1e1e2e"
+  zoom 0.5
+}
+
+prefer-no-csd
+
+hotkey-overlay { skip-at-startup; }
+
+animations {
+    // subtle, responsive animations
+    slowdown 1.0
+}
