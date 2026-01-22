@@ -5,7 +5,7 @@ return{
 
   {
     'saghen/blink.cmp',
-    dependencies = { 'rafamadriz/friendly-snippets' },
+    dependencies = {  'L3MON4D3/LuaSnip', version = 'v2.*'  },
 
     version = '1.*',
 
@@ -33,7 +33,7 @@ return{
         ['<Down>'] = { 'select_next', 'fallback' },
 
         ['<C-l>'] = { 'select_and_accept' },
-        ['<CR>'] = { 'accept', 'fallback' },
+        ['<C-y>'] = {  'accept', 'fallback'  }
       },
 
       appearance = {
@@ -60,6 +60,9 @@ return{
         completion = { menu = { auto_show = true } 
       },
       },
+
+
+      snippets = { preset = 'luasnip'},
 
       sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },

@@ -21,7 +21,7 @@ binds {
     // --- Screenshots ---
     Print { screenshot-screen; }
     Mod+Backslash { screenshot-window; }
-    Shift+Backslash { screenshot; }
+    Mod+Shift+Backslash { screenshot; }
 
     // --- Workspaces ---
     Mod+1 { focus-workspace 1; }

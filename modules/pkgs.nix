@@ -7,6 +7,7 @@
 
       # Compilers
       gcc
+      gnumake
       fenix.complete.toolchain
       uv
 
@@ -34,7 +35,9 @@
       # Text Editing
       vim
       neovim
-      miktex
+      texliveFull
+      tree-sitter
+      zathura
       pango
 
       # File Browsing & Utilities
