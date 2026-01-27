@@ -9,6 +9,7 @@
         starship init fish | source
         zoxide init fish | source
         fish_vi_key_bindings
+        fzf --fish | source
         '';
       shellAliases = {
         cd = "z";
