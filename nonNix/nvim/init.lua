@@ -59,8 +59,8 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 
 
 -- Split mappings under <leader>;
-vim.keymap.set("n", "<leader>;h", ":split<CR>",  { desc = "Horizontal split" })
-vim.keymap.set("n", "<leader>;v", ":vsplit<CR>", { desc = "Vertical split" })
+vim.keymap.set("n", "<leader>,", ":vsplit<CR>", { desc = "Vertical split" })
+vim.keymap.set("n", "<leader>.", ":split<CR>",  { desc = "Horizontal split" })
 
 vim.keymap.set("n", "Q", "<nop>")
 --vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")

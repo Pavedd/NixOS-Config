@@ -41,6 +41,7 @@
       pango
 
       # File Browsing & Utilities
+      fd
       tree
       eza
       zoxide
