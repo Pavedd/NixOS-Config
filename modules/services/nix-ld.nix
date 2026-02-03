@@ -23,7 +23,11 @@
           libdrm
           ffmpeg.dev
           libelf
+          libsm
+          libxext
+          libxrandr
           libGL
+          libGLU
           libjpeg
           libogg
           libpng
@@ -31,10 +35,14 @@
           libpulseaudio
           opencv # libqxcb
           libtiff
+          stdenv.cc.cc.lib
+          stdenv.cc
           libva
+          icu
           libvorbis
           libxkbcommon
           pipewire
+          coreutils
           wayland
           ]
           ) ++ (

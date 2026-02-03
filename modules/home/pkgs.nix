@@ -19,11 +19,12 @@
       firefox
       unstable.yt-dlp
       ytermusic
+      modrinth-app
 
       # Email & File sharing
       thunderbird
       localsend
-      jocalsend
+      #jocalsend
 
       # Terminal & Shell
       starship
