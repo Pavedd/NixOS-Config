@@ -19,7 +19,6 @@
       firefox
       unstable.yt-dlp
       ytermusic
-      modrinth-app
 
       # Email & File sharing
       thunderbird
