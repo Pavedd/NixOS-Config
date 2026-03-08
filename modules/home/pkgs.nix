@@ -31,6 +31,7 @@
 
       # Text Editing
       gnome-text-editor
+      libreoffice
 
       # File Browsing & Utilities
       nautilus

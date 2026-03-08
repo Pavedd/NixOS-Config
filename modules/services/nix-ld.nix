@@ -44,6 +44,7 @@
           pipewire
           coreutils
           wayland
+          postgresql
           ]
           ) ++ (
             with pkgs.gnome; [
