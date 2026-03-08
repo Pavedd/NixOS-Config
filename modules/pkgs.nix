@@ -32,11 +32,13 @@
       btop
       fastfetch
 
-      # Text Editing
+      # Development 
       vim
       neovim
-      texliveFull
       tree-sitter
+      godotPackages_4_6.godot
+      # Text Editing
+      texliveFull
       zathura
       pango
 

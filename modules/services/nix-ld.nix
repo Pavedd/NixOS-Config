@@ -36,6 +36,7 @@
           libxkbcommon
           pipewire
           wayland
+          postgresql
           ]
           ) ++ (
             with pkgs.gnome; [
