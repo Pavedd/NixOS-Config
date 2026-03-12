@@ -36,7 +36,9 @@
       vim
       neovim
       tree-sitter
-      godotPackages_4_6.godot
+      unstable.godotPackages_4_6.godot
+      neovim-remote
+
       # Text Editing
       texliveFull
       zathura
@@ -62,6 +64,8 @@
       udiskie
       ntfs3g
       dust
+
+
 
       # Networking Tools
       tcpdump
