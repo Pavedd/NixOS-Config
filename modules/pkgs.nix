@@ -3,7 +3,7 @@
     environment.systemPackages = with pkgs; [
 
       # Custom Helper
-#      en
+      en
 
       # Compilers
       gcc
