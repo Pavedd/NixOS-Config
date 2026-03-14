@@ -3,6 +3,7 @@
 --huge dict with most important lsps
 
 local servers = {
+  gdscript = "godot",
   lua_ls = "lua-language-server", -- Lua
   clangd = "clangd", -- C/C++
   pyright = "pyright-langserver", -- Python
