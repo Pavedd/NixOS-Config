@@ -6,6 +6,7 @@
       libraries = options.programs.nix-ld.libraries.default ++ (
           with pkgs; [
           cairo
+          cacert
           dbus
           dbus-glib
           dconf

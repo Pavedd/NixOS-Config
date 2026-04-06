@@ -48,6 +48,7 @@
         self.homeModules.vscode
 
         self.homeModules.mpd
+        self.homeModules.opencode
 
     ];
 

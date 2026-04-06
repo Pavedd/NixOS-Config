@@ -15,6 +15,10 @@
       arduino-cli
       unstable.quickshell
 
+      # 3D design
+      bambu-studio
+      unstable.orca-slicer
+
       # Web
       firefox
       unstable.yt-dlp
