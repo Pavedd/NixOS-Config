@@ -6,6 +6,7 @@
       libraries = options.programs.nix-ld.libraries.default ++ (
           with pkgs; [
           cairo
+          cacert
           dbus
           dbus-glib
           dconf
@@ -24,7 +25,11 @@
           ffmpeg.dev
           xdg-utils
           libelf
+          libsm
+          libxext
+          libxrandr
           libGL
+          libGLU
           libjpeg
           libogg
           libpng
@@ -32,10 +37,14 @@
           libpulseaudio
           opencv # libqxcb
           libtiff
+          stdenv.cc.cc.lib
+          stdenv.cc
           libva
+          icu
           libvorbis
           libxkbcommon
           pipewire
+          coreutils
           wayland
           postgresql
           ]

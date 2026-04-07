@@ -75,6 +75,7 @@
       # Communication
       unstable.discord
       protonup-qt
+      unstable.protonplus
 
       # System Libraries
       libinput

@@ -11,6 +11,8 @@
       self.nixosModules.defaultConf
       self.nixosModules.astolfo
       self.nixosModules.amd
+      self.nixosModules.rocm
+      self.nixosModules.ollama
       inputs.stylix.nixosModules.stylix
       inputs.milk-grub-theme.nixosModule
     ];

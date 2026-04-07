@@ -15,6 +15,10 @@
       arduino-cli
       unstable.quickshell
 
+      # 3D design
+      bambu-studio
+      unstable.orca-slicer
+
       # Web
       firefox
       unstable.yt-dlp
@@ -23,7 +27,7 @@
       # Email & File sharing
       thunderbird
       localsend
-      jocalsend
+      #jocalsend
 
       # Terminal & Shell
       starship
