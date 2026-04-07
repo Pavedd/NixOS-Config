@@ -12,6 +12,7 @@
       self.nixosModules.defaultConf
       self.nixosModules.twinkpad
       self.nixosModules.amd
+      self.nixosModules.nginx
       inputs.stylix.nixosModules.stylix
       inputs.milk-grub-theme.nixosModule
     ];

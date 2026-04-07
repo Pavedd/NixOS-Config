@@ -22,6 +22,7 @@
           krb5
           libdrm
           ffmpeg.dev
+          xdg-utils
           libelf
           libGL
           libjpeg
