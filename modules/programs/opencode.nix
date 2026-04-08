@@ -10,7 +10,7 @@
       npm = "@ai-sdk/openai-compatible";
       name = "astolfo desktop provider";
       options = {
-        baseURL = "http://192.168.178.38:11434/v1";
+        baseURL = "http://127.0.0.1:11434/v1";
       };
       models = {
         "gpt-oss:20b" = {
