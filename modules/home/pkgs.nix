@@ -50,6 +50,7 @@
       aseprite
       obs-studio
       mpd
+      notify
 
       # Games
       prismlauncher

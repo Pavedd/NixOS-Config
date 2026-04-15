@@ -35,6 +35,8 @@
           libpng
           libpq
           libpulseaudio
+          openssl
+          pkg-config
           opencv # libqxcb
           libtiff
           stdenv.cc.cc.lib

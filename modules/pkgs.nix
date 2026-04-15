@@ -12,7 +12,7 @@
       uv
 
       # Nix Utilities
-      nh
+      unstable.nh
       nix-output-monitor
       nix-index
       nix-tree
@@ -87,6 +87,7 @@
       xdg-desktop-portal
       xdg-desktop-portal-hyprland
       unstable.xwayland-satellite
+      imagemagick
 
       # Gaming
       heroic
