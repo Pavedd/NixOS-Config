@@ -1,8 +1,8 @@
-spawn-at-startup "waybar"
+//spawn-at-startup "waybar"
 spawn-at-startup "udiskie"
-spawn-at-startup "swww-daemon"
-spawn-at-startup "swww img /etc/nixos/home-manager/wallpapers/miku.png"
-spawn-at-startup "swaync"
+//spawn-at-startup "swww-daemon"
+//spawn-at-startup "swww img /etc/nixos/home-manager/wallpapers/miku.png"
+//spawn-at-startup "swaync"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "sudo auto-cpufreq --daemon"
 

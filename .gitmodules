@@ -1,0 +1,3 @@
+[submodule "nonNix/nvim"]
+	path = nonNix/nvim
+	url = https://github.com/Pavedd/nvim-config.git

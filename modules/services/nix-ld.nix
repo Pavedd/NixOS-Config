@@ -23,6 +23,7 @@
           krb5
           libdrm
           ffmpeg.dev
+          xdg-utils
           libelf
           libsm
           libxext
@@ -34,6 +35,8 @@
           libpng
           libpq
           libpulseaudio
+          openssl
+          pkg-config
           opencv # libqxcb
           libtiff
           stdenv.cc.cc.lib

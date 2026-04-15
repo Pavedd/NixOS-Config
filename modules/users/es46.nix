@@ -30,13 +30,14 @@
         self.homeModules.pkgs
         self.homeModules.git
         self.homeModules.niri
-        self.homeModules.hypridle
-        self.homeModules.hyprlock
-        self.homeModules.hyprpkgs
+  #      self.homeModules.hypridle
+  #      self.homeModules.hyprlock
+  #      self.homeModules.hyprpkgs
         self.homeModules.kitty
-        self.homeModules.fuzzel
-        self.homeModules.swaync
-        self.homeModules.waybar
+  #      self.homeModules.fuzzel
+  #      self.homeModules.swaync
+        self.homeModules.noctalia
+  #      self.homeModules.waybar
         self.homeModules.gtk
 
         self.homeModules.stylix
@@ -60,16 +61,18 @@
     };
 
 
-      stylix.targets = {
-        swaync.enable = false;
-        fuzzel.enable = false;
-        neovim.enable = false;
-        kitty.enable = false;
-        waybar.enable = false;
-        tmux.enable = false;
-        starship.enable = false;
-      };
-
+       stylix.targets = {
+         swaync.enable = false;
+         btop.enable = false;
+         blender.enable = false;
+         fuzzel.enable = false;
+         neovim.enable = false;
+         kitty.enable = false;
+         waybar.enable = false;
+         tmux.enable = false;
+         starship.enable = false;
+       };
+      
 
     obsidian.sync.enable = true;
 

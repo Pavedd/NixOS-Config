@@ -21,6 +21,11 @@
     stylix.url = "github:nix-community/stylix/release-25.11";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
 
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     milk-grub-theme.url = "github:gemakfy/MilkGrub";
     milk-grub-theme.inputs.nixpkgs.follows = "nixpkgs";
     fenix.url = "github:nix-community/fenix/monthly";
