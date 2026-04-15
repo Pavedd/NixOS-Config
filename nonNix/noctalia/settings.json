@@ -18,6 +18,9 @@
         "ignoreMouseInput": false,
         "overviewLayer": true,
         "pinnedApps": [
+            "org.godotengine.Godot4.6",
+            "aseprite",
+            "discord"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -231,14 +234,14 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "tonal-spot",
+        "generationMethod": "fruit-salad",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Catppuccin",
+        "predefinedScheme": "Eldritch",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -350,7 +353,7 @@
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
         "dockType": "floating",
-        "enabled": true,
+        "enabled": false,
         "floatingRatio": 1,
         "groupApps": false,
         "groupClickAction": "cycle",
@@ -508,7 +511,7 @@
     },
     "notifications": {
         "backgroundOpacity": 1,
-        "clearDismissed": true,
+        "clearDismissed": false,
         "criticalUrgencyDuration": 15,
         "density": "default",
         "enableBatteryToast": true,
@@ -676,7 +679,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/es46/Pictures/Wallpapers",
+        "directory": "/etc/nixos/nonNix/wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
@@ -691,7 +694,7 @@
         "overviewEnabled": false,
         "overviewTint": 0.6,
         "panelPosition": "follow_bar",
-        "randomIntervalSec": 300,
+        "randomIntervalSec": 120,
         "setWallpaperOnAllMonitors": true,
         "showHiddenFiles": false,
         "skipStartupTransition": false,
@@ -700,17 +703,17 @@
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
         "transitionType": [
-            "fade",
             "disc",
             "stripes",
             "wipe",
             "pixelate",
-            "honeycomb"
+            "honeycomb",
+            "fade"
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "recursive",
+        "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",

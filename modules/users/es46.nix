@@ -32,7 +32,7 @@
         self.homeModules.niri
   #      self.homeModules.hypridle
   #      self.homeModules.hyprlock
-        self.homeModules.hyprpkgs
+  #      self.homeModules.hyprpkgs
         self.homeModules.kitty
   #      self.homeModules.fuzzel
   #      self.homeModules.swaync
