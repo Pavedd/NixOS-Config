@@ -1,5 +1,6 @@
-{
-  theme = {
+let
+
+  manualTheme = {
     base00 = "#1e1e2e"; # crust (darkest bg)
     base01 = "#181825"; # mantle
     base02 = "#313244"; # surface0
@@ -17,4 +18,15 @@
     base0E = "#cba6f7"; # mauve
     base0F = "#f2cdcd"; # flamingo
   };
+
+
+  themePath = ./../../nonNix/base16.json;
+  autoTheme = builtins.fromJSON (builtins.readFile themePath);
+
+  theme = autoTheme;
+
+
+in
+{
+  inherit theme;
 }

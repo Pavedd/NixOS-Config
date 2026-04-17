@@ -53,7 +53,7 @@
         "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "fontScale": 1,
+        "fontScale": 1.1,
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": true,
@@ -82,26 +82,13 @@
         "widgets": {
             "center": [
                 {
-                    "compactMode": false,
-                    "diskPath": "/",
-                    "iconColor": "primary",
-                    "id": "SystemMonitor",
-                    "showCpuCores": false,
-                    "showCpuFreq": false,
-                    "showCpuTemp": true,
-                    "showCpuUsage": true,
-                    "showDiskAvailable": false,
-                    "showDiskUsage": false,
-                    "showDiskUsageAsPercent": false,
-                    "showGpuTemp": false,
-                    "showLoadAverage": false,
-                    "showMemoryAsPercent": false,
-                    "showMemoryUsage": true,
-                    "showNetworkStats": false,
-                    "showSwapUsage": false,
-                    "textColor": "primary",
-                    "useMonospaceFont": true,
-                    "usePadding": false
+                    "clockColor": "primary",
+                    "customFont": "JetBrains Mono ExtraBold",
+                    "formatHorizontal": "HH:mm ddd, MMM dd",
+                    "formatVertical": "HH mm - dd MM",
+                    "id": "Clock",
+                    "tooltipFormat": "HH:mm ddd, MMM dd",
+                    "useCustomFont": true
                 },
                 {
                     "hideWhenZero": false,
@@ -155,7 +142,7 @@
                     "iconColor": "none",
                     "id": "Volume",
                     "middleClickCommand": "pwvucontrol || pavucontrol",
-                    "textColor": "none"
+                    "textColor": "tertiary"
                 },
                 {
                     "colorName": "primary",
@@ -179,13 +166,26 @@
                     ]
                 },
                 {
-                    "clockColor": "primary",
-                    "customFont": "",
-                    "formatHorizontal": "HH:mm ddd, MMM dd",
-                    "formatVertical": "HH mm - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": false
+                    "compactMode": false,
+                    "diskPath": "/",
+                    "iconColor": "primary",
+                    "id": "SystemMonitor",
+                    "showCpuCores": false,
+                    "showCpuFreq": false,
+                    "showCpuTemp": true,
+                    "showCpuUsage": true,
+                    "showDiskAvailable": false,
+                    "showDiskUsage": false,
+                    "showDiskUsageAsPercent": false,
+                    "showGpuTemp": false,
+                    "showLoadAverage": false,
+                    "showMemoryAsPercent": false,
+                    "showMemoryUsage": true,
+                    "showNetworkStats": false,
+                    "showSwapUsage": false,
+                    "textColor": "primary",
+                    "useMonospaceFont": true,
+                    "usePadding": false
                 },
                 {
                     "deviceNativePath": "__default__",
@@ -288,9 +288,6 @@
                 }
             ],
             "right": [
-                {
-                    "id": "Notifications"
-                },
                 {
                     "id": "KeepAwake"
                 },
@@ -661,7 +658,7 @@
                 "id": "kitty"
             }
         ],
-        "enableUserTheming": false
+        "enableUserTheming": true
     },
     "ui": {
         "boxBorderEnabled": false,
