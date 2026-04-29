@@ -13,3 +13,13 @@
 [templates.base16]
 input_path = "~/.config/noctalia/templates/base16.json"
 output_path = "/etc/nixos/nonNix/base16.json"
+
+[templates.nvim-base16]
+input_path = "~/.config/noctalia/templates/nvim-base16.lua"
+output_path = "~/.config/nvim/lua/config/base16.lua"
+post_hook = 'pkill -SIGUSR1 nvim'
+
+# [templates.starship]
+# input_path = "~/.config/noctalia/templates/starship.nix"
+# output_path = "/etc/nixos/modules/terminal/starship.nix"
+

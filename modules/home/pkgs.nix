@@ -21,7 +21,9 @@
 
       # Web
       firefox
-      unstable.yt-dlp
+      librewolf
+      pywalfox-native
+      # unstable.yt-dlp
       ytermusic
 
       # Email & File sharing

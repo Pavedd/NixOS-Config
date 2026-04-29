@@ -3,7 +3,7 @@ binds {
     // --- Launchers ---
     Mod+Space repeat=false { spawn "kitty"; }
     Mod+Ctrl+Space repeat=false { spawn "kitty" "-e" "tmux"; }
-    Mod+B repeat=false { spawn "firefox"; }
+    Mod+B repeat=false { spawn "librewolf"; }
     Mod+A repeat=false  { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+P repeat=false  { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
     Mod+E repeat=false { spawn "nautilus"; }

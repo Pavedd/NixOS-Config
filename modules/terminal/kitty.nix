@@ -1,9 +1,8 @@
 {
   flake.homeModules.kitty = { lib, pkgs, ... }: {
     programs.btop.enable = true;
-    programs.kitty = lib.mkForce {
+    programs.kitty = {
       enable = true;
-      themeFile = "Catppuccin-Mocha";
       settings = {
         TERM = "xterm-256color";
         cursor_trail = 1;
@@ -16,13 +15,14 @@
         mouse_hide_wait = "-1.0";
         window_padding_width = 8;
         background_opacity = "0.65";
-        background = "#11111b";
+#        background = "#11111b";
         bold_font = "JetBrainsMono-ExtraBold";
         bold_italic_font = "JetBrainsMono-ExtraBoldItalic";
         # bold_font = "JetBrainsMono Nerd Font Mono Extra Bold";
         # bold_italic_font = "JetBrainsMono Nerd Font Mono Extra Bold Italic";
         # font_family = "JetBrainsMono Nerd Font Mono";     
      };
+    extraConfig = ''include themes/noctalia.conf'';
     };
   };
 }
