@@ -1,3 +1,10 @@
+blur {
+  passes 2        // more passes = stronger blur (default: 3)
+  offset 3.0      // sample distance per pass (default: 3.0)
+  noise 0.03      // grain overlay (default: 0.02)
+  saturation 1.0  // color saturation boost (default: 1.5)
+}
+
 layout {
     gaps 6
     center-focused-column "never"
@@ -17,6 +24,9 @@ layout {
         proportion 1.0
     }
 
+
+
+    
     default-column-width { proportion 0.5; }
 
     // --- Visuals ---

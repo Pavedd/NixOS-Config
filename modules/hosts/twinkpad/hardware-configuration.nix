@@ -3,7 +3,6 @@
 # to /etc/nixos/configuration.nix instead.
 {
 flake.nixosModules.twinkpad-hardware = { config, lib, pkgs, modulesPath, ... }: {
-
   imports =
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
@@ -14,7 +13,7 @@ flake.nixosModules.twinkpad-hardware = { config, lib, pkgs, modulesPath, ... }: 
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/50b60cde-ce6c-499f-a51f-ff270e2775a7";
+    { device = "/dev/disk/by-uuid/ccb7e7dd-c539-4454-bde6-e5a6c3a3e3f0";
       fsType = "ext4";
     };
 
@@ -25,16 +24,8 @@ flake.nixosModules.twinkpad-hardware = { config, lib, pkgs, modulesPath, ... }: 
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/b4c6d57c-4182-4ebc-9f54-d651548739e2"; }
+    [ { device = "/dev/disk/by-uuid/f4d9afc7-b621-4a15-9a2b-9711ba0748c2"; }
     ];
-
-  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-  # (the default) this is the recommended approach. When using systemd-networkd it's
-  # still possible to use this option, but it's recommended to use it in conjunction
-  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp1s0f0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlp2s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;

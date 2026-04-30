@@ -1,5 +1,3 @@
-{self, ... }: 
- let theme = self.theme; in
 {
   flake.homeModules.starship = {pkgs, config, lib, ...}: {
     programs.starship = {
@@ -10,76 +8,46 @@
       enableTransience = true;
       settings = {
         palettes = {
-          auto_gen = {
+          catppuccin_mocha = {
 # Core accents
-            rosewater = theme.base06;
-            flamingo  = theme.base0F;
-            pink      = theme.base0F;
-            mauve     = theme.base0E;
-            red       = theme.base08;
-            maroon    = theme.base08;
-            peach     = theme.base09;
-            yellow    = theme.base0A;
+            rosewater = "{{colors.tertiary.default.hex}}";
+            flamingo  = "{{colors.tertiary_fixed_dim.default.hex}}";
+            pink      = "{{colors.primary_fixed_dim.default.hex}}";
+            mauve     = "{{colors.inverse_primary.default.hex}}";
+            red       = "{{colors.error.default.hex}}";
+            maroon    = "{{colors.error.default.hex}}";
+            peach     = "{{colors.tertiary_fixed_dim.default.hex}}";
+            yellow    = "{{colors.tertiary.default.hex}}";
 
 # Semantic colors
-            green     = theme.base0B;
-            teal      = theme.base0C;
-            sky       = theme.base0C;
-            sapphire  = theme.base0C;
-            blue      = theme.base0D;
-            lavender  = theme.base07;
+            green     = "{{colors.secondary.default.hex}}";
+            teal      = "{{colors.secondary.default.hex}}";
+            sky       = "{{colors.secondary_fixed_dim.default.hex}}";
+            sapphire  = "{{colors.secondary_fixed_dim.default.hex}}";
+            blue      = "{{colors.primary.default.hex}}";
+            lavender  = "{{colors.inverse_primary.default.hex}}";
 
 # Text
-            text      = theme.base05;
-            subtext1  = theme.base04;
-            subtext0  = theme.base03;
+            text      = "{{colors.on_surface.default.hex}}";
+            subtext1  = "{{colors.on_surface_variant.default.hex}}";
+            subtext0  = "{{colors.outline.default.hex}}";
 
 # Overlays
-            overlay2  = theme.base04;
-            overlay1  = theme.base03;
-            overlay0  = theme.base02;
+            overlay2  = "{{colors.outline.default.hex}}";
+            overlay1  = "{{colors.on_surface_variant.default.hex}}";
+            overlay0  = "{{colors.surface_variant.default.hex}}";
 
 # Surfaces
-            surface2  = theme.base04;
-            surface1  = theme.base03;
-            surface0  = theme.base02;
+            surface2  = "{{colors.surface_variant.default.hex}}";
+            surface1  = "{{colors.surface.default.hex}}";
+            surface0  = "{{colors.background.default.hex}}";
 
-# Base layers (IMPORTANT: keep ordering correct)
-            base      = theme.base00;
-            mantle    = theme.base01;
-            crust     = theme.base00;
-
-
+# Base layers
+            base      = "{{colors.background.default.hex}}";
+            mantle    = "{{colors.surface.default.hex}}";
+            crust     = "{{colors.on_tertiary.default.hex}}";
           };
-          catppuccin_mocha = {
-            rosewater = "#f5e0dc";
-            flamingo = "#f2cdcd";
-            pink = "#f5c2e7";
-            mauve = "#cba6f7";
-            red = "#f38ba8";
-            maroon = "#eba0ac";
-            peach = "#fab387";
-            yellow = "#f9e2af";
-            green = "#a6e3a1";
-            teal = "#94e2d5";
-            sky = "#89dceb";
-            sapphire = "#74c7ec";
-            blue = "#89b4fa";
-            lavender = "#b4befe";
-            text = "#cdd6f4";
-            subtext1 = "#bac2de";
-            subtext0 = "#a6adc8";
-            overlay2 = "#9399b2";
-            overlay1 = "#7f849c";
-            overlay0 = "#6c7086";
-            surface2 = "#585b70";
-            surface1 = "#45475a";
-            surface0 = "#313244";
-            base = "#1e1e2e";
-            mantle = "#181825";
-            crust = "#11111b";
-          };
-                 rose_pine = {
+                  rose_pine = {
             _nc = "#16141f";
             base = "#191724";
             surface = "#1f1d2e";
@@ -100,7 +68,7 @@
             iris2 = "#907aa9";
           };
         };
-        palette = "auto_gen";
+        palette = "catppuccin_mocha";
         format = lib.concatStrings [
           "[╭─](bold overlay0)[◖](bold mauve)[  ](bold bg:mauve fg:base)"
             "[](fg:mauve bg:base)"

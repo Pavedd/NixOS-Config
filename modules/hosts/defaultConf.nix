@@ -29,7 +29,11 @@
     fish.enable = false;
   };
 
-  programs.niri.enable = true; 
+  programs.niri = {
+    enable = true;
+    package = pkgs.unstable.niri;
+  }; 
+
   qt.enable = true;
 
   nixpkgs = {
