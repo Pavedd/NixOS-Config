@@ -63,6 +63,7 @@
         "middleClickCommand": "",
         "middleClickFollowMouse": false,
         "monitors": [
+            "DP-1"
         ],
         "mouseWheelAction": "volume",
         "mouseWheelWrap": true,
@@ -73,6 +74,10 @@
         "rightClickCommand": "",
         "rightClickFollowMouse": true,
         "screenOverrides": [
+            {
+                "enabled": false,
+                "name": "DP-1"
+            }
         ],
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
@@ -159,7 +164,7 @@
                 },
                 {
                     "colorName": "primary",
-                    "hideWhenIdle": true,
+                    "hideWhenIdle": false,
                     "id": "AudioVisualizer",
                     "width": 200
                 }
@@ -393,7 +398,7 @@
         "dimmerOpacity": 0.10999999999999999,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
-        "enableLockScreenMediaControls": false,
+        "enableLockScreenMediaControls": true,
         "enableShadows": true,
         "forceBlackScreenCorners": false,
         "iRadiusRatio": 1,
@@ -423,13 +428,13 @@
         },
         "language": "",
         "lockOnSuspend": true,
-        "lockScreenAnimations": false,
-        "lockScreenBlur": 0,
+        "lockScreenAnimations": true,
+        "lockScreenBlur": 0.1,
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
         ],
         "lockScreenTint": 0,
-        "passwordChars": false,
+        "passwordChars": true,
         "radiusRatio": 0.3,
         "reverseScroll": false,
         "scaleRatio": 1,
@@ -560,7 +565,7 @@
         "notifyUpdates": true
     },
     "sessionMenu": {
-        "countdownDuration": 10000,
+        "countdownDuration": 3000,
         "enableCountdown": true,
         "largeButtonsLayout": "single-row",
         "largeButtonsStyle": true,
@@ -637,7 +642,7 @@
         "diskAvailWarningThreshold": 20,
         "diskCriticalThreshold": 90,
         "diskWarningThreshold": 80,
-        "enableDgpuMonitoring": false,
+        "enableDgpuMonitoring": true,
         "externalMonitor": "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor",
         "gpuCriticalThreshold": 90,
         "gpuWarningThreshold": 80,

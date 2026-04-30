@@ -9,7 +9,7 @@
           isNormalUser = true;
           description = "es46";
 
-          extraGroups = ["wheel" "networkmanager" "dialout" "seat" "adbusers"];
+          extraGroups = ["wheel" "networkmanager" "dialout" "seat" "adbusers" "docker"];
           packages = with pkgs; [];
           shell = pkgs.fish;
         };

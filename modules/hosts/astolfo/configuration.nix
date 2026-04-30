@@ -13,6 +13,7 @@
       self.nixosModules.amd
       self.nixosModules.rocm
       self.nixosModules.ollama
+      self.nixosModules.docker
       inputs.stylix.nixosModules.stylix
       inputs.milk-grub-theme.nixosModule
     ];

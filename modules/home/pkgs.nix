@@ -27,6 +27,7 @@
       # Email & File sharing
       thunderbird
       localsend
+      croc
       #jocalsend
 
       # Terminal & Shell
