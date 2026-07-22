@@ -5,7 +5,7 @@
         "clipboardWatchTextCommand": "wl-paste --type text --watch cliphist store",
         "clipboardWrapText": true,
         "customLaunchPrefix": "",
-        "customLaunchPrefixEnabled": false,
+        "customLaunchPrefixEnabled": true,
         "density": "compact",
         "enableClipPreview": true,
         "enableClipboardChips": true,

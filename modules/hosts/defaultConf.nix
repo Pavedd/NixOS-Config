@@ -11,8 +11,7 @@
       self.nixosModules.fish
       self.nixosModules.pkgs
       self.nixosModules.nix-ld
-       
-      inputs.noctalia.nixosModules.default
+      self.nixosModules.opentablet       
 
       self.nixosModules.noctalia
 

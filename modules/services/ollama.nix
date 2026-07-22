@@ -8,7 +8,7 @@
     };
     networking.firewall.allowedTCPPorts = [ 11434 ]; 
     environment.systemPackages = with pkgs; [
-      open-webui
+#      open-webui
     ];
  
   };

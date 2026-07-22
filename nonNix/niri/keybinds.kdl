@@ -4,8 +4,8 @@ binds {
     Mod+Space repeat=false { spawn "kitty"; }
     Mod+Ctrl+Space repeat=false { spawn "kitty" "-e" "tmux"; }
     Mod+B repeat=false { spawn "librewolf"; }
-    Mod+A repeat=false  { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
-    Mod+P repeat=false  { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
+    Mod+A repeat=false  { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+P repeat=false  { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+E repeat=false { spawn "nautilus"; }
     Mod+V repeat=false { spawn "code"; }
     Mod+N repeat=false { spawn "obsidian"; }

@@ -16,12 +16,13 @@
       unstable.quickshell
 
       # 3D design
-      bambu-studio
+      #bambu-studio
       unstable.orca-slicer
 
       # Web
       firefox
       librewolf
+      ungoogled-chromium
       pywalfox-native
       # unstable.yt-dlp
       ytermusic

@@ -12,8 +12,9 @@
       self.nixosModules.astolfo
       self.nixosModules.amd
       self.nixosModules.rocm
-      self.nixosModules.ollama
+#      self.nixosModules.ollama
       self.nixosModules.docker
+      self.nixosModules.vr
       inputs.stylix.nixosModules.stylix
       inputs.milk-grub-theme.nixosModule
     ];

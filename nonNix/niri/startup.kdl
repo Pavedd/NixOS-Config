@@ -1,5 +1,6 @@
 //spawn-at-startup "waybar"
 spawn-at-startup "udiskie"
+spawn-at-startup "noctalia"
 //spawn-at-startup "swww-daemon"
 //spawn-at-startup "swww img /etc/nixos/home-manager/wallpapers/miku.png"
 //spawn-at-startup "swaync"

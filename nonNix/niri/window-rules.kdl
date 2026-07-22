@@ -22,10 +22,28 @@ window-rule {
   }
 }
 
-/* Noctalia: blur everywhere without xray for a better look */
+window-rule {
+  match app-id="dev.noctalia.Noctalia.Settings"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+
 layer-rule {
-  match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
   background-effect {
     xray false
+    // blur false
   }
+}
+
+layer-rule {
+  match namespace="^noctalia-backdrop"
+  place-within-backdrop true
 }

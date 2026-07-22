@@ -36,7 +36,7 @@
       vim
       neovim
       tree-sitter
-      unstable.godotPackages_4_6.godot
+      godotPackages_4_7.godot
       neovim-remote
 
       # Text Editing

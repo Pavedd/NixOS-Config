@@ -13,7 +13,7 @@
 
 
       programs.neovim = {
-        enable = true;
+        enable = false;
 
         extraPackages = with pkgs; [
 
