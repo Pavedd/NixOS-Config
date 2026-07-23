@@ -1,0 +1,172 @@
+config_version = 2
+
+[audio]
+enable_sounds = true
+
+[backdrop]
+enabled = true
+
+[bar.default]
+background_opacity = 0.79999998211860657
+center = [ "clock", "notifications" ]
+end = [ "tray", "clipboard", "network", "bluetooth", "battery", "group:g1", "control-center" ]
+margin_edge = 0
+margin_ends = 0
+radius = 0
+start = [ "workspaces", "media", "volume", "audio_visualizer" ]
+
+    [bar.default.monitor."BenQ GL2760"]
+    enabled = false
+
+    [[bar.default.capsule_group]]
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "ram", "sysmon", "cpu" ]
+    opacity = 0.5
+    padding = 6.0
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "nightlight"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[[control_center.shortcuts]]
+type = "wallpaper"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1280.0
+    cy = 1317.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 957.0
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
+[plugins]
+enabled = [ "noctalia/timer" ]
+
+[shell]
+font_family = "JetBrains Mono NL"
+niri_overview_type_to_launch_enabled = true
+password_style = "random"
+settings_show_advanced = true
+
+    [shell.animation]
+    speed = 1.3500000201165676
+
+    [shell.panel]
+    launcher_placement = "attached"
+    transparency_mode = "glass"
+
+[theme]
+builtin = "Tokyo-Night"
+community_palette = "Catppuccin Lavender"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "dysfunctional"
+
+    [theme.templates]
+    community_ids = [ "obsidian" ]
+
+[wallpaper]
+directory = "/etc/nixos/nonNix/wallpapers"
+
+    [wallpaper.default]
+    path = "/etc/nixos/nonNix/wallpapers/wallhaven_49r29x.jpg"
+
+    [wallpaper.last]
+    path = "/etc/nixos/nonNix/wallpapers/wallhaven_49r29x.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/etc/nixos/nonNix/wallpapers/wallhaven_49r29x.jpg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/etc/nixos/nonNix/wallpapers/wallhaven_49r29x.jpg"
+
+[widget.clock]
+color = "primary"
+
+[widget.control-center]
+glyph = "brand-snowflake"
+icon_color = "secondary"
+
+[widget.cpu]
+color = "primary"
+show_label = false
+
+[widget.network]
+show_label = false
+
+[widget.notifications]
+color = "tertiary"
+
+[widget.ram]
+color = "primary"
+
+[widget.sysmon]
+color = "primary"
+display = "text"
+show_label = false
+stat = "cpu_temp"
+
+[widget.tray]
+drawer = true
+
+[widget.volume]
+show_label = false
